@@ -1,5 +1,5 @@
 
-### Looks like there is already this idea, look up for https://musclewiki.com/ :)
+## Looks like there is already this idea, search up for https://musclewiki.com/ :)
 
 
 
