@@ -1,0 +1,1102 @@
+[
+  {
+    "slug": "flat-bench-press",
+    "name": "Flat Bench Press",
+    "primaryMuscles": ["pectoralis-major"],
+    "secondaryMuscles": ["anterior-deltoid", "triceps-long-head", "triceps-lateral-head"],
+    "equipment": "barbell",
+    "difficulty": "beginner",
+    "description": "The king of chest exercises. Lie flat on a bench, grip the barbell slightly wider than shoulder-width, lower it to mid-chest, then press back up.",
+    "formCues": ["Retract your shoulder blades before unracking", "Keep your feet flat on the floor", "Lower the bar to mid-chest, not your neck", "Drive through your entire upper back"]
+  },
+  {
+    "slug": "incline-bench-press",
+    "name": "Incline Bench Press",
+    "primaryMuscles": ["pectoralis-major", "anterior-deltoid"],
+    "secondaryMuscles": ["triceps-long-head", "triceps-lateral-head"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "Set the bench to 30-45 degrees to target the upper chest and front delts. Press the barbell from upper chest height.",
+    "formCues": ["Set bench to 30-45 degrees", "Keep wrists stacked over elbows", "Control the descent — don't bounce", "Squeeze upper chest at the top"]
+  },
+  {
+    "slug": "decline-bench-press",
+    "name": "Decline Bench Press",
+    "primaryMuscles": ["pectoralis-major"],
+    "secondaryMuscles": ["triceps-long-head", "triceps-lateral-head", "anterior-deltoid"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "Decline angle targets the lower chest. Set bench to -15 to -30 degrees, secure your feet, and press.",
+    "formCues": ["Hook feet securely before lifting", "Keep lower back pressed into bench", "Bar should touch lower chest", "Maintain control throughout"]
+  },
+  {
+    "slug": "dumbbell-bench-press",
+    "name": "Dumbbell Bench Press",
+    "primaryMuscles": ["pectoralis-major"],
+    "secondaryMuscles": ["anterior-deltoid", "triceps-long-head", "triceps-lateral-head", "serratus-anterior"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "description": "Greater range of motion than barbell bench. Each arm works independently, helping fix muscle imbalances.",
+    "formCues": ["Start with dumbbells on thighs to get into position", "Lower until elbows are at 90 degrees", "Bring dumbbells close together at top", "Keep a neutral wrist position"]
+  },
+  {
+    "slug": "incline-dumbbell-press",
+    "name": "Incline Dumbbell Press",
+    "primaryMuscles": ["pectoralis-major", "anterior-deltoid"],
+    "secondaryMuscles": ["triceps-long-head", "serratus-anterior"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "description": "Incline dumbbell pressing for upper chest development with greater range of motion than the barbell version.",
+    "formCues": ["Set bench to 30 degrees for most upper chest activation", "Neutral grip can reduce shoulder stress", "Let dumbbells travel slightly forward at bottom", "Squeeze hard at top"]
+  },
+  {
+    "slug": "dumbbell-flyes",
+    "name": "Dumbbell Flyes",
+    "primaryMuscles": ["pectoralis-major"],
+    "secondaryMuscles": ["anterior-deltoid", "serratus-anterior"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "description": "Isolation movement for the chest. Arms arc wide open then come together at the top, stretching the pec at the bottom.",
+    "formCues": ["Maintain a slight bend in the elbows throughout", "Think of hugging a large tree", "Don't go too heavy — stretch matters more than weight", "Squeeze chest at top, not just hands"]
+  },
+  {
+    "slug": "incline-dumbbell-flyes",
+    "name": "Incline Dumbbell Flyes",
+    "primaryMuscles": ["pectoralis-major"],
+    "secondaryMuscles": ["anterior-deltoid"],
+    "equipment": "dumbbell",
+    "difficulty": "intermediate",
+    "description": "Targets the upper chest with a stretching fly motion on an inclined bench.",
+    "formCues": ["Bench at 30-45 degrees", "Arms arc wide with a slight elbow bend", "Control the stretch at the bottom", "Squeeze upper chest at the top"]
+  },
+  {
+    "slug": "cable-crossovers",
+    "name": "Cable Crossovers",
+    "primaryMuscles": ["pectoralis-major"],
+    "secondaryMuscles": ["anterior-deltoid", "serratus-anterior"],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "description": "Constant tension chest isolation using cables set at high position. Great for finishing the chest with a squeeze.",
+    "formCues": ["Set cables at shoulder height or above", "Step forward to create tension", "Slight forward lean from hips", "Cross hands slightly at the bottom for peak contraction"]
+  },
+  {
+    "slug": "push-ups",
+    "name": "Push-Ups",
+    "primaryMuscles": ["pectoralis-major"],
+    "secondaryMuscles": ["triceps-long-head", "triceps-lateral-head", "anterior-deltoid", "serratus-anterior"],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "description": "Fundamental bodyweight chest exercise. Body forms a straight line from head to heels throughout.",
+    "formCues": ["Keep core tight throughout", "Elbows at 45 degrees, not flared", "Full range of motion — chest near floor", "Don't let hips sag"]
+  },
+  {
+    "slug": "chest-dips",
+    "name": "Chest Dips",
+    "primaryMuscles": ["pectoralis-major"],
+    "secondaryMuscles": ["triceps-long-head", "anterior-deltoid", "serratus-anterior"],
+    "equipment": "bodyweight",
+    "difficulty": "intermediate",
+    "description": "Lean forward while dipping to shift emphasis to the chest. Excellent mass builder for lower chest.",
+    "formCues": ["Lean torso forward 30-45 degrees", "Elbows flare slightly outward", "Lower until shoulder is below elbow", "Control the descent"]
+  },
+  {
+    "slug": "pec-deck-machine",
+    "name": "Pec Deck Machine",
+    "primaryMuscles": ["pectoralis-major"],
+    "secondaryMuscles": ["anterior-deltoid"],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "description": "Machine fly variation for chest isolation. Great for beginners learning the chest squeeze sensation.",
+    "formCues": ["Adjust seat so handles are at chest height", "Slight bend in elbows throughout", "Bring pads together with chest, not arms", "Control the return — don't let weights slam"]
+  },
+  {
+    "slug": "conventional-deadlift",
+    "name": "Conventional Deadlift",
+    "primaryMuscles": ["erector-spinae", "gluteus-maximus"],
+    "secondaryMuscles": ["hamstrings-biceps-femoris", "hamstrings-semitendinosus", "quadriceps-rectus-femoris", "latissimus-dorsi", "trapezius-upper", "rhomboids"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "The king of all exercises. Lift a loaded barbell from the floor to hip height using a hip hinge pattern.",
+    "formCues": ["Bar over mid-foot, not touching shins", "Grip just outside legs", "Push the floor away, don't pull the bar", "Keep lats engaged — protect your lower back"]
+  },
+  {
+    "slug": "bent-over-barbell-row",
+    "name": "Bent-Over Barbell Row",
+    "primaryMuscles": ["latissimus-dorsi", "rhomboids"],
+    "secondaryMuscles": ["trapezius-middle", "trapezius-lower", "teres-major", "posterior-deltoid", "biceps-brachii"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "Hinge forward at hips and row the bar to your lower chest. One of the best exercises for total back thickness.",
+    "formCues": ["Hips back, torso 45 degrees or more horizontal", "Pull bar to lower chest/upper abdomen", "Drive elbows back, not up", "Keep lower back neutral throughout"]
+  },
+  {
+    "slug": "dumbbell-row",
+    "name": "Dumbbell Row",
+    "primaryMuscles": ["latissimus-dorsi"],
+    "secondaryMuscles": ["rhomboids", "teres-major", "posterior-deltoid", "biceps-brachii"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "description": "One-arm dumbbell row with knee and hand supported on bench. Excellent for isolating each side of the back.",
+    "formCues": ["Keep spine neutral and parallel to floor", "Pull dumbbell to hip, not armpit", "Let the lat do the work, not the bicep", "Full stretch at the bottom"]
+  },
+  {
+    "slug": "pull-ups",
+    "name": "Pull-Ups",
+    "primaryMuscles": ["latissimus-dorsi"],
+    "secondaryMuscles": ["teres-major", "biceps-brachii", "brachialis", "rhomboids", "posterior-deltoid"],
+    "equipment": "bodyweight",
+    "difficulty": "intermediate",
+    "description": "Overhand grip chin-up. One of the best indicators of relative upper body strength. Chest to bar is the goal.",
+    "formCues": ["Start from a dead hang with fully extended arms", "Initiate by depressing shoulder blades", "Drive elbows toward hips", "Cross feet behind you to prevent swinging"]
+  },
+  {
+    "slug": "chin-ups",
+    "name": "Chin-Ups",
+    "primaryMuscles": ["latissimus-dorsi", "biceps-brachii"],
+    "secondaryMuscles": ["teres-major", "brachialis", "posterior-deltoid"],
+    "equipment": "bodyweight",
+    "difficulty": "intermediate",
+    "description": "Underhand grip pull-up that involves the biceps more than pull-ups. Often easier for beginners.",
+    "formCues": ["Underhand grip, shoulder-width apart", "Full dead hang at bottom", "Chest toward bar at top", "Avoid kipping — control the movement"]
+  },
+  {
+    "slug": "lat-pulldown",
+    "name": "Lat Pulldown",
+    "primaryMuscles": ["latissimus-dorsi"],
+    "secondaryMuscles": ["teres-major", "biceps-brachii", "brachialis", "rhomboids"],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "description": "Cable machine version of pull-ups. Allows adjustable resistance and is ideal for beginners building pulling strength.",
+    "formCues": ["Slight backward lean, maybe 10-15 degrees", "Pull bar to upper chest, not behind neck", "Drive elbows down toward hips", "Controlled return to full stretch"]
+  },
+  {
+    "slug": "seated-cable-row",
+    "name": "Seated Cable Row",
+    "primaryMuscles": ["latissimus-dorsi", "rhomboids"],
+    "secondaryMuscles": ["trapezius-middle", "teres-major", "posterior-deltoid", "biceps-brachii"],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "description": "Seated horizontal row using cable machine. Builds back thickness with constant tension throughout.",
+    "formCues": ["Keep chest up, don't round your back", "Pull handle to lower chest/upper abdomen", "Squeeze shoulder blades at the end", "Controlled forward lean on the return — get that stretch"]
+  },
+  {
+    "slug": "t-bar-row",
+    "name": "T-Bar Row",
+    "primaryMuscles": ["latissimus-dorsi", "rhomboids"],
+    "secondaryMuscles": ["trapezius-middle", "teres-major", "posterior-deltoid", "erector-spinae"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "Row with a T-bar or landmine setup. Allows heavier loading than dumbbell rows with excellent lat engagement.",
+    "formCues": ["Hinge over the bar significantly", "Pull handles to lower chest", "Keep chest up throughout", "Don't bounce the weight — control it"]
+  },
+  {
+    "slug": "face-pulls",
+    "name": "Face Pulls",
+    "primaryMuscles": ["posterior-deltoid", "rhomboids"],
+    "secondaryMuscles": ["trapezius-middle", "teres-minor", "infraspinatus", "rotator-cuff"],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "description": "Cable pulls toward your face targeting rear delts and upper back. Essential for shoulder health and posture.",
+    "formCues": ["Set cable at face height", "Pull toward forehead, elbows high", "Externally rotate at the end of the movement", "Light weight, high reps — this is for health, not ego"]
+  },
+  {
+    "slug": "cable-straight-arm-pulldown",
+    "name": "Cable Straight-Arm Pulldown",
+    "primaryMuscles": ["latissimus-dorsi"],
+    "secondaryMuscles": ["teres-major", "posterior-deltoid", "serratus-anterior"],
+    "equipment": "cable",
+    "difficulty": "intermediate",
+    "description": "Isolates the lat through a straight-arm movement. Excellent for developing the mind-muscle connection with the lat.",
+    "formCues": ["Arms stay straight throughout", "Hinge forward slightly at hips", "Pull rope down to thighs", "Feel the lat stretch at the top"]
+  },
+  {
+    "slug": "hyperextensions",
+    "name": "Hyperextensions",
+    "primaryMuscles": ["erector-spinae"],
+    "secondaryMuscles": ["gluteus-maximus", "hamstrings-biceps-femoris", "lower-back"],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "description": "Lower back extension exercise on the hyperextension bench. Builds lower back endurance and strength.",
+    "formCues": ["Hips on the pad, not lower back", "Don't hyperextend — stop at neutral", "Arms across chest or behind head", "Control the descent"]
+  },
+  {
+    "slug": "inverted-row",
+    "name": "Inverted Row",
+    "primaryMuscles": ["latissimus-dorsi", "rhomboids"],
+    "secondaryMuscles": ["trapezius-middle", "biceps-brachii", "posterior-deltoid"],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "description": "Horizontal pull using a barbell in a rack or rings. Adjustable difficulty by changing body angle.",
+    "formCues": ["Keep body rigid like a plank", "Pull chest to bar, not head", "Squeeze shoulder blades at top", "Lower the bar to increase difficulty"]
+  },
+  {
+    "slug": "rack-pulls",
+    "name": "Rack Pulls",
+    "primaryMuscles": ["erector-spinae", "trapezius-upper"],
+    "secondaryMuscles": ["gluteus-maximus", "latissimus-dorsi", "rhomboids"],
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "description": "Partial deadlift from knee height or above. Allows heavier loading to build upper back and lockout strength.",
+    "formCues": ["Set pins at knee height", "Same setup as deadlift", "Emphasize upper back engagement at lockout", "Use straps for grip when going heavy"]
+  },
+  {
+    "slug": "overhead-press",
+    "name": "Overhead Press",
+    "primaryMuscles": ["anterior-deltoid", "lateral-deltoid"],
+    "secondaryMuscles": ["triceps-long-head", "triceps-lateral-head", "supraspinatus", "trapezius-upper"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "Standing or seated barbell press overhead. The primary strength test for shoulder pressing power.",
+    "formCues": ["Grip just outside shoulder width", "Bar rests on front delts before lift", "Press the bar over your head in a straight line", "Squeeze glutes and abs for full body tension"]
+  },
+  {
+    "slug": "dumbbell-shoulder-press",
+    "name": "Dumbbell Shoulder Press",
+    "primaryMuscles": ["anterior-deltoid", "lateral-deltoid"],
+    "secondaryMuscles": ["triceps-long-head", "supraspinatus"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "description": "Seated or standing dumbbell overhead press. Greater range of motion than barbell and helps balance both sides.",
+    "formCues": ["Elbows at 90 degrees at starting position", "Press overhead to full lockout", "Don't arc the dumbbells inward at top", "Keep core braced throughout"]
+  },
+  {
+    "slug": "lateral-raises",
+    "name": "Lateral Raises",
+    "primaryMuscles": ["lateral-deltoid"],
+    "secondaryMuscles": ["supraspinatus", "trapezius-upper"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "description": "Isolation exercise for the side delts. Lifts dumbbells out to the side to shoulder height.",
+    "formCues": ["Slight forward lean (15 degrees) to target mid-delt better", "Raise to shoulder height — no higher", "Lead with elbows, not wrists", "Control the descent — don't let them drop"]
+  },
+  {
+    "slug": "front-raises",
+    "name": "Front Raises",
+    "primaryMuscles": ["anterior-deltoid"],
+    "secondaryMuscles": ["pectoralis-major", "lateral-deltoid"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "description": "Raises arms forward to shoulder height, targeting the front deltoid.",
+    "formCues": ["Arms straight or slight elbow bend", "Don't swing the weight up", "Raise to shoulder height", "Alternate arms or do both simultaneously"]
+  },
+  {
+    "slug": "reverse-flyes",
+    "name": "Reverse Flyes",
+    "primaryMuscles": ["posterior-deltoid"],
+    "secondaryMuscles": ["rhomboids", "trapezius-middle", "teres-minor", "infraspinatus"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "description": "Bent-over dumbbell fly in reverse targeting rear delts and upper back. Critical for balanced shoulder development.",
+    "formCues": ["Hinge forward until torso is near parallel to floor", "Arms arc up and out to sides", "Lead with elbows, not hands", "Don't shrug — keep traps relaxed"]
+  },
+  {
+    "slug": "cable-lateral-raises",
+    "name": "Cable Lateral Raises",
+    "primaryMuscles": ["lateral-deltoid"],
+    "secondaryMuscles": ["supraspinatus"],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "description": "Lateral raises with a cable provides constant tension, unlike dumbbells which have a dead zone at the bottom.",
+    "formCues": ["Stand sideways to the cable machine", "Pull cable across body to shoulder height", "Slight forward lean helps target mid-delt", "Control return — no jerking"]
+  },
+  {
+    "slug": "arnold-press",
+    "name": "Arnold Press",
+    "primaryMuscles": ["anterior-deltoid", "lateral-deltoid"],
+    "secondaryMuscles": ["posterior-deltoid", "triceps-long-head", "supraspinatus"],
+    "equipment": "dumbbell",
+    "difficulty": "intermediate",
+    "description": "Rotating dumbbell press invented by Arnold Schwarzenegger. Hits all three delt heads through the rotation.",
+    "formCues": ["Start with palms facing you", "Rotate outward as you press", "Full rotation at top", "Reverse motion on the way down"]
+  },
+  {
+    "slug": "upright-rows",
+    "name": "Upright Rows",
+    "primaryMuscles": ["trapezius-upper", "lateral-deltoid"],
+    "secondaryMuscles": ["anterior-deltoid", "supraspinatus", "biceps-brachii"],
+    "equipment": "barbell",
+    "difficulty": "beginner",
+    "description": "Pull a barbell straight up along your torso to chin height. Builds upper traps and side delts.",
+    "formCues": ["Close grip (fist-width) hits traps more", "Wider grip hits delts more", "Elbows lead the movement", "Don't pull higher than your chin"]
+  },
+  {
+    "slug": "barbell-curl",
+    "name": "Barbell Curl",
+    "primaryMuscles": ["biceps-brachii"],
+    "secondaryMuscles": ["brachialis", "brachioradialis", "biceps-long-head", "biceps-short-head"],
+    "equipment": "barbell",
+    "difficulty": "beginner",
+    "description": "Classic bicep builder using a barbell. Allows heavier loading than dumbbells for overall bicep mass.",
+    "formCues": ["Elbows pinned to sides throughout", "Full extension at bottom", "Curl to chin level, not shoulders", "Don't swing — control the weight"]
+  },
+  {
+    "slug": "dumbbell-curl",
+    "name": "Dumbbell Curl",
+    "primaryMuscles": ["biceps-brachii"],
+    "secondaryMuscles": ["brachialis", "brachioradialis"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "description": "Alternating or simultaneous dumbbell curls. Allows supination (rotation) for peak bicep contraction.",
+    "formCues": ["Supinate (rotate palm up) as you curl", "Full extension at bottom", "Alternate arms or do both together", "Keep elbows at sides — don't let them drift forward"]
+  },
+  {
+    "slug": "hammer-curl",
+    "name": "Hammer Curl",
+    "primaryMuscles": ["brachialis", "brachioradialis"],
+    "secondaryMuscles": ["biceps-brachii", "biceps-long-head"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "description": "Neutral grip curl that targets the brachialis and brachioradialis. Builds overall arm thickness.",
+    "formCues": ["Neutral grip (thumbs up) throughout", "Can be done alternating or together", "Full extension at bottom", "Keep elbows pinned to sides"]
+  },
+  {
+    "slug": "preacher-curl",
+    "name": "Preacher Curl",
+    "primaryMuscles": ["biceps-short-head"],
+    "secondaryMuscles": ["biceps-brachii", "brachialis"],
+    "equipment": "barbell",
+    "difficulty": "beginner",
+    "description": "Curl on a preacher bench that eliminates cheating by anchoring the upper arm. Emphasizes the short head of the bicep.",
+    "formCues": ["Upper arm fully on the pad", "Full extension at bottom — feel the stretch", "Don't lean forward to cheat reps", "Control the negative slowly"]
+  },
+  {
+    "slug": "concentration-curl",
+    "name": "Concentration Curl",
+    "primaryMuscles": ["biceps-brachii"],
+    "secondaryMuscles": ["biceps-long-head", "brachialis"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "description": "Seated single-arm curl with elbow braced on inner thigh. Ultimate isolation for the bicep peak.",
+    "formCues": ["Elbow braced on inner thigh", "Curl straight up to shoulder", "Full extension at bottom", "Supinate wrist for peak contraction"]
+  },
+  {
+    "slug": "ez-bar-curl",
+    "name": "EZ Bar Curl",
+    "primaryMuscles": ["biceps-brachii"],
+    "secondaryMuscles": ["brachialis", "brachioradialis"],
+    "equipment": "barbell",
+    "difficulty": "beginner",
+    "description": "Barbell curl using the angled EZ bar. Reduces wrist strain compared to straight barbell curls.",
+    "formCues": ["Use the inner angled grips for more bicep emphasis", "Use the outer grips for more brachialis", "Full extension at bottom", "Keep strict form — no swinging"]
+  },
+  {
+    "slug": "cable-curl",
+    "name": "Cable Curl",
+    "primaryMuscles": ["biceps-brachii"],
+    "secondaryMuscles": ["brachialis"],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "description": "Bicep curl using a cable machine. Provides constant tension throughout the range of motion.",
+    "formCues": ["Stand facing the machine", "Full extension at bottom", "Curl to chin height", "Cable creates constant tension — use it well"]
+  },
+  {
+    "slug": "reverse-curl",
+    "name": "Reverse Curl",
+    "primaryMuscles": ["brachioradialis", "wrist-extensors"],
+    "secondaryMuscles": ["biceps-brachii", "brachialis"],
+    "equipment": "barbell",
+    "difficulty": "beginner",
+    "description": "Curl with overhand grip to develop the brachioradialis and forearms.",
+    "formCues": ["Overhand (pronated) grip", "Keep wrists neutral — don't curl them", "Elbows at sides", "Lighter weight than regular curls is normal"]
+  },
+  {
+    "slug": "wrist-curls",
+    "name": "Wrist Curls",
+    "primaryMuscles": ["wrist-flexors"],
+    "secondaryMuscles": ["pronator-teres"],
+    "equipment": "barbell",
+    "difficulty": "beginner",
+    "description": "Seated wrist flexion for forearm development. Wrists hang off the bench and curl upward.",
+    "formCues": ["Forearms rest on thighs", "Let bar roll down fingertips at bottom", "Curl with wrists only", "High reps work best for forearms"]
+  },
+  {
+    "slug": "tricep-pushdown",
+    "name": "Tricep Pushdown",
+    "primaryMuscles": ["triceps-lateral-head", "triceps-medial-head"],
+    "secondaryMuscles": ["triceps-long-head"],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "description": "Cable pushdown targeting the triceps. The most popular isolation exercise for the back of the arm.",
+    "formCues": ["Elbows pinned to sides", "Push all the way to full lockout", "Don't flare elbows out", "Slight forward lean is fine"]
+  },
+  {
+    "slug": "overhead-tricep-extension",
+    "name": "Overhead Tricep Extension",
+    "primaryMuscles": ["triceps-long-head"],
+    "secondaryMuscles": ["triceps-lateral-head", "triceps-medial-head"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "description": "Overhead extension stretches and works the long head of the tricep more than pushdowns.",
+    "formCues": ["Keep elbows pointing forward, not flaring", "Lower weight behind head in a controlled arc", "Full extension at top", "Grip one dumbbell with both hands or use two"]
+  },
+  {
+    "slug": "skull-crushers",
+    "name": "Skull Crushers",
+    "primaryMuscles": ["triceps-long-head"],
+    "secondaryMuscles": ["triceps-lateral-head", "triceps-medial-head"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "Lying tricep extension lowering the bar toward your forehead. Excellent for building tricep mass.",
+    "formCues": ["Lower bar to forehead or just behind the head", "Keep upper arms perpendicular to floor", "EZ bar is easier on wrists than straight bar", "Control descent to avoid head injury"]
+  },
+  {
+    "slug": "close-grip-bench-press",
+    "name": "Close-Grip Bench Press",
+    "primaryMuscles": ["triceps-long-head", "triceps-lateral-head"],
+    "secondaryMuscles": ["pectoralis-major", "anterior-deltoid"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "Bench press with narrow grip to shift load to triceps. One of the best mass builders for the triceps.",
+    "formCues": ["Grip shoulder-width or just inside", "Elbows track close to sides", "Lower to lower chest", "Full extension at top"]
+  },
+  {
+    "slug": "tricep-dips",
+    "name": "Tricep Dips",
+    "primaryMuscles": ["triceps-long-head", "triceps-lateral-head"],
+    "secondaryMuscles": ["anterior-deltoid", "pectoralis-major"],
+    "equipment": "bodyweight",
+    "difficulty": "intermediate",
+    "description": "Upright dip keeping body vertical to target triceps. Can be weighted for advanced lifters.",
+    "formCues": ["Keep torso upright for more tricep activation", "Don't go below 90 degrees if you feel shoulder strain", "Full lockout at top", "Feet together, cross ankles behind you"]
+  },
+  {
+    "slug": "back-squat",
+    "name": "Back Squat",
+    "primaryMuscles": ["quadriceps-rectus-femoris", "quadriceps-vastus-lateralis", "quadriceps-vastus-medialis"],
+    "secondaryMuscles": ["gluteus-maximus", "hamstrings-biceps-femoris", "erector-spinae", "adductors"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "The fundamental lower body strength exercise. Bar on upper back, squat to parallel or below.",
+    "formCues": ["Brace your core before every rep", "Knees track over toes, not caving in", "Break at hips and knees simultaneously", "Drive through heels to stand up"]
+  },
+  {
+    "slug": "front-squat",
+    "name": "Front Squat",
+    "primaryMuscles": ["quadriceps-rectus-femoris", "quadriceps-vastus-lateralis", "quadriceps-vastus-medialis", "quadriceps-vastus-intermedius"],
+    "secondaryMuscles": ["gluteus-maximus", "erector-spinae", "adductors"],
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "description": "Bar on front of shoulders. Requires excellent mobility and keeps the torso more upright than back squat.",
+    "formCues": ["Keep elbows high throughout", "More upright torso than back squat", "Core braced hard — bar position demands it", "Wrist flexibility is critical — work on it"]
+  },
+  {
+    "slug": "leg-press",
+    "name": "Leg Press",
+    "primaryMuscles": ["quadriceps-rectus-femoris", "quadriceps-vastus-lateralis", "quadriceps-vastus-medialis"],
+    "secondaryMuscles": ["gluteus-maximus", "hamstrings-biceps-femoris", "adductors"],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "description": "Machine pressing through legs. Allows heavy loading with spinal support — good for beginners or those with back issues.",
+    "formCues": ["Don't lock out knees completely at top", "Lower until thighs are parallel or slightly below", "Feet at shoulder width, toes slightly out", "Keep lower back pressed to pad throughout"]
+  },
+  {
+    "slug": "hack-squat",
+    "name": "Hack Squat",
+    "primaryMuscles": ["quadriceps-vastus-lateralis", "quadriceps-vastus-medialis"],
+    "secondaryMuscles": ["gluteus-maximus", "hamstrings-biceps-femoris"],
+    "equipment": "machine",
+    "difficulty": "intermediate",
+    "description": "Machine squat on an angled sled. Places high demand on the quads through deep knee flexion.",
+    "formCues": ["Feet low on the platform for more quad emphasis", "Full depth if mobility allows", "Drive through heels", "Control descent — no dropping down"]
+  },
+  {
+    "slug": "leg-extension",
+    "name": "Leg Extension",
+    "primaryMuscles": ["quadriceps-rectus-femoris", "quadriceps-vastus-lateralis", "quadriceps-vastus-medialis", "quadriceps-vastus-intermedius"],
+    "secondaryMuscles": [],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "description": "Knee extension on the machine for quad isolation. Great finisher after squats.",
+    "formCues": ["Seat adjusted so knees align with machine pivot", "Full extension at top — hold briefly", "Controlled descent", "Don't jerk the weight up"]
+  },
+  {
+    "slug": "leg-curl",
+    "name": "Leg Curl",
+    "primaryMuscles": ["hamstrings-biceps-femoris", "hamstrings-semitendinosus", "hamstrings-semimembranosus"],
+    "secondaryMuscles": ["gastrocnemius"],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "description": "Lying or seated hamstring curl machine. Best isolation exercise for hamstrings.",
+    "formCues": ["Full stretch at start", "Curl all the way to full contraction", "Don't let hips lift up (lying version)", "Control the return — don't let it slam"]
+  },
+  {
+    "slug": "romanian-deadlift",
+    "name": "Romanian Deadlift",
+    "primaryMuscles": ["hamstrings-biceps-femoris", "hamstrings-semitendinosus", "hamstrings-semimembranosus"],
+    "secondaryMuscles": ["gluteus-maximus", "erector-spinae", "lower-back"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "Hip hinge movement keeping legs relatively straight. Exceptional hamstring stretch and strength development.",
+    "formCues": ["Knees have slight bend — not locked, not squatting", "Hinge at hips, push them back", "Bar stays close to legs throughout", "Feel the hamstring stretch at the bottom"]
+  },
+  {
+    "slug": "stiff-leg-deadlift",
+    "name": "Stiff-Leg Deadlift",
+    "primaryMuscles": ["hamstrings-biceps-femoris", "hamstrings-semitendinosus"],
+    "secondaryMuscles": ["gluteus-maximus", "erector-spinae"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "Similar to RDL but legs are kept completely straight. Greater hamstring stretch but demands excellent hip mobility.",
+    "formCues": ["Stand on a platform for greater range", "Keep legs completely straight", "Hinge until you feel a strong hamstring stretch", "Maintain neutral spine throughout"]
+  },
+  {
+    "slug": "lunges",
+    "name": "Lunges",
+    "primaryMuscles": ["quadriceps-rectus-femoris", "gluteus-maximus"],
+    "secondaryMuscles": ["hamstrings-biceps-femoris", "adductors", "hip-flexors"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "description": "Stepping lunge forward or backward targeting quads and glutes. Excellent for unilateral leg development.",
+    "formCues": ["Step forward until both knees are at 90 degrees", "Keep front knee over ankle, not past toes excessively", "Torso stays upright", "Push off front foot to return"]
+  },
+  {
+    "slug": "walking-lunges",
+    "name": "Walking Lunges",
+    "primaryMuscles": ["quadriceps-rectus-femoris", "gluteus-maximus"],
+    "secondaryMuscles": ["hamstrings-biceps-femoris", "adductors", "hip-flexors"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "description": "Continuous forward lunges walking across the gym floor. Adds a cardiovascular challenge to the lunge pattern.",
+    "formCues": ["Keep torso upright throughout", "Knee tracks over middle toes", "Step far enough forward for a 90-degree angle", "Use dumbbells at sides or barbell on back"]
+  },
+  {
+    "slug": "bulgarian-split-squat",
+    "name": "Bulgarian Split Squat",
+    "primaryMuscles": ["quadriceps-rectus-femoris", "gluteus-maximus"],
+    "secondaryMuscles": ["hamstrings-biceps-femoris", "adductors", "hip-flexors"],
+    "equipment": "dumbbell",
+    "difficulty": "intermediate",
+    "description": "Rear foot elevated split squat. One of the most demanding unilateral exercises that builds serious quad and glute strength.",
+    "formCues": ["Rear foot elevated on bench, top of foot down", "Front foot far enough forward to allow 90-degree knee bend", "Torso slightly forward for glute emphasis", "Control descent — don't let it drop"]
+  },
+  {
+    "slug": "goblet-squat",
+    "name": "Goblet Squat",
+    "primaryMuscles": ["quadriceps-rectus-femoris", "gluteus-maximus"],
+    "secondaryMuscles": ["adductors", "erector-spinae", "transverse-abdominis"],
+    "equipment": "kettlebell",
+    "difficulty": "beginner",
+    "description": "Hold a kettlebell or dumbbell at chest height while squatting. Great for learning squat mechanics.",
+    "formCues": ["Hold weight at chest — elbows inside knees at bottom", "Use elbows to push knees out at bottom", "Heels flat throughout", "Excellent for teaching hip mobility in the squat"]
+  },
+  {
+    "slug": "step-ups",
+    "name": "Step-Ups",
+    "primaryMuscles": ["quadriceps-rectus-femoris", "gluteus-maximus"],
+    "secondaryMuscles": ["hamstrings-biceps-femoris", "gluteus-medius"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "description": "Step onto an elevated platform driving through the front leg. Unilateral exercise that tests balance and hip stability.",
+    "formCues": ["Use a box that puts thigh parallel to floor", "Drive through heel of front foot", "Don't push off with back foot", "Step down controlled — same foot that stepped up"]
+  },
+  {
+    "slug": "box-jumps",
+    "name": "Box Jumps",
+    "primaryMuscles": ["quadriceps-rectus-femoris", "gluteus-maximus"],
+    "secondaryMuscles": ["hamstrings-biceps-femoris", "gastrocnemius", "hip-flexors"],
+    "equipment": "bodyweight",
+    "difficulty": "intermediate",
+    "description": "Explosive jump onto a raised box. Develops lower body power and fast-twitch muscle fiber recruitment.",
+    "formCues": ["Arm swing helps propel you up", "Land softly with bent knees", "Step down, don't jump down", "Start with a comfortable box height"]
+  },
+  {
+    "slug": "leg-press-calf-raise",
+    "name": "Leg Press Calf Raise",
+    "primaryMuscles": ["gastrocnemius", "soleus"],
+    "secondaryMuscles": [],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "description": "Calf raises using the leg press machine. Allows heavy loading with a long range of motion.",
+    "formCues": ["Place balls of feet on bottom of platform", "Full stretch at bottom", "Full contraction at top", "Slow controlled reps — calves respond to time under tension"]
+  },
+  {
+    "slug": "sissy-squat",
+    "name": "Sissy Squat",
+    "primaryMuscles": ["quadriceps-rectus-femoris", "quadriceps-vastus-lateralis"],
+    "secondaryMuscles": ["hip-flexors"],
+    "equipment": "bodyweight",
+    "difficulty": "advanced",
+    "description": "Advanced quad isolation where you lean back while bending knees, keeping hips forward. Brutal on the quads.",
+    "formCues": ["Hold something for balance", "Lean back as you lower", "Knees travel forward over toes", "Don't sit back — push hips forward"]
+  },
+  {
+    "slug": "hip-adduction-machine",
+    "name": "Hip Adduction Machine",
+    "primaryMuscles": ["adductors"],
+    "secondaryMuscles": ["gluteus-minimus"],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "description": "Machine that brings the legs together against resistance to target the inner thigh adductors.",
+    "formCues": ["Set to a comfortable starting width", "Controlled movement — no slamming", "Full range of motion", "Can be done seated upright or leaning back"]
+  },
+  {
+    "slug": "hip-abduction-machine",
+    "name": "Hip Abduction Machine",
+    "primaryMuscles": ["abductors", "gluteus-medius"],
+    "secondaryMuscles": ["tensor-fasciae-latae", "gluteus-minimus"],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "description": "Machine that pushes legs apart against resistance to target outer hips and glutes.",
+    "formCues": ["Sit upright or lean forward to target glute medius more", "Full range of motion", "Control both directions", "High reps work well for this muscle group"]
+  },
+  {
+    "slug": "plank",
+    "name": "Plank",
+    "primaryMuscles": ["transverse-abdominis"],
+    "secondaryMuscles": ["rectus-abdominis", "erector-spinae", "gluteus-maximus", "hip-flexors"],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "description": "Isometric core hold in push-up position on forearms. Foundation of core stability training.",
+    "formCues": ["Forearms on floor, elbows under shoulders", "Body forms a straight line", "Don't let hips rise or sag", "Breathe normally — don't hold breath"]
+  },
+  {
+    "slug": "side-plank",
+    "name": "Side Plank",
+    "primaryMuscles": ["external-obliques", "internal-obliques"],
+    "secondaryMuscles": ["transverse-abdominis", "gluteus-medius"],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "description": "Lateral plank targeting the obliques and hip abductors. Essential for lateral core stability.",
+    "formCues": ["Stack feet or stagger for easier version", "Keep hips elevated — don't sag", "Body forms a straight diagonal line", "Both forearm and lateral foot on floor"]
+  },
+  {
+    "slug": "crunches",
+    "name": "Crunches",
+    "primaryMuscles": ["rectus-abdominis"],
+    "secondaryMuscles": ["external-obliques", "internal-obliques"],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "description": "Classic ab exercise. Curl torso toward knees using abdominal contraction.",
+    "formCues": ["Don't pull your neck — hands lightly behind head", "Focus on contracting abs, not reaching with head", "Exhale at the top of the crunch", "Don't lower all the way to floor between reps"]
+  },
+  {
+    "slug": "hanging-leg-raises",
+    "name": "Hanging Leg Raises",
+    "primaryMuscles": ["rectus-abdominis", "hip-flexors"],
+    "secondaryMuscles": ["external-obliques", "transverse-abdominis"],
+    "equipment": "bodyweight",
+    "difficulty": "intermediate",
+    "description": "Hanging from a bar, raise legs to parallel or above. Challenges the entire anterior core.",
+    "formCues": ["Hang from bar with full grip", "Don't swing — control the movement", "Raise legs to parallel minimum, higher for advanced", "Lower slowly — the negative builds strength"]
+  },
+  {
+    "slug": "ab-wheel-rollout",
+    "name": "Ab Wheel Rollout",
+    "primaryMuscles": ["rectus-abdominis", "transverse-abdominis"],
+    "secondaryMuscles": ["external-obliques", "latissimus-dorsi", "erector-spinae"],
+    "equipment": "other",
+    "difficulty": "advanced",
+    "description": "Roll out ab wheel to full extension and return. One of the most difficult core exercises, demands full-body tension.",
+    "formCues": ["Start from kneeling position for beginners", "Keep hips low throughout — don't let them pike", "Arms stay straight", "Don't go further than you can control the return"]
+  },
+  {
+    "slug": "russian-twists",
+    "name": "Russian Twists",
+    "primaryMuscles": ["external-obliques", "internal-obliques"],
+    "secondaryMuscles": ["rectus-abdominis", "hip-flexors"],
+    "equipment": "other",
+    "difficulty": "beginner",
+    "description": "Seated rotation exercise for the obliques. Can be done with or without weight.",
+    "formCues": ["Lean back 45 degrees", "Feet on floor or elevated for more difficulty", "Rotate from the torso — not just your arms", "Touch the floor on each side"]
+  },
+  {
+    "slug": "cable-woodchops",
+    "name": "Cable Woodchops",
+    "primaryMuscles": ["external-obliques", "internal-obliques"],
+    "secondaryMuscles": ["rectus-abdominis", "transverse-abdominis"],
+    "equipment": "cable",
+    "difficulty": "intermediate",
+    "description": "Diagonal pulling motion from high to low (or low to high) mimicking a chopping motion. Excellent rotational core training.",
+    "formCues": ["Rotate from hips — not just arms", "Arms stay extended throughout", "Both high-to-low and low-to-high variations", "Core braced throughout"]
+  },
+  {
+    "slug": "dead-bugs",
+    "name": "Dead Bugs",
+    "primaryMuscles": ["transverse-abdominis"],
+    "secondaryMuscles": ["rectus-abdominis", "hip-flexors"],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "description": "Lying on your back, extend opposite arm and leg while keeping lower back pressed into floor. Teaches anti-extension core stability.",
+    "formCues": ["Flatten lower back into floor throughout", "Move slowly and controlled", "Exhale as you extend arm and leg", "Don't let lower back arch"]
+  },
+  {
+    "slug": "mountain-climbers",
+    "name": "Mountain Climbers",
+    "primaryMuscles": ["hip-flexors", "rectus-abdominis"],
+    "secondaryMuscles": ["transverse-abdominis", "external-obliques", "anterior-deltoid"],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "description": "From push-up position, alternate driving knees toward chest rapidly. Combines core stability with cardiovascular demand.",
+    "formCues": ["Start in plank position", "Keep hips level — don't raise them", "Alternate legs rapidly", "Core stays braced throughout"]
+  },
+  {
+    "slug": "pallof-press",
+    "name": "Pallof Press",
+    "primaryMuscles": ["transverse-abdominis", "external-obliques"],
+    "secondaryMuscles": ["internal-obliques", "rectus-abdominis"],
+    "equipment": "cable",
+    "difficulty": "intermediate",
+    "description": "Anti-rotation press using a cable. Resist the cable pulling you sideways while pressing arms forward.",
+    "formCues": ["Stand perpendicular to cable machine", "Hold cable at chest height", "Press forward while resisting rotation", "Pause at full extension"]
+  },
+  {
+    "slug": "hip-thrust",
+    "name": "Hip Thrust",
+    "primaryMuscles": ["gluteus-maximus"],
+    "secondaryMuscles": ["hamstrings-biceps-femoris", "adductors", "transverse-abdominis"],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "description": "Bodyweight or banded hip thrust with upper back on bench. Isolates the glutes through hip extension.",
+    "formCues": ["Upper back on bench at shoulder blade level", "Feet hip-width apart", "Push hips up until body is a straight line", "Squeeze glutes hard at the top"]
+  },
+  {
+    "slug": "barbell-hip-thrust",
+    "name": "Barbell Hip Thrust",
+    "primaryMuscles": ["gluteus-maximus"],
+    "secondaryMuscles": ["hamstrings-biceps-femoris", "adductors"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "Hip thrust with barbell loaded across hips. The most effective exercise for glute hypertrophy per research.",
+    "formCues": ["Pad the barbell for hip comfort", "Drive through heels", "Full hip extension at top", "Tuck chin to chest for better glute squeeze"]
+  },
+  {
+    "slug": "glute-bridge",
+    "name": "Glute Bridge",
+    "primaryMuscles": ["gluteus-maximus"],
+    "secondaryMuscles": ["hamstrings-biceps-femoris"],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "description": "Lying on back, push hips upward. The beginner version of hip thrust, done on the floor.",
+    "formCues": ["Feet hip-width, close to glutes", "Push through heels", "Squeeze glutes at the top", "Keep lower back from hyperextending"]
+  },
+  {
+    "slug": "cable-kickbacks",
+    "name": "Cable Kickbacks",
+    "primaryMuscles": ["gluteus-maximus"],
+    "secondaryMuscles": ["hamstrings-biceps-femoris"],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "description": "Standing cable kickback targeting the glutes through hip extension. Provides constant tension throughout the movement.",
+    "formCues": ["Hinge forward 45 degrees", "Keep leg straight or slight bend in knee", "Extend leg back — feel glute contract", "Don't swing your hip — isolate the glute"]
+  },
+  {
+    "slug": "donkey-kicks",
+    "name": "Donkey Kicks",
+    "primaryMuscles": ["gluteus-maximus"],
+    "secondaryMuscles": ["gluteus-medius"],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "description": "On all-fours, kick one leg up toward the ceiling. Targets glutes with minimal equipment needed.",
+    "formCues": ["Start on hands and knees", "Keep core braced — don't let back arch", "Kick until thigh is parallel to floor", "Add ankle weights or bands for more challenge"]
+  },
+  {
+    "slug": "fire-hydrants",
+    "name": "Fire Hydrants",
+    "primaryMuscles": ["gluteus-medius"],
+    "secondaryMuscles": ["gluteus-maximus", "abductors"],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "description": "On all-fours, open the hip by lifting the knee out to the side. Targets the gluteus medius.",
+    "formCues": ["Start on hands and knees", "Keep pelvis neutral — don't tilt", "Lift knee to side while keeping hip angle at 90 degrees", "Add bands for more resistance"]
+  },
+  {
+    "slug": "standing-calf-raise",
+    "name": "Standing Calf Raise",
+    "primaryMuscles": ["gastrocnemius"],
+    "secondaryMuscles": ["soleus"],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "description": "Standing calf raise on machine or step. Targets the gastrocnemius through plantarflexion.",
+    "formCues": ["Full stretch at bottom — heel below platform level", "Rise all the way to tiptoes", "Pause at top for contraction", "Calves need high volume — don't rush"]
+  },
+  {
+    "slug": "seated-calf-raise",
+    "name": "Seated Calf Raise",
+    "primaryMuscles": ["soleus"],
+    "secondaryMuscles": ["gastrocnemius"],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "description": "Seated calf raise targets the soleus (deep calf muscle) more than standing raises due to the bent knee position.",
+    "formCues": ["Knee bent at 90 degrees removes gastrocnemius", "Full range of motion", "Soleus responds to slow reps", "More weight than you might expect — soleus is strong"]
+  },
+  {
+    "slug": "donkey-calf-raise",
+    "name": "Donkey Calf Raise",
+    "primaryMuscles": ["gastrocnemius"],
+    "secondaryMuscles": ["soleus"],
+    "equipment": "machine",
+    "difficulty": "intermediate",
+    "description": "Bent-over calf raise with weight on the lower back. Stretches the gastroc more than standing raises.",
+    "formCues": ["Hinge forward 90 degrees", "Full stretch at bottom", "Rise to full tiptoe", "The stretch at the bottom is the key benefit"]
+  },
+  {
+    "slug": "single-leg-calf-raise",
+    "name": "Single-Leg Calf Raise",
+    "primaryMuscles": ["gastrocnemius", "soleus"],
+    "secondaryMuscles": ["tibialis-anterior"],
+    "equipment": "bodyweight",
+    "difficulty": "intermediate",
+    "description": "One-leg calf raise on a step. Doubles the load compared to two-leg version and improves balance.",
+    "formCues": ["Hold something lightly for balance only", "Full range of motion is critical", "Don't bounce at the bottom", "Own your bodyweight before adding load"]
+  },
+  {
+    "slug": "clean-and-press",
+    "name": "Clean and Press",
+    "primaryMuscles": ["anterior-deltoid", "lateral-deltoid", "trapezius-upper"],
+    "secondaryMuscles": ["gluteus-maximus", "erector-spinae", "quadriceps-rectus-femoris", "triceps-long-head"],
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "description": "Olympic lift pulling bar from floor to shoulder, then pressing overhead. Full body power and strength development.",
+    "formCues": ["Clean must be explosive — it's not a deadlift", "Catch bar on shoulders in a partial squat", "Press from clean position", "Master each component separately first"]
+  },
+  {
+    "slug": "thrusters",
+    "name": "Thrusters",
+    "primaryMuscles": ["quadriceps-rectus-femoris", "anterior-deltoid"],
+    "secondaryMuscles": ["gluteus-maximus", "triceps-long-head", "erector-spinae"],
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "description": "Front squat immediately followed by a push press. A brutal conditioning movement used in CrossFit.",
+    "formCues": ["Drive from the squat into the press without pausing", "Use the leg drive to initiate the press", "Bar stays on front shoulders during squat", "One fluid movement — squat and press are linked"]
+  },
+  {
+    "slug": "farmers-walks",
+    "name": "Farmer's Walks",
+    "primaryMuscles": ["trapezius-upper", "wrist-flexors"],
+    "secondaryMuscles": ["erector-spinae", "gluteus-maximus", "transverse-abdominis", "brachioradialis"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "description": "Carry heavy dumbbells or implements while walking. Builds grip strength, traps, and full body stability.",
+    "formCues": ["Stand tall — don't lean sideways", "Shoulder blades retracted and depressed", "Small controlled steps", "Grip hard — it's the point of the exercise"]
+  },
+  {
+    "slug": "kettlebell-swings",
+    "name": "Kettlebell Swings",
+    "primaryMuscles": ["gluteus-maximus", "hamstrings-biceps-femoris"],
+    "secondaryMuscles": ["erector-spinae", "transverse-abdominis", "trapezius-upper"],
+    "equipment": "kettlebell",
+    "difficulty": "intermediate",
+    "description": "Hip hinge ballistic movement projecting the kettlebell forward. Develops explosive hip power and conditioning.",
+    "formCues": ["It's a hip hinge, not a squat", "Hike the bell back between legs aggressively", "Squeeze glutes explosively to project the bell", "Arms are just chains — the hips do the work"]
+  },
+  {
+    "slug": "burpees",
+    "name": "Burpees",
+    "primaryMuscles": ["pectoralis-major", "quadriceps-rectus-femoris"],
+    "secondaryMuscles": ["triceps-long-head", "gluteus-maximus", "anterior-deltoid", "hamstrings-biceps-femoris"],
+    "equipment": "bodyweight",
+    "difficulty": "intermediate",
+    "description": "Full body conditioning exercise — drop to push-up, perform push-up, jump up with hands overhead. Notorious for difficulty.",
+    "formCues": ["Maintain control — not just speed", "Push-up should be full range", "Explosive jump at the top", "Modify by stepping rather than jumping if needed"]
+  },
+  {
+    "slug": "man-makers",
+    "name": "Man Makers",
+    "primaryMuscles": ["pectoralis-major", "anterior-deltoid"],
+    "secondaryMuscles": ["latissimus-dorsi", "quadriceps-rectus-femoris", "gluteus-maximus", "triceps-long-head"],
+    "equipment": "dumbbell",
+    "difficulty": "advanced",
+    "description": "Combination movement: push-up, row each arm, then squat clean to press with dumbbells. Full body conditioning.",
+    "formCues": ["Take your time — quality over speed", "Maintain plank position during rows", "Clean to shoulders before pressing", "This is a conditioning finisher, not a strength exercise"]
+  },
+  {
+    "slug": "behind-neck-press",
+    "name": "Behind-Neck Press",
+    "primaryMuscles": ["lateral-deltoid", "anterior-deltoid"],
+    "secondaryMuscles": ["triceps-long-head", "supraspinatus", "trapezius-upper"],
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "description": "Overhead press from behind the neck. Hits the mid-delts strongly but requires excellent shoulder mobility and should be approached carefully.",
+    "formCues": ["Only for those with excellent shoulder mobility", "Wide grip to reduce shoulder stress", "Lower only to ear level — not deeper", "If any pain, stop immediately — this exercise has risk"]
+  },
+  {
+    "slug": "sumo-deadlift",
+    "name": "Sumo Deadlift",
+    "primaryMuscles": ["gluteus-maximus", "adductors"],
+    "secondaryMuscles": ["erector-spinae", "hamstrings-biceps-femoris", "quadriceps-rectus-femoris", "trapezius-upper"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "Wide stance deadlift variant with feet turned out. More glute and adductor involvement, shorter range of motion.",
+    "formCues": ["Toes pointed out 30-45 degrees", "Bar close to body throughout", "Push knees out over toes", "Hips closer to bar than conventional stance"]
+  },
+  {
+    "slug": "trap-bar-deadlift",
+    "name": "Trap Bar Deadlift",
+    "primaryMuscles": ["gluteus-maximus", "quadriceps-rectus-femoris"],
+    "secondaryMuscles": ["erector-spinae", "hamstrings-biceps-femoris", "trapezius-upper", "latissimus-dorsi"],
+    "equipment": "other",
+    "difficulty": "beginner",
+    "description": "Deadlift using a hex/trap bar. More upright torso than conventional, easier on the lower back for beginners.",
+    "formCues": ["Stand in center of trap bar", "Grip handles at sides", "Chest up, hips back before lifting", "Drive through heels and stand up straight"]
+  },
+  {
+    "slug": "cable-face-pulls",
+    "name": "Cable Face Pulls",
+    "primaryMuscles": ["posterior-deltoid", "rhomboids"],
+    "secondaryMuscles": ["trapezius-middle", "teres-minor", "infraspinatus"],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "description": "Rope attachment cable pull to face height. Essential prehab movement for shoulder health and rear delt development.",
+    "formCues": ["Rope attachment, cable at face height", "Elbows finish high and wide", "External rotation at end — show your biceps to ceiling", "Light weight, high reps for joint health"]
+  },
+  {
+    "slug": "incline-barbell-row",
+    "name": "Incline Barbell Row",
+    "primaryMuscles": ["latissimus-dorsi", "rhomboids"],
+    "secondaryMuscles": ["trapezius-middle", "posterior-deltoid", "biceps-brachii"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "Chest-supported row on an incline bench. Eliminates lower back strain while building upper back thickness.",
+    "formCues": ["Lie chest-down on incline bench", "Let arms hang fully at bottom", "Pull bar to stomach level", "Squeeze shoulder blades at top"]
+  },
+  {
+    "slug": "cable-row-wide-grip",
+    "name": "Wide-Grip Cable Row",
+    "primaryMuscles": ["latissimus-dorsi", "rhomboids"],
+    "secondaryMuscles": ["trapezius-middle", "posterior-deltoid"],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "description": "Seated cable row with a wide bar attachment. Emphasizes upper back and rhomboids more than close grip.",
+    "formCues": ["Overhand grip, wider than shoulder width", "Keep torso upright — don't lean back excessively", "Pull to lower chest", "Feel the squeeze between shoulder blades"]
+  },
+  {
+    "slug": "meadows-row",
+    "name": "Meadows Row",
+    "primaryMuscles": ["latissimus-dorsi"],
+    "secondaryMuscles": ["teres-major", "posterior-deltoid", "biceps-brachii", "brachialis"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "Single-arm landmine row created by John Meadows. Unique angle that creates an excellent lat stretch and contraction.",
+    "formCues": ["Barbell in a landmine or corner", "Staggered stance for stability", "Pull to hip — not armpit", "Really focus on the lat stretch at the bottom"]
+  },
+  {
+    "slug": "cable-tricep-overhead",
+    "name": "Cable Overhead Tricep Extension",
+    "primaryMuscles": ["triceps-long-head"],
+    "secondaryMuscles": ["triceps-lateral-head", "triceps-medial-head"],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "description": "Overhead tricep extension using a rope cable. Provides constant tension and excellent long head stretch.",
+    "formCues": ["Face away from cable stack", "Rope behind head, elbows forward", "Extend arms fully overhead", "Keep elbows from flaring — face them forward"]
+  },
+  {
+    "slug": "reverse-grip-pulldown",
+    "name": "Reverse-Grip Pulldown",
+    "primaryMuscles": ["latissimus-dorsi", "biceps-brachii"],
+    "secondaryMuscles": ["teres-major", "brachialis"],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "description": "Lat pulldown with underhand grip. The bicep involvement allows more weight and a strong lat contraction.",
+    "formCues": ["Underhand grip, shoulder-width", "Pull to upper chest", "Elbows track by your sides", "Good option if regular pulldown causes shoulder discomfort"]
+  },
+  {
+    "slug": "spider-curls",
+    "name": "Spider Curls",
+    "primaryMuscles": ["biceps-long-head"],
+    "secondaryMuscles": ["biceps-brachii", "brachialis"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "Chest-down on incline bench, curling a barbell or dumbbells. Stretches the long head of the bicep maximally.",
+    "formCues": ["Chest against incline bench (45 degrees)", "Arms hang freely at bottom for full stretch", "Curl fully — peak contraction", "Excellent for bicep peak development"]
+  },
+  {
+    "slug": "zercher-squat",
+    "name": "Zercher Squat",
+    "primaryMuscles": ["quadriceps-rectus-femoris", "gluteus-maximus"],
+    "secondaryMuscles": ["adductors", "erector-spinae", "biceps-brachii"],
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "description": "Squat with the bar held in the crook of your elbows. Brutally hard on the upper back and core while hitting the quads.",
+    "formCues": ["Bar in the crook of elbows — use a pad", "Elbows stay up throughout", "Upright torso forced by bar position", "Go deep — the mechanics allow it"]
+  },
+  {
+    "slug": "glute-ham-raise",
+    "name": "Glute-Ham Raise",
+    "primaryMuscles": ["hamstrings-biceps-femoris", "hamstrings-semitendinosus"],
+    "secondaryMuscles": ["gluteus-maximus", "erector-spinae", "gastrocnemius"],
+    "equipment": "machine",
+    "difficulty": "advanced",
+    "description": "Using the GHD machine, lower from an upright position to near parallel using hamstring strength. Incredible hamstring developer.",
+    "formCues": ["Feet secured in machine", "Lower slowly — this is hard", "Hamstrings do the work, not momentum", "Use bands for assistance if needed when starting"]
+  },
+  {
+    "slug": "shrugs",
+    "name": "Barbell Shrugs",
+    "primaryMuscles": ["trapezius-upper"],
+    "secondaryMuscles": ["trapezius-middle", "rhomboids"],
+    "equipment": "barbell",
+    "difficulty": "beginner",
+    "description": "Elevate shoulders against resistance to directly target the upper trapezius. Builds the traps for a powerful look.",
+    "formCues": ["Arms straight throughout", "Raise shoulders toward ears", "Hold at top briefly", "Don't roll shoulders — straight up and down"]
+  },
+  {
+    "slug": "dumbbell-shrugs",
+    "name": "Dumbbell Shrugs",
+    "primaryMuscles": ["trapezius-upper"],
+    "secondaryMuscles": ["trapezius-middle"],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "description": "Shoulder shrug using dumbbells at sides. Greater range of motion than barbell shrugs.",
+    "formCues": ["Full stretch at bottom", "Shrug straight up to ears", "Hold for 1-2 seconds at top", "Lower slowly for more trap engagement"]
+  },
+  {
+    "slug": "nordic-hamstring-curl",
+    "name": "Nordic Hamstring Curl",
+    "primaryMuscles": ["hamstrings-semitendinosus", "hamstrings-semimembranosus"],
+    "secondaryMuscles": ["hamstrings-biceps-femoris", "gluteus-maximus"],
+    "equipment": "bodyweight",
+    "difficulty": "advanced",
+    "description": "Kneel with ankles secured, lower yourself forward using hamstrings. One of the best exercises for hamstring injury prevention.",
+    "formCues": ["Ankle secured firmly", "Lower as slowly as possible — it's very difficult", "Catch yourself with hands near the floor", "Build up slowly — very high injury risk if done too aggressively"]
+  },
+  {
+    "slug": "hip-flexor-march",
+    "name": "Standing Hip Flexor March",
+    "primaryMuscles": ["hip-flexors"],
+    "secondaryMuscles": ["rectus-abdominis", "transverse-abdominis"],
+    "equipment": "band",
+    "difficulty": "beginner",
+    "description": "Standing high-knee march with resistance band. Directly targets the hip flexors often neglected in gym training.",
+    "formCues": ["Band anchored at ankle height behind you", "Drive knee up above hip level", "Stay tall — don't lean back", "Controlled — not a sprint"]
+  },
+  {
+    "slug": "cable-pull-through",
+    "name": "Cable Pull-Through",
+    "primaryMuscles": ["gluteus-maximus", "hamstrings-biceps-femoris"],
+    "secondaryMuscles": ["erector-spinae", "adductors"],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "description": "Hip hinge with a cable between your legs. Excellent for teaching hip hinge mechanics and glute-hamstring development.",
+    "formCues": ["Face away from cable machine", "Rope between legs at low setting", "Hinge at hips — push them back", "Drive hips forward to standing — glutes initiate the lockout"]
+  },
+  {
+    "slug": "dragon-flags",
+    "name": "Dragon Flags",
+    "primaryMuscles": ["rectus-abdominis", "transverse-abdominis"],
+    "secondaryMuscles": ["external-obliques", "erector-spinae", "hip-flexors"],
+    "equipment": "bodyweight",
+    "difficulty": "advanced",
+    "description": "Bruce Lee's signature core exercise. Lie on a bench, hold overhead support, lift entire body off bench in a rigid plank.",
+    "formCues": ["Grip bench overhead firmly", "Keep entire body rigid as one unit", "Lower controlled — this is the hard part", "Tuck to regress if needed"]
+  },
+  {
+    "slug": "jefferson-curl",
+    "name": "Jefferson Curl",
+    "primaryMuscles": ["erector-spinae", "lower-back"],
+    "secondaryMuscles": ["hamstrings-biceps-femoris", "trapezius-lower"],
+    "equipment": "dumbbell",
+    "difficulty": "advanced",
+    "description": "Intentional spinal flexion under light load for posterior chain mobility and strength. Controversial but valued by many athletes.",
+    "formCues": ["Very light weight only", "Stand on a platform", "Curl spine forward vertebra by vertebra", "Reverse back up slowly — this is a mobility exercise"]
+  },
+  {
+    "slug": "push-press",
+    "name": "Push Press",
+    "primaryMuscles": ["anterior-deltoid", "lateral-deltoid"],
+    "secondaryMuscles": ["triceps-long-head", "gluteus-maximus", "quadriceps-rectus-femoris", "trapezius-upper"],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "description": "Overhead press using a slight leg drive to initiate momentum. Allows heavier loads than strict press for shoulder development.",
+    "formCues": ["Small dip — just 3-4 inches at the knee", "Drive with legs then press with arms", "Full lockout overhead", "Bar stays over center of foot throughout"]
+  }
+]

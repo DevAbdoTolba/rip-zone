@@ -1,0 +1,142 @@
+[
+  {
+    "slug": "soreness-first-workout",
+    "question": "I can barely walk after my first workout. Is this normal or did I injure myself?",
+    "answer": "What you're feeling is DOMS — Delayed Onset Muscle Soreness — and it's completely normal, especially after your first session. It peaks 24-72 hours after training and means your muscles are adapting. Real injury feels sharp, immediate, and often localized to a joint, not a muscle belly. DOMS is a dull, diffuse ache that gets better with light movement. The good news: DOMS gets much milder as you become consistent. After 2-3 weeks of training, you'll barely feel it unless you significantly increase intensity.",
+    "category": "muscle-pain",
+    "tags": ["doms", "beginner", "first-workout", "recovery"]
+  },
+  {
+    "slug": "what-is-doms-train-through",
+    "question": "What exactly is DOMS and should I train through it?",
+    "answer": "DOMS (Delayed Onset Muscle Soreness) is the muscle damage and inflammation response that follows new or intense training. It's not a sign of a good workout — you can have great sessions with minimal DOMS as you get more experienced. Should you train through it? Light soreness: yes, train the same muscle group if you need to, though it's ideal to wait 48 hours. Severe soreness (can't sit without wincing): give it one more rest day. Training while very sore increases injury risk and reduces performance. Active recovery like walking, light cardio, or stretching helps.",
+    "category": "muscle-pain",
+    "tags": ["doms", "recovery", "training-frequency"]
+  },
+  {
+    "slug": "knee-pain-squats",
+    "question": "My knees hurt during squats. What's going wrong?",
+    "answer": "Knee pain during squats has a few common causes. The most common: knees caving inward (valgus collapse) — fix this by consciously pushing your knees out over your toes and strengthening your glutes. Too much forward lean causing excessive shear on the knee — usually a mobility issue. Knees tracking past toes excessively — often a heel mobility problem. In Egyptian gym culture, people often squat with heels raised on plates as a quick fix, which helps temporarily but doesn't address the root issue. First: reduce weight, work on ankle and hip mobility (goblet squats are great), and consider a physio if pain persists. Never train into sharp joint pain.",
+    "category": "muscle-pain",
+    "tags": ["knee-pain", "squat-form", "mobility", "injury-prevention"]
+  },
+  {
+    "slug": "shoulder-pain-bench-press",
+    "question": "I get shoulder pain at the bottom of the bench press. Should I push through it?",
+    "answer": "No — don't push through sharp shoulder pain on bench press. This is one of the most common gym injuries and often leads to rotator cuff issues that sideline you for months. The most common cause is the bar path being too high (toward your neck instead of mid-chest) or the elbows flaring 90 degrees from your body. Quick fixes: lower the bar path to mid-chest, try a slight tuck with your elbows (about 45-75 degrees from your body), and add face pulls and rear delt work to your program. If the pain persists with proper form, reduce weight significantly and consider getting it checked. Dumbbells often feel better on the shoulder than barbell.",
+    "category": "muscle-pain",
+    "tags": ["shoulder-pain", "bench-press", "rotator-cuff", "form"]
+  },
+  {
+    "slug": "hitting-plateau",
+    "question": "I've been lifting for a few months but haven't gotten stronger in weeks. What do I do?",
+    "answer": "Plateaus are normal and have specific solutions. First, check the basics: Are you eating enough? Undereating is the #1 cause of stalled progress for Egyptian gym-goers who are worried about gaining fat. Are you sleeping enough? 7-9 hours — this is when you actually grow. Then look at your program: Are you progressively overloading? Adding weight, reps, or sets over time is mandatory for progress. Try adding 2.5-5kg to compound lifts every week or two. If strength is stuck, deload for a week (50-60% of your usual weight), then come back. Sometimes your nervous system just needs a reset. If you've been on the same program for 4+ months, switch it up.",
+    "category": "progress",
+    "tags": ["plateau", "progressive-overload", "program-design"]
+  },
+  {
+    "slug": "when-to-increase-weight",
+    "question": "How do I know when to add more weight to an exercise?",
+    "answer": "Simple rule: when you can complete all sets and reps with good form with 1-2 reps left in the tank, add weight next session. Example: your program says 3x8 bench press. If you complete all 24 reps and your last set felt like you had 2 more reps available, add 2.5-5kg next time. Start small — many guys add too much too fast and miss reps. For upper body: add 2.5kg at a time. For lower body (squat, deadlift): 5kg at a time is fine when you're newer. Don't chase weight at the expense of form — progressive overload means doing it correctly with more resistance.",
+    "category": "progress",
+    "tags": ["progressive-overload", "weight-selection", "beginner"]
+  },
+  {
+    "slug": "losing-gains-ramadan",
+    "question": "It's Ramadan and I'm fasting all day. Will I lose all my muscle?",
+    "answer": "You won't lose all your muscle — but you can minimize losses with the right approach. Research shows muscle loss during Ramadan is minimal if you maintain training and adequate protein intake in your eating window. Best strategy: train closer to Iftar (right before or 1-2 hours after) when you have energy. Hit your protein target — aim for 1.6-2g per kg of bodyweight spread across Suhoor and Iftar meals. Use Suhoor for a high-protein, slow-digesting meal (eggs, meat, dairy). Reduce training volume slightly (70% of normal is fine) and focus on maintaining strength rather than trying to set PRs. Expect some temporary strength reduction from disrupted sleep and reduced meal frequency — this is normal and temporary.",
+    "category": "progress",
+    "tags": ["ramadan", "fasting", "muscle-preservation", "egyptian-culture"]
+  },
+  {
+    "slug": "spot-reduction-myth",
+    "question": "If I do a lot of crunches and ab exercises, will I lose my belly fat?",
+    "answer": "No — spot reduction is a complete myth. Doing 1000 crunches will not burn the fat specifically above your abs. Fat loss is systemic, not local. Your body decides where to burn fat from based on genetics and hormones, not which muscles you're working. To lose belly fat: create a calorie deficit through diet and overall activity, do compound movements that burn the most calories (squats, deadlifts, rows), add cardio if needed. Core exercises are still valuable for strength, posture, and injury prevention — just don't expect them to directly burn belly fat. The abs are made in the kitchen, as they say.",
+    "category": "misconceptions",
+    "tags": ["spot-reduction", "fat-loss", "ab-training", "myths"]
+  },
+  {
+    "slug": "protein-timing-anabolic-window",
+    "question": "My friend says I have to eat protein within 30 minutes after training or I'll lose gains. Is this true?",
+    "answer": "The 'anabolic window' of 30 minutes is mostly bro-science. Research shows that muscle protein synthesis remains elevated for 24+ hours after training — not just 30 minutes. What matters far more: total daily protein intake (1.6-2.2g per kg bodyweight), distributing protein across 3-5 meals throughout the day, and overall calorie intake. That said, having protein after training is still a good habit — not because you'll lose gains if you don't, but because it's convenient and ensures you hit your daily total. If your post-workout meal is delayed 1-2 hours because you're coming from the gym at night, you'll be absolutely fine.",
+    "category": "misconceptions",
+    "tags": ["protein-timing", "anabolic-window", "post-workout-nutrition", "myths"]
+  },
+  {
+    "slug": "cardio-kills-gains",
+    "question": "Will cardio ruin my gains? Everyone at my gym says to avoid it.",
+    "answer": "Cardio won't kill your gains unless you're doing excessive amounts while undereating. The 'cardio kills gains' mentality is gym bro mythology. Moderate cardio (2-4 sessions per week, 20-40 minutes) actually improves cardiovascular health, recovery, and potentially even anabolic signaling. What actually kills gains: not eating enough, not sleeping enough, and not following a progressive program. The main risk is overtraining if you're doing extreme amounts of both. If you're bulking, keep cardio moderate. If you're maintaining or cutting, cardio helps create a caloric deficit. In the Egyptian heat of summer, even just walking more is beneficial.",
+    "category": "misconceptions",
+    "tags": ["cardio", "muscle-building", "myths", "concurrent-training"]
+  },
+  {
+    "slug": "machines-vs-free-weights",
+    "question": "Are machines useless? Everyone says you should only use free weights.",
+    "answer": "Machines are not useless — they're a valuable tool with specific advantages. Machines are excellent for: beginners learning movement patterns safely, isolation work for targeted muscle development, training around injuries, and high-rep finishing sets. Free weights are better for: compound strength development, functional movement patterns, and stabilizer muscle recruitment. The best programs use both. Research shows that machines produce similar hypertrophy (muscle growth) to free weights when matched for volume and effort. Use compound free weight movements as your foundation, then use machines for isolation and volume. Leg press + hack squat + leg extension together build legs just as effectively as only squatting.",
+    "category": "misconceptions",
+    "tags": ["machines", "free-weights", "training-methods", "myths"]
+  },
+  {
+    "slug": "how-much-protein-needed",
+    "question": "Everyone says different things about protein. How much do I actually need?",
+    "answer": "The research is clear: 1.6-2.2g of protein per kg of bodyweight per day is optimal for muscle building. For a 75kg person, that's 120-165g of protein daily. Most Egyptian diets are lower in protein than this, so prioritizing protein sources like eggs, chicken, beef, fish, and legumes is key. You don't need fancy protein shakes — regular food works perfectly. Spreading protein across 3-4 meals (30-40g per meal) is more effective than eating it all at once because the body can only utilize so much protein per meal effectively. Going higher than 2.2g/kg shows minimal additional benefit and just means expensive urine.",
+    "category": "nutrition-basics",
+    "tags": ["protein", "nutrition", "muscle-building", "macros"]
+  },
+  {
+    "slug": "is-creatine-safe",
+    "question": "Is creatine safe? My family says it'll damage my kidneys.",
+    "answer": "Creatine monohydrate is the most researched supplement in sports nutrition history and is completely safe for healthy individuals. The kidney damage claim is a myth — studies on healthy people show no kidney damage even with long-term use. It simply causes the kidneys to excrete more creatinine (a natural breakdown product of creatine), which elevated creatinine can look concerning on blood tests but is not harmful. Benefits: 5-15% strength increase, slightly more power output, and possibly faster muscle recovery. Dosage: 3-5g per day, every day (no loading phase needed). It works for about 70% of people (some are 'non-responders'). Drink plenty of water with it. It's inexpensive and widely available in Egypt.",
+    "category": "nutrition-basics",
+    "tags": ["creatine", "supplements", "safety", "performance"]
+  },
+  {
+    "slug": "hydration-egyptian-heat",
+    "question": "How do I stay hydrated training in the Egyptian summer? It's brutal.",
+    "answer": "Egyptian summer training requires serious hydration management. General rule: drink 35-40ml per kg of bodyweight daily — for a 80kg person, that's 2.8-3.2 liters minimum, and more when training in heat. Signs of dehydration that affect performance: thirst (you're already mildly dehydrated by this point), dark urine, reduced strength, and cramping. Practical tips: bring 1.5-2 liters of water to every session. Start your workout well-hydrated — drink 500ml an hour before. If sweating heavily, add electrolytes (a pinch of salt in your water works). Avoid training in peak heat (12pm-4pm outside). Air-conditioned gyms help, but even then, acclimatization matters. For those who fast during Ramadan, the pre-dawn Suhoor meal is your hydration window — maximize it.",
+    "category": "nutrition-basics",
+    "tags": ["hydration", "egyptian-summer", "heat-training", "electrolytes"]
+  },
+  {
+    "slug": "squat-form-mistakes",
+    "question": "What are the most common squat mistakes I should watch out for?",
+    "answer": "The most common squat mistakes in Egyptian gyms: 1) Knees caving inward — push them out over your toes actively. 2) Heels rising — often an ankle mobility issue. Temporarily elevate heels with small plates while you work on mobility. 3) Excessive forward lean — usually tight hips or weak upper back. Goblet squats and mobility work help. 4) Half reps — aim for thighs parallel to the floor minimum. 4) Looking down instead of forward — look 1-2 meters in front of you. 5) Too much weight too soon — ego lifting with poor form builds bad habits that are hard to unlearn. Film yourself from the side — it reveals problems you can't feel. Start lighter than you think you need to.",
+    "category": "training-form",
+    "tags": ["squat", "form", "beginner", "technique"]
+  },
+  {
+    "slug": "breathing-during-lifts",
+    "question": "How am I supposed to breathe during heavy lifts? I hold my breath and get dizzy.",
+    "answer": "The Valsalva maneuver — taking a big breath and holding it — is actually correct for the most intense part of heavy compound lifts (squat, deadlift, bench). It increases intra-abdominal pressure and protects your spine. But here's the key: breathe at the top of each rep, not while under maximum strain. For squats: big breath at the top, descend and ascend holding it, breathe at the top. For deadlifts: big breath, pull, breathe once locked out. Getting dizzy means you're holding your breath for too long or taking too small of a breath. For lighter sets (12+ reps), you can exhale on the concentric (effort) phase and inhale on the eccentric. Never hold your breath throughout an entire set.",
+    "category": "training-form",
+    "tags": ["breathing", "valsalva", "heavy-lifting", "technique"]
+  },
+  {
+    "slug": "deadlift-setup-mistakes",
+    "question": "I keep hurting my lower back on deadlifts. What am I doing wrong?",
+    "answer": "Lower back pain on deadlifts almost always comes from rounding the lower back under load. The most common causes: 1) Bar too far from body — the bar drifts forward creating a lever on your spine. Fix: bar over mid-foot at setup, pull it back into your shins. 2) Jerking the bar off the floor — treat the start as 'push the floor away,' not 'pull the bar up.' 3) Not bracing the core before pulling — big breath into your belly, brace like you're about to get punched. 4) Too much weight too soon — reduce weight 20%, fix your form, rebuild. 5) Not hinging properly — the deadlift is a hip hinge, not a squat. Consider doing Romanian deadlifts before conventional to learn the hinge pattern.",
+    "category": "training-form",
+    "tags": ["deadlift", "lower-back", "form", "injury-prevention"]
+  },
+  {
+    "slug": "sleep-muscle-growth",
+    "question": "How important is sleep for building muscle? I sleep about 5-6 hours.",
+    "answer": "Sleep is critically important and 5-6 hours is genuinely undermining your progress. The majority of muscle growth hormone (GH) is released during deep sleep stages. Multiple studies show that sleep deprivation reduces muscle protein synthesis, increases cortisol (muscle breakdown hormone), reduces testosterone, and impairs recovery. Practically: people sleeping 7-9 hours gain significantly more muscle and strength than those sleeping under 6 hours even on the same program. In Egypt, late-night gym culture (training at midnight) combined with early work schedules creates chronic sleep debt. If you can't sleep 8 hours, aim for at least 7 consistently. Short naps (20-30 minutes) can partially compensate. This is not optional — sleep is your anabolic window.",
+    "category": "recovery",
+    "tags": ["sleep", "recovery", "muscle-growth", "hormones"]
+  },
+  {
+    "slug": "how-many-rest-days",
+    "question": "How many rest days do I need per week? Is training every day bad?",
+    "answer": "Most people need 1-2 rest days per week. The optimal approach is not 'rest days' but 'muscle group frequency' — each muscle group typically needs 48-72 hours between sessions to recover. You can train 5-6 days if you're training different muscle groups each day. Signs you need a rest day: persistent fatigue that doesn't improve with a night's sleep, performance declining across sessions, feeling sick or run-down. Beginners on 3 days/week can often be more tired between sessions than intermediate lifters on 5 days, because the body adapts. Active recovery days (light walking, stretching, swimming) are not rest days — they're recovery tools. Forced rest when you feel great is usually not necessary; train by feel.",
+    "category": "recovery",
+    "tags": ["rest-days", "recovery", "training-frequency", "overtraining"]
+  },
+  {
+    "slug": "signs-of-overtraining",
+    "question": "How do I know if I'm overtraining? I've been training 7 days a week for 2 months.",
+    "answer": "Training 7 days a week for 2 months without any rest is a recipe for overtraining syndrome. Signs you're there: persistent fatigue even after full nights of sleep, strength decreasing consistently over 2+ weeks, mood changes (irritability, depression, reduced motivation), getting sick more often than usual, sleep problems despite being tired, and elevated resting heart rate. Overtraining is more common among dedicated beginners who think 'more = better.' The solution: a full deload week (40-50% of normal training volume, no intensity), then return to 4-5 days/week. Your body builds muscle during rest, not during training. The workout is just the stimulus — recovery is where the adaptation happens.",
+    "category": "recovery",
+    "tags": ["overtraining", "recovery", "training-volume", "beginner-mistakes"]
+  }
+]
