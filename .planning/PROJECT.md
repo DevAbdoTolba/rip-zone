@@ -27,7 +27,7 @@ The interactive muscle map must work — users can see which muscles are straine
 
 ### Validated
 
-(None yet — ship to validate)
+- [x] TypeScript domain types, data storage split, seed data infrastructure — Validated in Phase 1: Foundation
 
 ### Active
 
@@ -97,4 +97,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-22 after milestone v1.0 started*
+*Last updated: 2026-03-22 after Phase 1: Foundation complete — Next.js 16, domain types, Dexie/Zustand client layer, MongoDB/Mongoose server layer, seed data, Playwright E2E*
