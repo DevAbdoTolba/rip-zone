@@ -102,13 +102,40 @@ Which phases cover which requirements. Updated during roadmap creation.
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| — | — | — |
+| MAP-01 | Phase 2 | Pending |
+| MAP-02 | Phase 2 | Pending |
+| MAP-03 | Phase 5 | Pending |
+| MAP-04 | Phase 6 | Pending |
+| MAP-05 | Phase 2 | Pending |
+| EXER-01 | Phase 3 | Pending |
+| EXER-02 | Phase 3 | Pending |
+| EXER-03 | Phase 3 | Pending |
+| EXER-04 | Phase 6 | Pending |
+| EXER-05 | Phase 6 | Pending |
+| WORK-01 | Phase 4 | Pending |
+| WORK-02 | Phase 4 | Pending |
+| WORK-03 | Phase 4 | Pending |
+| WORK-04 | Phase 4 | Pending |
+| WORK-05 | Phase 4 | Pending |
+| WORK-06 | Phase 4 | Pending |
+| STRAIN-01 | Phase 5 | Pending |
+| STRAIN-02 | Phase 5 | Pending |
+| STRAIN-03 | Phase 5 | Pending |
+| RANK-01 | Phase 7 | Pending |
+| RANK-02 | Phase 7 | Pending |
+| RANK-03 | Phase 7 | Pending |
+| RANK-04 | Phase 7 | Pending |
+| FAQ-01 | Phase 8 | Pending |
+| FAQ-02 | Phase 8 | Pending |
+| BIO-01 | Phase 8 | Pending |
+| BIO-02 | Phase 8 | Pending |
+| BIO-03 | Phase 8 | Pending |
 
 **Coverage:**
 - v1 requirements: 26 total
-- Mapped to phases: 0
-- Unmapped: 26
+- Mapped to phases: 26
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-03-22*
-*Last updated: 2026-03-22 after initial definition*
+*Last updated: 2026-03-22 after roadmap creation — traceability complete*
