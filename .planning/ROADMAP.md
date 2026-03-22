@@ -33,12 +33,13 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Dexie database initializes with correct schema for workout sessions, bio metrics, and ranking state
   4. Seed data JSON for muscles, exercises (100+), workout plans (3-5), and FAQ entries loads into MongoDB without errors
   5. All TypeScript domain types compile: MuscleId, MuscleSlug, WorkoutSession, SetLog, TierRank, StrainLevel, BioMetrics
-**Plans:** 4 plans
+**Plans:** 5 plans
 Plans:
 - [ ] 01-01-PLAN.md — Bootstrap Next.js 16, shadcn/ui design system, TypeScript domain types
 - [ ] 01-02-PLAN.md — Dexie split databases and Zustand domain store shells
 - [ ] 01-03-PLAN.md — MongoDB connection, Mongoose models, seed data, and CLI seed script
 - [ ] 01-04-PLAN.md — Smoke-test page, health API, Vitest setup, and human verification
+- [ ] 01-05-PLAN.md — SVGR turbopack pre-wiring and Playwright E2E smoke test
 
 ### Phase 2: Muscle Map SVG
 **Goal**: Users can see a 2.5D illustrated muscle map with front and back body views and toggle between them — the visual contract (slug-based path IDs, two-layer SVG architecture, invisible hit-target overlays) is locked in for all downstream phases
@@ -131,7 +132,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Foundation | 0/4 | Planning complete | - |
+| 1. Foundation | 0/5 | Planning complete | - |
 | 2. Muscle Map SVG | 0/TBD | Not started | - |
 | 3. Exercise Library | 0/TBD | Not started | - |
 | 4. Workout Logger | 0/TBD | Not started | - |
