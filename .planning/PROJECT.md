@@ -1,0 +1,85 @@
+# Rip Zone
+
+## What This Is
+
+A fitness app for the Egyptian gym community built with Next.js and MongoDB. It centers on an interactive 2.5D muscle map with heatmap visualization showing muscle strain, clickable exercise references, workout tracking, community FAQ, and a gamified ranking system.
+
+## Core Value
+
+The interactive muscle map must work — users can see which muscles are strained, click any muscle for training guidance, and understand their body's state at a glance.
+
+## Requirements
+
+### Validated
+
+(None yet — ship to validate)
+
+### Active
+
+- [ ] 2.5D illustrated muscle map (front/back views) covering all muscles including rare/obscure ones
+- [ ] Heatmap overlay showing strain level per muscle based on training data
+- [ ] Clickable muscles opening exercise references with pre-training warm-up and training intensity info
+- [ ] Placeholder scientific dataset for muscle strain/recovery calculations
+- [ ] Optional bio-info collection (height, weight, age, gender, body fat %, muscle measurements)
+- [ ] Bio-info reward system — more data improves accuracy, never gates features
+- [ ] AI-generated FAQ content from Egyptian gym community topics (Reddit, Twitter, Facebook)
+- [ ] Newbie-focused Q&A (muscle pain, progress loss, common misconceptions)
+- [ ] Workout tracker — freestyle logging (exercise → sets/reps/weight → rest timer)
+- [ ] Pre-built workout plans users can follow step by step
+- [ ] Radar chart body rating based on reps, weight, and body metrics
+- [ ] Tier ranking system: Iron → Bronze → Silver → Gold → Platinum → Diamond → Elite
+
+### Out of Scope
+
+- User authentication — v1 is local-only, no accounts
+- Real scientific dataset — placeholder data for v1, real data integrated later
+- Arabic UI — English-first, Arabic content in FAQ only
+- Mobile native app — web-first with Next.js
+- Social features — no sharing, following, or community interaction in v1
+
+## Context
+
+- Target audience: Egyptian gym-goers, especially newbies
+- The muscle map is the hero feature — everything else supports it
+- Muscle strain data will eventually come from scientific papers (reps, weight, intensity, recovery time per muscle)
+- Each muscle's training info includes: intensity % focus, assisting/helping muscles
+- FAQ content should reflect real questions from Egyptian fitness culture
+- Ranking equations combine workout performance (reps, weight) with body metrics when available
+
+## Constraints
+
+- **Tech stack**: Next.js + MongoDB — non-negotiable
+- **Language**: English UI
+- **Auth**: No authentication for v1 — all data stored locally
+- **Muscle data**: Placeholder datasets for v1, real scientific data added in future milestone
+- **Bio-info**: All fields optional — app must work fully without any bio data
+
+## Key Decisions
+
+| Decision | Rationale | Outcome |
+|----------|-----------|---------|
+| 2.5D illustrated map over WebGL 3D | Simpler to build, faster to render, flat views show all muscles clearly | — Pending |
+| No auth for v1 | Reduces complexity, lets users try immediately without friction | — Pending |
+| English UI with Arabic FAQ content | Simpler i18n, community content stays culturally relevant | — Pending |
+| Placeholder muscle data | Unblocks development while scientific data is researched | — Pending |
+| Local storage for v1 | No backend user management needed, faster to ship | — Pending |
+
+## Evolution
+
+This document evolves at phase transitions and milestone boundaries.
+
+**After each phase transition** (via `/gsd:transition`):
+1. Requirements invalidated? → Move to Out of Scope with reason
+2. Requirements validated? → Move to Validated with phase reference
+3. New requirements emerged? → Add to Active
+4. Decisions to log? → Add to Key Decisions
+5. "What This Is" still accurate? → Update if drifted
+
+**After each milestone** (via `/gsd:complete-milestone`):
+1. Full review of all sections
+2. Core Value check — still the right priority?
+3. Audit Out of Scope — reasons still valid?
+4. Update Context with current state
+
+---
+*Last updated: 2026-03-22 after initialization*
