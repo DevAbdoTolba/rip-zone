@@ -8,6 +8,21 @@ A fitness app for the Egyptian gym community built with Next.js and MongoDB. It 
 
 The interactive muscle map must work — users can see which muscles are strained, click any muscle for training guidance, and understand their body's state at a glance.
 
+## Current Milestone: v1.0 Core MVP
+
+**Goal:** Ship the interactive 2.5D muscle map fitness app with workout tracking, strain visualization, exercise references, gamified ranking, and Egyptian community FAQ.
+
+**Target features:**
+- 2.5D illustrated muscle map with heatmap strain overlay
+- Clickable muscles → exercise references with warm-up guidance
+- Freestyle workout logger with rest timer
+- Pre-built workout plans
+- Placeholder muscle strain/recovery engine
+- Radar chart body rating
+- Iron → Elite tier ranking system
+- Egyptian gym community FAQ
+- Optional bio-info collection with accuracy rewards
+
 ## Requirements
 
 ### Validated
@@ -82,4 +97,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-22 after initialization*
+*Last updated: 2026-03-22 after milestone v1.0 started*
