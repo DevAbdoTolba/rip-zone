@@ -81,7 +81,7 @@ completed: 2026-03-23
 
 1. **Task 1+2: Workout logger UI and rest timer widget** - `56f5930` (feat)
 
-**Plan metadata:** TBD (docs commit)
+**Plan metadata:** `afa4d89` (docs: complete plan)
 
 ## Files Created/Modified
 - `src/components/workout/WorkoutLogger.tsx` - Main logger component with session, exercise list, elapsed timer
