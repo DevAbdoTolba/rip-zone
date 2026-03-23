@@ -2,12 +2,14 @@
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import { MapPin, Dumbbell } from 'lucide-react'
+import { MapPin, Dumbbell, History, Timer } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const tabs = [
   { href: '/', label: 'Map', icon: MapPin },
   { href: '/exercises', label: 'Exercises', icon: Dumbbell },
+  { href: '/history', label: 'History', icon: History },
+  { href: '/workout', label: 'Workout', icon: Timer },
 ]
 
 export function BottomNav() {
