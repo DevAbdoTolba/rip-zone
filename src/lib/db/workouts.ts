@@ -27,30 +27,33 @@ export interface SetLogRecord {
   completedAt: number
 }
 
+export interface PlanProgressRecord {
+  id: string  // `${planId}-${dayLabel}`
+  planId: WorkoutPlanId
+  dayLabel: string
+  completedAt: number
+  sessionId: WorkoutSessionId
+}
+
+export interface LastUsedRestRecord {
+  exerciseSlug: ExerciseSlug
+  restSeconds: number
+  updatedAt: number
+}
+
 export class WorkoutsDatabase extends Dexie {
   sessions!: EntityTable<WorkoutSessionRecord, 'id'>
   exercisesInSession!: EntityTable<ExerciseInSessionRecord, 'id'>
   sets!: EntityTable<SetLogRecord, 'id'>
+  planProgress!: EntityTable<PlanProgressRecord, 'id'>
+  lastUsedRest!: EntityTable<LastUsedRestRecord, 'exerciseSlug'>
 
   constructor() {
     super('rip-zone-workouts')
 
     // Per D-13: Migration pattern for Dexie schema changes.
     // Each version() call preserves user data through schema updates.
-    // When adding a new field or index in future phases, add a new version block:
-    //
-    //   this.version(2).stores({
-    //     sessions: 'id, startedAt, completedAt, planId, newIndex',
-    //     exercisesInSession: 'id, sessionId, exerciseSlug, orderIndex',
-    //     sets: 'id, exerciseInSessionId, completedAt',
-    //   }).upgrade(tx => {
-    //     // Migrate existing records — e.g., backfill a new required field:
-    //     return tx.table('sessions').toCollection().modify(session => {
-    //       if (session.newField === undefined) {
-    //         session.newField = 'default-value'
-    //       }
-    //     })
-    //   })
+    // When adding a new field or index in future phases, add a new version block.
     //
     // Rules:
     // 1. NEVER modify a previous version() block — only append new ones
@@ -62,6 +65,16 @@ export class WorkoutsDatabase extends Dexie {
       sessions: 'id, startedAt, completedAt, planId',
       exercisesInSession: 'id, sessionId, exerciseSlug, orderIndex',
       sets: 'id, exerciseInSessionId, completedAt',
+    })
+
+    // v2: Add planProgress and lastUsedRest tables for workout plan tracking and rest timer memory.
+    // No upgrade() needed — new tables start empty.
+    this.version(2).stores({
+      sessions: 'id, startedAt, completedAt, planId',
+      exercisesInSession: 'id, sessionId, exerciseSlug, orderIndex',
+      sets: 'id, exerciseInSessionId, completedAt',
+      planProgress: 'id, planId, dayLabel, completedAt',
+      lastUsedRest: 'exerciseSlug',
     })
   }
 }
