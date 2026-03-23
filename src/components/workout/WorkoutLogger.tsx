@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState, useCallback } from 'react'
+import { useEffect, useState, useCallback, useRef } from 'react'
 import { Plus, Dumbbell, CheckCircle2 } from 'lucide-react'
 import { useWorkoutStore } from '@/stores/useWorkoutStore'
 import { computePRs, isNewPR } from '@/lib/pr-detection'
@@ -22,17 +22,25 @@ function formatElapsed(totalSeconds: number): string {
   return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`
 }
 
-// Load historical sets for an exercise from Dexie
-async function loadHistoricalSets(exerciseSlug: string): Promise<Pick<SetLogRecord, 'reps' | 'weightKg'>[]> {
+// Load historical sets for an exercise from Dexie, excluding the current session's records.
+// The excludeSessionId parameter prevents current-session sets from polluting the baseline PRMap.
+async function loadHistoricalSets(
+  exerciseSlug: string,
+  excludeSessionId: string | null,
+): Promise<Pick<SetLogRecord, 'reps' | 'weightKg'>[]> {
   try {
     const { workoutsDb } = await import('@/lib/db/workouts')
-    // Get all sessions for this exercise to compute PRs
     const exerciseRecords = await workoutsDb.exercisesInSession
       .where('exerciseSlug')
       .equals(exerciseSlug)
       .toArray()
+    // Filter out exercises belonging to the current session so their sets
+    // don't inflate the baseline and break strict > comparisons.
+    const historicalRecords = excludeSessionId
+      ? exerciseRecords.filter(r => r.sessionId !== excludeSessionId)
+      : exerciseRecords
     const allSets: Pick<SetLogRecord, 'reps' | 'weightKg'>[] = []
-    for (const record of exerciseRecords) {
+    for (const record of historicalRecords) {
       const sets = await workoutsDb.sets
         .where('exerciseInSessionId')
         .equals(record.id)
@@ -58,8 +66,12 @@ export function WorkoutLogger({ exercises }: WorkoutLoggerProps) {
   } = useWorkoutStore()
 
   const [pickerOpen, setPickerOpen] = useState(false)
-  // Maps exerciseSlug -> historical PRMap for checking new PRs
-  const [historicPRs, setHistoricPRs] = useState<Map<string, Map<number, number>>>(new Map())
+
+  // Snapshot-based PR baseline: captured ONCE per exercise slug when the exercise is
+  // first added to the session. Never re-queried after confirmSet writes to Dexie.
+  // This ensures isNewPR compares against pre-session history, not current-session data.
+  const sessionPRBaseline = useRef<Map<string, Map<number, number>>>(new Map())
+  const loadedSlugs = useRef<Set<string>>(new Set())
 
   // Elapsed timer
   useEffect(() => {
@@ -76,18 +88,31 @@ export function WorkoutLogger({ exercises }: WorkoutLoggerProps) {
     loadActiveSession()
   }, [])
 
-  // Load historical PRs whenever exercises change
+  // Load baseline PRs ONCE per exercise slug — only triggered when a new exercise is added.
+  // Uses excludeSessionId so current-session sets are excluded from the baseline even during
+  // crash recovery (where exercises may already have confirmed sets in Dexie).
   useEffect(() => {
-    const loadPRs = async () => {
-      const updates = new Map<string, Map<number, number>>()
+    const loadNewBaselines = async () => {
+      const sessionId = activeSession?.id as string | null
       for (const ex of activeExercises) {
-        const historicalSets = await loadHistoricalSets(ex.exerciseSlug as string)
-        updates.set(ex.exerciseSlug as string, computePRs(historicalSets))
+        const slug = ex.exerciseSlug as string
+        if (!loadedSlugs.current.has(slug)) {
+          loadedSlugs.current.add(slug)
+          const historicalSets = await loadHistoricalSets(slug, sessionId)
+          sessionPRBaseline.current.set(slug, computePRs(historicalSets))
+        }
       }
-      setHistoricPRs(updates)
     }
-    loadPRs()
-  }, [activeExercises])
+    loadNewBaselines()
+  }, [activeExercises, activeSession])
+
+  // Reset refs when session ends so the next session starts with a fresh baseline.
+  useEffect(() => {
+    if (!activeSession) {
+      sessionPRBaseline.current = new Map()
+      loadedSlugs.current = new Set()
+    }
+  }, [activeSession])
 
   const handleSelectExercise = useCallback(async (exercise: Exercise) => {
     const DEFAULT_REST = 90
@@ -155,7 +180,7 @@ export function WorkoutLogger({ exercises }: WorkoutLoggerProps) {
       {/* Exercise list */}
       <div className="flex flex-col gap-3 px-4">
         {activeExercises.map(exerciseState => {
-          const prMap = historicPRs.get(exerciseState.exerciseSlug as string)
+          const prMap = sessionPRBaseline.current.get(exerciseState.exerciseSlug as string)
 
           return (
             <div
