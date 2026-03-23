@@ -80,9 +80,18 @@ export const useWorkoutStore = create<WorkoutState>((set, get) => ({
     const { activeSession } = get()
     if (!activeSession) return
     const { workoutsDb } = await import('@/lib/db/workouts')
-    const updated: WorkoutSessionRecord = { ...activeSession, completedAt: Date.now() }
-    await workoutsDb.sessions.put(updated)
-    set({ activeSession: null, activeExercises: [] })
+    const session: WorkoutSessionRecord = { ...activeSession, completedAt: Date.now() }
+    await workoutsDb.sessions.put(session)
+    if (get().currentPlanId && get().currentDayLabel) {
+      await workoutsDb.planProgress.put({
+        id: `${get().currentPlanId}-${get().currentDayLabel}`,
+        planId: get().currentPlanId!,
+        dayLabel: get().currentDayLabel!,
+        completedAt: Date.now(),
+        sessionId: session.id,
+      })
+    }
+    set({ activeSession: null, activeExercises: [], currentPlanId: null, currentDayLabel: null })
   },
 
   addExercise: async (slug: ExerciseSlug, suggestedReps?: number, suggestedWeightKg?: number, restSeconds?: number) => {
