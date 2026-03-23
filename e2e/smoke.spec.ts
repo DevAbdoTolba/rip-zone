@@ -6,24 +6,15 @@ test.describe('Phase 1 Smoke Test', () => {
     await expect(page.locator('h1')).toContainText('Rip Zone')
   })
 
-  test('page shows Foundation loaded subtitle', async ({ page }) => {
+  test('page shows muscle map SVG', async ({ page }) => {
     await page.goto('/')
-    await expect(page.locator('text=Foundation loaded')).toBeVisible()
+    await expect(page.locator('svg[aria-label="Front muscle map"]')).toBeVisible()
   })
 
-  test('page shows MongoDB status label', async ({ page }) => {
+  test('page shows bottom navigation with Map and Exercises tabs', async ({ page }) => {
     await page.goto('/')
-    await expect(page.locator('text=MongoDB')).toBeVisible()
-  })
-
-  test('page shows Local DB status label', async ({ page }) => {
-    await page.goto('/')
-    await expect(page.locator('text=Local DB')).toBeVisible()
-  })
-
-  test('page shows Reference data status label', async ({ page }) => {
-    await page.goto('/')
-    await expect(page.locator('text=Reference data')).toBeVisible()
+    await expect(page.getByRole('link', { name: 'Map' }).first()).toBeVisible()
+    await expect(page.getByRole('link', { name: 'Exercises' }).first()).toBeVisible()
   })
 
   test('no console errors on page load', async ({ page }) => {
