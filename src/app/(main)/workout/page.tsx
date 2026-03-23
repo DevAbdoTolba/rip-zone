@@ -1,10 +1,13 @@
 'use client'
 
+import exercisesData from '@/../data/exercises.json'
+import { WorkoutLogger } from '@/components/workout/WorkoutLogger'
+import type { Exercise } from '@/types/workout'
+
 export default function WorkoutPage() {
   return (
-    <main className="flex-1 p-4">
-      <h1 className="text-2xl font-bold text-foreground">Workout</h1>
-      <p className="mt-2 text-muted-foreground">Workout Logger — Coming Soon</p>
+    <main className="flex-1 pb-20">
+      <WorkoutLogger exercises={exercisesData as unknown as Exercise[]} />
     </main>
   )
 }
