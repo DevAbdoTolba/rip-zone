@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Ready to execute
-stopped_at: Completed 03-02-PLAN.md
-last_updated: "2026-03-23T14:11:49.149Z"
+stopped_at: Completed 03-03-PLAN.md
+last_updated: "2026-03-23T14:18:51.141Z"
 progress:
   total_phases: 8
   completed_phases: 2
   total_plans: 14
-  completed_plans: 12
+  completed_plans: 13
 ---
 
 # Project State
@@ -24,7 +24,7 @@ See: .planning/PROJECT.md (updated 2026-03-22)
 ## Current Position
 
 Phase: 03 (exercise-library) — EXECUTING
-Plan: 3 of 4
+Plan: 4 of 4
 
 ## Performance Metrics
 
@@ -58,6 +58,7 @@ Plan: 3 of 4
 | Phase 02 P05 | 10 | 3 tasks | 4 files |
 | Phase 03 P01 | 5min | 2 tasks | 9 files |
 | Phase 03 P02 | 7min | 2 tasks | 5 files |
+| Phase 03 P03 | 8min | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -96,6 +97,8 @@ Recent decisions affecting current work:
 - [Phase 03]: filterExercises uses AND logic for multiple filters; E2E exercise-library tests use real bodies (not .skip) to surface missing UI
 - [Phase 03]: ExerciseFilters uses native button elements for chips — getByRole('button') Playwright compatibility without extra ARIA roles
 - [Phase 03]: Cards start collapsed (Level 0) — Level 1 expand reveals description, badges, warm-up and More CTAs; Level 2 adds form cues and secondary muscles
+- [Phase 03]: MiniMuscleMap uses style.fill inline overrides — container lacks data-view so globals.css muscle selectors don't apply; useEffect resets ALL muscle path fills before applying highlights
+- [Phase 03]: WarmupSheet uses @base-ui Dialog with split warmupOpen/warmupGroup state in ExerciseLibrary — pre-computed movements prop passed to keep sheet stateless
 
 ### Pending Todos
 
@@ -109,6 +112,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-23T14:11:49.145Z
-Stopped at: Completed 03-02-PLAN.md
+Last session: 2026-03-23T14:18:51.137Z
+Stopped at: Completed 03-03-PLAN.md
 Resume file: None
