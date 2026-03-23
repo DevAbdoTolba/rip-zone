@@ -84,3 +84,56 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Phase 2: Muscle map path styling */
+/* Default: muted gray fill for all interactive muscle paths */
+[data-view] path[id^="muscle-"] {
+  fill: oklch(0.22 0.02 265);
+  stroke: oklch(0.18 0.03 265);
+  stroke-width: 1px;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+/* Anatomy mode: thinner strokes for dense path boundaries */
+[data-view][data-detail-mode="anatomy"] path[id^="muscle-"] {
+  stroke-width: 0.75px;
+}
+
+/* Hover: brighten fill — instant, no transition (per D-12 snappy philosophy) */
+[data-view] path[id^="muscle-"]:hover {
+  fill: oklch(0.32 0.05 265);
+}
+
+/* Selected muscle: primary accent fill */
+[data-view] path[id^="muscle-"][data-selected="true"] {
+  fill: oklch(0.85 0.18 195);
+}
+
+/* Non-interactive body outline (head, neck, hands, feet) */
+[data-view] path[id^="outline-"] {
+  fill: oklch(0.14 0.02 265);
+  stroke: oklch(0.18 0.03 265);
+  stroke-width: 1px;
+  pointer-events: none;
+  cursor: default;
+}
+
+/* Hit target overlay paths — invisible, receive pointer events */
+[data-view] path[id^="hit-"] {
+  fill: transparent;
+  stroke: none;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+/* Disambiguation dim overlay */
+[data-view] .disambiguation-overlay {
+  fill: oklch(0.07 0.01 265 / 70%);
+  pointer-events: none;
+}
+
+/* Disambiguation: cluster muscles are above overlay, keep pointer events */
+[data-view] .disambiguation-cluster path[id^="muscle-"] {
+  pointer-events: all;
+}
