@@ -1,11 +1,12 @@
 'use client'
 
-import { useMemo, useState } from 'react'
+import { useCallback, useMemo, useState } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { ChevronDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { ExerciseFilters } from './ExerciseFilters'
 import { ExerciseCard } from './ExerciseCard'
+import { WarmupSheet } from './WarmupSheet'
 import { filterExercises } from '@/lib/exercise-filter'
 import { cn } from '@/lib/utils'
 
@@ -70,7 +71,8 @@ export function ExerciseLibrary({ exercises, muscles, warmups }: ExerciseLibrary
   )
   const [expandedCards, setExpandedCards] = useState<Set<string>>(new Set())
   const [level2Card, setLevel2Card] = useState<string | null>(null)
-  const [warmupExercise, setWarmupExercise] = useState<Exercise | null>(null)
+  const [warmupOpen, setWarmupOpen] = useState(false)
+  const [warmupGroup, setWarmupGroup] = useState<string | null>(null)
 
   const hasActiveFilter = query !== '' || equipment !== '' || difficulty !== '' || muscleFilter !== ''
 
@@ -137,9 +139,20 @@ export function ExerciseLibrary({ exercises, muscles, warmups }: ExerciseLibrary
     setLevel2Card(prev => prev === slug ? null : slug)
   }
 
-  function openWarmup(ex: Exercise) {
-    setWarmupExercise(ex)
-  }
+  const openWarmup = useCallback((ex: Exercise) => {
+    const primarySlug = ex.primaryMuscles[0]
+    const muscle = muscles.find(m => m.slug === primarySlug)
+    if (muscle) {
+      setWarmupGroup(muscle.group)
+      setWarmupOpen(true)
+    }
+  }, [muscles])
+
+  const warmupMovements = useMemo(() => {
+    if (!warmupGroup) return []
+    const warmup = warmups.find(w => w.muscleGroup === warmupGroup)
+    return warmup?.movements ?? []
+  }, [warmupGroup, warmups])
 
   function clearAllFilters() {
     setQuery('')
@@ -225,37 +238,13 @@ export function ExerciseLibrary({ exercises, muscles, warmups }: ExerciseLibrary
         )}
       </div>
 
-      {/* Warmup sheet placeholder - rendered by Plan 03 */}
-      {warmupExercise && (
-        <div
-          data-testid="warmup-sheet"
-          className="fixed inset-0 z-50 flex items-end justify-center bg-background/80"
-          onClick={() => setWarmupExercise(null)}
-        >
-          <div
-            className="bg-card border border-border rounded-t-xl w-full max-w-lg max-h-[80vh] overflow-y-auto p-6"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <h3 className="text-[20px] font-semibold text-foreground mb-4">
-              {GROUP_LABELS[
-                muscles.find(m => m.slug === warmupExercise.primaryMuscles[0])?.group ?? ''
-              ] ?? 'Warm-up'} Warm-up
-            </h3>
-            {(() => {
-              const muscleGroup = muscles.find(m => m.slug === warmupExercise.primaryMuscles[0])?.group
-              const warmup = warmups.find(w => w.muscleGroup === muscleGroup)
-              return warmup?.movements.map((movement, i) => (
-                <div key={i} data-testid="warmup-movement" className="mb-4">
-                  <p className="text-[14px] font-semibold text-foreground">{movement.name}</p>
-                  <p className="text-[16px] text-muted-foreground">{movement.instruction}</p>
-                  <p className="text-[14px] text-muted-foreground">{movement.duration}</p>
-                </div>
-              ))
-            })()}
-            <Button variant="outline" onClick={() => setWarmupExercise(null)} className="w-full mt-2">Close</Button>
-          </div>
-        </div>
-      )}
+      {/* Warmup sheet */}
+      <WarmupSheet
+        open={warmupOpen}
+        onOpenChange={setWarmupOpen}
+        muscleGroup={warmupGroup}
+        movements={warmupMovements}
+      />
     </div>
   )
 }
