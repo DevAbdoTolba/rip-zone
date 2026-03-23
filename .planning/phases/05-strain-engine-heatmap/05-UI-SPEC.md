@@ -61,11 +61,11 @@ Extends the established type scale already in use across Phases 2–4. This phas
 | Body | 16px | 400 (regular) | 1.5 | General text, loading states |
 | Label | 14px | 400 (regular) | 1.5 | Disclaimer text, secondary info |
 | Heading | 20px | 600 (semibold) | 1.2 | Page headings (existing, not new) |
-| Display | 28px | 700 (bold) | 1.1 | Timer numerals (existing, not new) |
+| Display | 28px | 600 (semibold) | 1.1 | Timer numerals (existing, not new) |
 
-**Disclaimer text spec:** 12px / weight 400 / line-height 1.4 / color `muted-foreground` — matches the smallest label tier already used in SetRow and PRBadge. Renders below MuscleMapCanvas, center-aligned on mobile.
+**Disclaimer text spec:** 14px / weight 400 / line-height 1.5 / color `muted-foreground` — matches the label role already used in SetRow and PRBadge. Renders below MuscleMapCanvas, center-aligned on mobile.
 
-**Source:** Existing component audit — `text-[12px]`, `text-[14px]`, `text-[16px]`, `text-[20px]`, `text-[28px]` classes found across WorkoutLogger, SetRow, PRBadge, history/page.tsx.
+**Source:** Existing component audit — `text-[14px]`, `text-[16px]`, `text-[20px]`, `text-[28px]` classes found across WorkoutLogger, SetRow, PRBadge, history/page.tsx.
 
 ---
 
@@ -165,7 +165,7 @@ This phase is entirely a data computation + DOM mutation layer. No new shadcn co
 
 | Element | Copy | Notes |
 |---------|------|-------|
-| Disclaimer text | "Strain data based on placeholder estimates" | Always visible below muscle map; no dismiss; muted-foreground color; 12px |
+| Disclaimer text | "Strain data based on placeholder estimates" | Always visible below muscle map; no dismiss; muted-foreground color; 14px |
 | Disclaimer placement | Below MuscleMapCanvas, within MuscleMap flex-col container | Center-aligned on mobile (text-center), gap-2 (8px) from canvas |
 | Heatmap loading state | No loading indicator — map renders with default gray fills while Dexie query runs; fills update asynchronously | Silent async update per codebase D-12 snappy philosophy |
 | Error state | Console error only (`console.error('useStrainMap: failed to compute', err)`) — no user-visible error UI | Strain is non-critical; app works fully without it; map shows default gray |
@@ -215,7 +215,7 @@ This phase is entirely a data computation + DOM mutation layer. No new shadcn co
 │  │ ┌─────────────────────────────────────┐ ││
 │  │ │ p "Strain data based on placeholder │ ││
 │  │ │   estimates"                        │ ││
-│  │ │ text-[12px] text-muted-foreground   │ ││
+│  │ │ text-[14px] text-muted-foreground   │ ││
 │  │ │ text-center                         │ ││
 │  │ └─────────────────────────────────────┘ ││
 │  └─────────────────────────────────────────┘│
