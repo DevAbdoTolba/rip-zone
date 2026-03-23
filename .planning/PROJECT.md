@@ -29,6 +29,7 @@ The interactive muscle map must work — users can see which muscles are straine
 
 - [x] TypeScript domain types, data storage split, seed data infrastructure — Validated in Phase 1: Foundation
 - [x] 2.5D illustrated muscle map (front/back views) covering all muscles including rare/obscure ones — Validated in Phase 2: Muscle Map SVG
+- [x] Browseable, searchable exercise library with 110 exercises, muscle tags, and warm-up guidance — Validated in Phase 3: Exercise Library
 
 ### Active
 - [ ] Heatmap overlay showing strain level per muscle based on training data
@@ -96,4 +97,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-23 after Phase 2: Muscle Map SVG complete — 6 SVG files (Normal/Advanced/Anatomy × front/back), React component layer, disambiguation zoom, slug-based path ID contract locked*
+*Last updated: 2026-03-23 after Phase 3: Exercise Library complete — 110 exercises browsable in 9 muscle groups, search/filter, two-level card expand, mini muscle map, warm-up bottom sheet, bottom nav shell*
