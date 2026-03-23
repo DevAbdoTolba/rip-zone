@@ -14,7 +14,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 
 - [x] **Phase 1: Foundation** - Next.js project, TypeScript domain types, MongoDB connection, Dexie schema, and seeded reference data (completed 2026-03-22)
 - [x] **Phase 2: Muscle Map SVG** - 2.5D illustrated muscle map with front/back views, slug-based path IDs, and layered SVG architecture (completed 2026-03-23)
-- [ ] **Phase 3: Exercise Library** - Browseable, searchable exercise library with 100+ exercises and muscle group warm-up guidance
+- [x] **Phase 3: Exercise Library** - Browseable, searchable exercise library with 100+ exercises and muscle group warm-up guidance (completed 2026-03-23)
 - [ ] **Phase 4: Workout Logger** - Freestyle workout logging with rest timer, workout history, PR detection, and pre-built plan runner
 - [ ] **Phase 5: Strain Engine + Heatmap** - Per-muscle fatigue computation from workout logs wired to heatmap color overlay on the muscle map
 - [ ] **Phase 6: Click-to-Muscle Panel** - Tap any muscle to see exercises targeting it, warm-up guidance, and current strain state in a slide-out panel
@@ -67,12 +67,12 @@ Plans:
   1. User can browse a library of 100+ exercises, each showing its primary and secondary muscle targets
   2. User can search exercises by name and results update as they type
   3. User can navigate to any muscle group and view its warm-up guidance before training
-**Plans:** 3/4 plans executed
+**Plans:** 4/4 plans complete
 Plans:
 - [x] 03-01-PLAN.md — Infrastructure: warm-up data, Mongoose model, route group migration, bottom nav, filter function TDD, test scaffolds
 - [x] 03-02-PLAN.md — Exercise library page with search, filter chips, muscle group sections, and two-level card expand
 - [x] 03-03-PLAN.md — Mini muscle map highlights in exercise detail and warm-up bottom sheet
-- [ ] 03-04-PLAN.md — E2E test finalization and human verification checkpoint
+- [x] 03-04-PLAN.md — E2E test finalization and human verification checkpoint
 **UI hint**: yes
 
 ### Phase 4: Workout Logger
@@ -145,7 +145,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 |-------|----------------|--------|-----------|
 | 1. Foundation | 5/5 | Complete   | 2026-03-22 |
 | 2. Muscle Map SVG | 5/5 | Complete   | 2026-03-23 |
-| 3. Exercise Library | 3/4 | In Progress|  |
+| 3. Exercise Library | 4/4 | Complete   | 2026-03-23 |
 | 4. Workout Logger | 0/TBD | Not started | - |
 | 5. Strain Engine + Heatmap | 0/TBD | Not started | - |
 | 6. Click-to-Muscle Panel | 0/TBD | Not started | - |
