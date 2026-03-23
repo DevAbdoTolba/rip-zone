@@ -1,7 +1,6 @@
 'use client'
 
 import { Search, X } from 'lucide-react'
-import { Badge } from '@/components/ui/badge'
 import { cn } from '@/lib/utils'
 
 const EQUIPMENT_LABELS: Record<string, string> = {
@@ -23,6 +22,9 @@ const DIFFICULTY_LABELS: Record<string, string> = {
 
 const EQUIPMENT_VALUES = ['barbell', 'dumbbell', 'bodyweight', 'machine', 'cable', 'kettlebell', 'band', 'other']
 const DIFFICULTY_VALUES = ['beginner', 'intermediate', 'advanced']
+
+// Base chip classes shared across both states
+const chipBase = 'inline-flex h-5 w-fit shrink-0 items-center justify-center gap-1 overflow-hidden rounded-full border px-2 py-0.5 text-[14px] font-medium whitespace-nowrap transition-all cursor-pointer'
 
 interface ExerciseFiltersProps {
   query: string
@@ -53,7 +55,7 @@ export function ExerciseFilters({
           type="text"
           value={query}
           onChange={(e) => onQueryChange(e.target.value)}
-          placeholder="Search exercises..."
+          placeholder="Search exercises…"
           className={cn(
             'w-full h-10 pl-9 pr-9 rounded-lg bg-muted text-foreground text-[16px]',
             'placeholder:text-muted-foreground border border-border outline-none',
@@ -73,43 +75,51 @@ export function ExerciseFilters({
       </div>
 
       {/* Equipment filter */}
-      <div className="flex items-center mb-2" style={{ WebkitOverflowScrolling: 'touch' }}>
+      <div className="flex items-center mb-2">
         <span className="text-[14px] text-muted-foreground mr-2 shrink-0">Equipment</span>
-        <div className="flex gap-2 overflow-x-auto flex-nowrap scrollbar-hide pb-1">
+        <div
+          className="flex gap-2 overflow-x-auto flex-nowrap scrollbar-hide pb-1"
+          style={{ WebkitOverflowScrolling: 'touch' } as React.CSSProperties}
+        >
           {EQUIPMENT_VALUES.map((eq) => (
-            <Badge
+            <button
               key={eq}
+              type="button"
               onClick={() => onEquipmentChange(equipment === eq ? '' : eq)}
               className={cn(
-                'cursor-pointer shrink-0 text-[14px]',
+                chipBase,
                 equipment === eq
                   ? 'bg-primary text-primary-foreground border-transparent'
                   : 'bg-card text-muted-foreground border border-border hover:bg-muted'
               )}
             >
               {EQUIPMENT_LABELS[eq]}
-            </Badge>
+            </button>
           ))}
         </div>
       </div>
 
       {/* Difficulty filter */}
-      <div className="flex items-center" style={{ WebkitOverflowScrolling: 'touch' }}>
+      <div className="flex items-center">
         <span className="text-[14px] text-muted-foreground mr-2 shrink-0">Difficulty</span>
-        <div className="flex gap-2 overflow-x-auto flex-nowrap scrollbar-hide pb-1">
+        <div
+          className="flex gap-2 overflow-x-auto flex-nowrap scrollbar-hide pb-1"
+          style={{ WebkitOverflowScrolling: 'touch' } as React.CSSProperties}
+        >
           {DIFFICULTY_VALUES.map((diff) => (
-            <Badge
+            <button
               key={diff}
+              type="button"
               onClick={() => onDifficultyChange(difficulty === diff ? '' : diff)}
               className={cn(
-                'cursor-pointer shrink-0 text-[14px]',
+                chipBase,
                 difficulty === diff
                   ? 'bg-primary text-primary-foreground border-transparent'
                   : 'bg-card text-muted-foreground border border-border hover:bg-muted'
               )}
             >
               {DIFFICULTY_LABELS[diff]}
-            </Badge>
+            </button>
           ))}
         </div>
       </div>

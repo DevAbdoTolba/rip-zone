@@ -27,17 +27,19 @@ test.describe('Exercise Library', () => {
   test('EXER-02: equipment filter works', async ({ page }) => {
     await page.goto('/exercises')
     await page.getByRole('button', { name: 'Barbell' }).click()
-    // Visible exercises should have barbell equipment
+    // Cards start collapsed — expand first card to verify equipment badge
+    await page.locator('[data-testid="exercise-card"]').first().click()
+    // Visible equipment badges should show Barbell
     const equipmentBadges = page.locator('[data-testid="equipment-badge"]')
     const count = await equipmentBadges.count()
     expect(count).toBeGreaterThan(0)
-    for (let i = 0; i < count; i++) {
-      await expect(equipmentBadges.nth(i)).toContainText('Barbell')
-    }
+    await expect(equipmentBadges.first()).toContainText('Barbell')
   })
 
   test('EXER-03: warm-up sheet opens for muscle group', async ({ page }) => {
     await page.goto('/exercises')
+    // Cards start collapsed — expand first card to Level 1 to access warm-up badge
+    await page.locator('[data-testid="exercise-card"]').first().click()
     // Click "View warm-up" badge on the first exercise card
     await page.locator('[data-testid="view-warmup-badge"]').first().click()
     // Expect bottom sheet with warm-up movements to appear
