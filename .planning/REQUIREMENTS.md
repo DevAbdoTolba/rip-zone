@@ -10,10 +10,10 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Muscle Map
 
 - [ ] **MAP-01**: User can view a 2.5D illustrated muscle map with front and back body views
-- [ ] **MAP-02**: User can toggle between front and back views with state preserved
+- [x] **MAP-02**: User can toggle between front and back views with state preserved
 - [ ] **MAP-03**: User can see heatmap color overlay showing strain level per muscle (rested → strained gradient)
 - [ ] **MAP-04**: User can click any muscle to open an exercise reference panel
-- [ ] **MAP-05**: User can tap small/clustered muscles with disambiguation UI for accurate selection
+- [x] **MAP-05**: User can tap small/clustered muscles with disambiguation UI for accurate selection
 
 ### Exercise Library
 
@@ -103,10 +103,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | Requirement | Phase | Status |
 |-------------|-------|--------|
 | MAP-01 | Phase 2 | Pending |
-| MAP-02 | Phase 2 | Pending |
+| MAP-02 | Phase 2 | Complete |
 | MAP-03 | Phase 5 | Pending |
 | MAP-04 | Phase 6 | Pending |
-| MAP-05 | Phase 2 | Pending |
+| MAP-05 | Phase 2 | Complete |
 | EXER-01 | Phase 3 | Pending |
 | EXER-02 | Phase 3 | Pending |
 | EXER-03 | Phase 3 | Pending |
