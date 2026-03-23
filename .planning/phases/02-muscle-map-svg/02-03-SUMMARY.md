@@ -114,6 +114,18 @@ None - no external service configuration required.
 - Anatomy mode path IDs (-left/-right suffixes) enable per-side strain tracking in Phase 5 heatmap
 - MuscleMap component (Plan 04) can now import all 3 mode variants and switch between them based on `useMapStore.detailMode`
 
+## Self-Check: PASSED
+
+- FOUND: src/assets/svg/muscle-map-advanced-front.svg
+- FOUND: src/assets/svg/muscle-map-advanced-back.svg
+- FOUND: src/assets/svg/muscle-map-anatomy-front.svg
+- FOUND: src/assets/svg/muscle-map-anatomy-back.svg
+- FOUND: scripts/validate-svg-ids.ts
+- FOUND: .planning/phases/02-muscle-map-svg/02-03-SUMMARY.md
+- FOUND commit a9bb414 (Task 1)
+- FOUND commit c152043 (Task 2)
+- npx tsx scripts/validate-svg-ids.ts: 6/6 PASS, exits 0
+
 ---
 *Phase: 02-muscle-map-svg*
 *Completed: 2026-03-23*
