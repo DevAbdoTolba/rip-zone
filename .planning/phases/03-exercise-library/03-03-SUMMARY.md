@@ -117,3 +117,12 @@ None - no external service configuration required.
 ---
 *Phase: 03-exercise-library*
 *Completed: 2026-03-23*
+
+## Self-Check: PASSED
+
+- FOUND: src/components/exercise-library/MiniMuscleMap.tsx
+- FOUND: src/components/exercise-library/WarmupSheet.tsx
+- FOUND: .planning/phases/03-exercise-library/03-03-SUMMARY.md
+- FOUND: commit 8f241dc (Task 1 — MiniMuscleMap)
+- FOUND: commit ebb8937 (Task 2 — WarmupSheet)
+- FOUND: commit 464f211 (docs — SUMMARY + STATE + ROADMAP)
