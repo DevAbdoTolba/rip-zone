@@ -4,6 +4,7 @@ import { ChevronRight, ChevronDown } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { cn } from '@/lib/utils'
+import { MiniMuscleMap } from './MiniMuscleMap'
 
 const EQUIPMENT_LABELS: Record<string, string> = {
   barbell: 'Barbell',
@@ -181,9 +182,12 @@ export function ExerciseCard({
               </div>
             )}
 
-            {/* MiniMuscleMap placeholder — rendered by Plan 03 */}
-            <div id={`mini-map-${exercise.slug}`} className="flex justify-center my-4">
-              {/* MiniMuscleMap will be added here in Plan 03 */}
+            {/* MiniMuscleMap */}
+            <div className="flex justify-center my-4">
+              <MiniMuscleMap
+                primaryMuscles={exercise.primaryMuscles}
+                secondaryMuscles={exercise.secondaryMuscles}
+              />
             </div>
 
             <Button
