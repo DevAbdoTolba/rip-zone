@@ -62,7 +62,7 @@ Source: 8-point scale default; exceptions from CONTEXT.md D-06, CONTEXT.md D-08
 
 Usage guidance:
 - **Body (16px/400):** Exercise description excerpt in Level 1 card, warm-up movement instruction text, empty state body
-- **Label (14px/400):** Equipment badges, difficulty badges, primary/secondary muscle tag text, filter chip text, bottom nav labels, form cues in Level 2 expand
+- **Label (14px/400):** Equipment badges, difficulty badges, primary/secondary muscle tag text, filter chip text, bottom nav tab labels, form cues in Level 2 expand
 - **Heading (20px/600):** Exercise name in card header, muscle group section titles (e.g., "Chest", "Back"), warm-up sheet header
 - **Display (28px/600):** Page title "Exercises" at top of `/exercises` page
 
@@ -195,7 +195,7 @@ Source: CONTEXT.md D-06, D-08, D-11; RESEARCH.md architecture patterns
 - Active tab: `--primary` accent icon + label, visual indicator (underline or filled pill)
 - Inactive tab: `--muted-foreground` icon + label
 - Bottom nav background: `--card` (`oklch(0.10 0.02 265)`) with top border `--border`
-- Tab labels: 12px (below Label base, appropriate for nav context), weight 400
+- Tab labels: 14px (Label size), weight 400
 - Icons: 24px lucide icons, touch target padded to 44px minimum
 
 ### URL deep-linking (D-07)
