@@ -20,12 +20,14 @@ async function seed() {
   const { default: Exercise } = await import('../src/models/Exercise')
   const { default: WorkoutPlan } = await import('../src/models/WorkoutPlan')
   const { default: FaqEntry } = await import('../src/models/FaqEntry')
+  const { default: Warmup } = await import('../src/models/Warmup')
 
   // Load JSON data
   const musclesData = JSON.parse(readFileSync(path.resolve(process.cwd(), 'data/muscles.json'), 'utf-8'))
   const exercisesData = JSON.parse(readFileSync(path.resolve(process.cwd(), 'data/exercises.json'), 'utf-8'))
   const workoutPlansData = JSON.parse(readFileSync(path.resolve(process.cwd(), 'data/workout-plans.json'), 'utf-8'))
   const faqData = JSON.parse(readFileSync(path.resolve(process.cwd(), 'data/faq-entries.json'), 'utf-8'))
+  const warmupsData = JSON.parse(readFileSync(path.resolve(process.cwd(), 'data/warmups.json'), 'utf-8'))
 
   // Clear and re-seed each collection
   await Muscle.deleteMany({})
@@ -43,6 +45,10 @@ async function seed() {
   await FaqEntry.deleteMany({})
   await FaqEntry.insertMany(faqData)
   console.log(`Seeded ${faqData.length} FAQ entries`)
+
+  await Warmup.deleteMany({})
+  await Warmup.insertMany(warmupsData)
+  console.log(`Seeded ${warmupsData.length} warmup guides`)
 
   await mongoose.disconnect()
   console.log('Seeding complete')

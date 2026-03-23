@@ -1,0 +1,81 @@
+[
+  {
+    "muscleGroup": "chest",
+    "movements": [
+      { "name": "Arm Circles", "instruction": "Stand tall and make large forward circles with both arms to loosen the shoulder joints and warm up the chest.", "duration": "30 seconds" },
+      { "name": "Band Pull-Aparts", "instruction": "Hold a resistance band at shoulder width and pull apart horizontally, squeezing your shoulder blades.", "duration": "15 reps" },
+      { "name": "Incline Push-ups", "instruction": "Place hands on an elevated surface and perform slow push-ups to activate the pecs with minimal load.", "duration": "10 reps" },
+      { "name": "Dynamic Chest Stretch", "instruction": "Stand in a doorway with arms at 90 degrees on the frame, lean forward gently and hold, then release and repeat.", "duration": "20 seconds each side" }
+    ]
+  },
+  {
+    "muscleGroup": "back",
+    "movements": [
+      { "name": "Cat-Cow Stretch", "instruction": "On hands and knees, alternate between arching your back up (cat) and dropping your belly down (cow).", "duration": "10 reps" },
+      { "name": "Band Rows", "instruction": "Loop a resistance band around a sturdy pole, step back for tension, and row both hands to your ribcage.", "duration": "15 reps" },
+      { "name": "Scapular Pull-ups", "instruction": "Hang from a bar and retract your shoulder blades without bending your elbows — pure scapular movement.", "duration": "10 reps" },
+      { "name": "Thoracic Rotation", "instruction": "On all fours, place one hand behind your head and rotate your upper body toward the ceiling, then back down.", "duration": "10 reps each side" }
+    ]
+  },
+  {
+    "muscleGroup": "shoulders",
+    "movements": [
+      { "name": "Arm Circles", "instruction": "Make small to large circles with your arms extended, warming up the rotator cuff and deltoids.", "duration": "30 seconds each direction" },
+      { "name": "Band Dislocates", "instruction": "Hold a resistance band wide and pass it over and behind your head in a full arc, then reverse.", "duration": "10 reps" },
+      { "name": "Wall Slides", "instruction": "Stand with your back against a wall, arms in a 'W' shape, and slide them up to a 'Y' and back down.", "duration": "10 reps" },
+      { "name": "Light Lateral Raises", "instruction": "With very light dumbbells or no weight, raise arms to the side to shoulder height and lower slowly.", "duration": "15 reps" }
+    ]
+  },
+  {
+    "muscleGroup": "arms",
+    "movements": [
+      { "name": "Wrist Circles", "instruction": "Extend your arms and rotate your wrists in circles to warm up the forearm and bicep tendons.", "duration": "20 seconds each direction" },
+      { "name": "Light Curls", "instruction": "Grab the lightest dumbbells available and perform slow, controlled curls for blood flow.", "duration": "15 reps" },
+      { "name": "Tricep Stretch", "instruction": "Raise one arm overhead, bend at the elbow, and use the other hand to gently press the elbow back.", "duration": "20 seconds each arm" }
+    ]
+  },
+  {
+    "muscleGroup": "forearms",
+    "movements": [
+      { "name": "Wrist Flexor Stretch", "instruction": "Extend your arm with palm up, use the other hand to gently pull fingers back toward you.", "duration": "20 seconds each arm" },
+      { "name": "Wrist Extensor Stretch", "instruction": "Extend your arm with palm down, use the other hand to gently press the back of the hand toward you.", "duration": "20 seconds each arm" },
+      { "name": "Grip Squeezes", "instruction": "Rapidly squeeze and release a soft ball or make tight fists to pump blood into the forearms.", "duration": "30 seconds" }
+    ]
+  },
+  {
+    "muscleGroup": "core",
+    "movements": [
+      { "name": "Dead Bug", "instruction": "Lie on your back with arms extended up and knees at 90 degrees. Alternate extending opposite arm and leg while keeping your lower back pressed to the floor.", "duration": "10 reps each side" },
+      { "name": "Plank Hold", "instruction": "Hold a forearm plank with a straight line from head to heels, bracing your core.", "duration": "30 seconds" },
+      { "name": "Cat-Cow", "instruction": "On all fours, alternate between rounding your spine up and arching it down to mobilize the core.", "duration": "10 reps" },
+      { "name": "Standing Oblique Stretch", "instruction": "Stand tall, reach one arm overhead and lean to the opposite side, stretching the obliques.", "duration": "20 seconds each side" }
+    ]
+  },
+  {
+    "muscleGroup": "legs",
+    "movements": [
+      { "name": "Bodyweight Squats", "instruction": "Perform slow, controlled bodyweight squats through full range of motion to warm up quads, glutes, and hips.", "duration": "15 reps" },
+      { "name": "Leg Swings (Front-to-Back)", "instruction": "Hold a wall for balance and swing one leg forward and backward in a controlled arc.", "duration": "15 swings each leg" },
+      { "name": "Leg Swings (Side-to-Side)", "instruction": "Face the wall, hold for balance, and swing one leg across your body and out to the side.", "duration": "15 swings each leg" },
+      { "name": "Walking Lunges", "instruction": "Take exaggerated steps forward, dropping your back knee toward the floor with each step.", "duration": "10 steps each leg" },
+      { "name": "Ankle Circles", "instruction": "Lift one foot and rotate the ankle in circles to warm up the ankle joint.", "duration": "15 circles each direction" }
+    ]
+  },
+  {
+    "muscleGroup": "glutes",
+    "movements": [
+      { "name": "Glute Bridges", "instruction": "Lie on your back with knees bent, drive through your heels to lift your hips and squeeze your glutes at the top.", "duration": "15 reps" },
+      { "name": "Clamshells", "instruction": "Lie on your side with knees bent, keep feet together and open your top knee like a clamshell.", "duration": "15 reps each side" },
+      { "name": "Fire Hydrants", "instruction": "On all fours, lift one knee out to the side while keeping it bent at 90 degrees.", "duration": "12 reps each side" },
+      { "name": "Hip Circles", "instruction": "Stand on one leg and make large circles with the other knee to open up the hip joint.", "duration": "10 circles each direction" }
+    ]
+  },
+  {
+    "muscleGroup": "calves",
+    "movements": [
+      { "name": "Calf Raises", "instruction": "Stand on the edge of a step, lower your heels below the platform, then rise up onto your toes.", "duration": "20 reps" },
+      { "name": "Wall Calf Stretch", "instruction": "Place hands on a wall, step one foot back, and press the heel into the floor with a straight leg.", "duration": "20 seconds each leg" },
+      { "name": "Ankle Circles", "instruction": "Lift one foot off the ground and rotate the ankle in full circles.", "duration": "15 circles each direction" }
+    ]
+  }
+]
