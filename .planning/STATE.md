@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Ready to execute
-stopped_at: Completed 02-03-PLAN.md
-last_updated: "2026-03-23T11:41:45.871Z"
+stopped_at: Completed 02-04-PLAN.md
+last_updated: "2026-03-23T11:46:55.344Z"
 progress:
   total_phases: 8
   completed_phases: 1
   total_plans: 10
-  completed_plans: 8
+  completed_plans: 9
 ---
 
 # Project State
@@ -24,7 +24,7 @@ See: .planning/PROJECT.md (updated 2026-03-22)
 ## Current Position
 
 Phase: 02 (muscle-map-svg) — EXECUTING
-Plan: 4 of 5
+Plan: 5 of 5
 
 ## Performance Metrics
 
@@ -54,6 +54,7 @@ Plan: 4 of 5
 | Phase 02 P01 | 3 | 2 tasks | 7 files |
 | Phase 02 P02 | 5min | 2 tasks | 4 files |
 | Phase 02 P03 | 12min | 2 tasks | 5 files |
+| Phase 02 P04 | 2min | 2 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -82,6 +83,9 @@ Recent decisions affecting current work:
 - [Phase 02]: Anatomy mode includes muscle-biceps-brachii-left/right as compound paths alongside individual head paths — required by must_haves artifact spec
 - [Phase 02]: Validation script uses mode-aware known-ID set builder: anatomy mode extends svgRegion values with -left/-right suffixes to prevent false extra-ID failures
 - [Phase 02]: Midline muscles (rectus-abdominis, external-obliques, hip-flexors, trapezius parts, rhomboids, erector-spinae, lower-back) keep base IDs in Anatomy mode — no bilateral split for muscles on body centerline
+- [Phase 02]: MuscleMapCanvas uses event delegation (single onClick on container div) for SVG hits — cleaner than per-path listeners
+- [Phase 02]: viewBox override passes zoomRegion?.viewBox ?? undefined — null means SVG uses its authored viewBox, non-null triggers disambiguation zoom
+- [Phase 02]: page.tsx uses text-foreground for heading (not text-primary) — primary reserved for accents per UI-SPEC color contract
 
 ### Pending Todos
 
@@ -95,6 +99,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-23T11:41:45.867Z
-Stopped at: Completed 02-03-PLAN.md
+Last session: 2026-03-23T11:46:55.339Z
+Stopped at: Completed 02-04-PLAN.md
 Resume file: None

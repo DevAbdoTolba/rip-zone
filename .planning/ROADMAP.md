@@ -50,12 +50,12 @@ Plans:
   2. User can toggle between front and back views and the selected view is preserved when navigating away and returning
   3. User can tap small or clustered muscles (e.g., brachialis, rotator cuff) and a disambiguation popover appears letting them select the intended muscle
   4. Each muscle path has a slug-based ID (e.g., muscle-biceps-left) that matches the data model, confirmed by inspecting the DOM
-**Plans:** 3/5 plans executed
+**Plans:** 4/5 plans executed
 Plans:
 - [x] 02-01-PLAN.md — Infrastructure: @svgr/webpack, SVG type declaration, useMapStore extension, CSS selectors, test scaffolds
 - [x] 02-02-PLAN.md — Normal mode SVG authoring (front + back) and path ID validation script
 - [x] 02-03-PLAN.md — Advanced + Anatomy mode SVG authoring (4 files) and validation update
-- [ ] 02-04-PLAN.md — React components (MuscleMap, Canvas, Controls) and home page integration
+- [x] 02-04-PLAN.md — React components (MuscleMap, Canvas, Controls) and home page integration
 - [ ] 02-05-PLAN.md — Disambiguation zoom, E2E tests, and human verification
 **UI hint**: yes
 
@@ -139,7 +139,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
 | 1. Foundation | 5/5 | Complete   | 2026-03-22 |
-| 2. Muscle Map SVG | 3/5 | In Progress|  |
+| 2. Muscle Map SVG | 4/5 | In Progress|  |
 | 3. Exercise Library | 0/TBD | Not started | - |
 | 4. Workout Logger | 0/TBD | Not started | - |
 | 5. Strain Engine + Heatmap | 0/TBD | Not started | - |
