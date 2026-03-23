@@ -86,7 +86,7 @@ Plans:
   4. User sees a visual callout highlighting a new personal record at the moment it is set during a session
   5. User can select a pre-built workout plan and step through it exercise by exercise with the app tracking their position in the plan
   6. User can close and reopen the app with all workout history intact and no data loss (offline-first confirmed)
-**Plans:** 4/6 plans executed
+**Plans:** 7 plans
 Plans:
 - [x] 04-01-PLAN.md — Foundation: Dexie v2 schema, extended Zustand store, PR detection, 4-tab nav, route stubs
 - [x] 04-02-PLAN.md — Seed data: PPL, Arnold Split, and Upper/Lower Superset Egyptian gym splits
@@ -94,6 +94,7 @@ Plans:
 - [x] 04-04-PLAN.md — History page: contribution graph heatmap, git-log timeline, expandable session detail
 - [x] 04-05-PLAN.md — Plan runner: plan browser with recommendations, day picker, progress tracking
 - [ ] 04-06-PLAN.md — E2E tests, store tests, and human verification
+- [ ] 04-07-PLAN.md — Gap closure: fix PR badge snapshot logic so badge fires during active session
 **UI hint**: yes
 
 ### Phase 5: Strain Engine + Heatmap
@@ -153,7 +154,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | 1. Foundation | 5/5 | Complete   | 2026-03-22 |
 | 2. Muscle Map SVG | 5/5 | Complete   | 2026-03-23 |
 | 3. Exercise Library | 4/4 | Complete   | 2026-03-23 |
-| 4. Workout Logger | 4/6 | In Progress|  |
+| 4. Workout Logger | 5/7 | In Progress|  |
 | 5. Strain Engine + Heatmap | 0/TBD | Not started | - |
 | 6. Click-to-Muscle Panel | 0/TBD | Not started | - |
 | 7. Ranking + Radar | 0/TBD | Not started | - |
