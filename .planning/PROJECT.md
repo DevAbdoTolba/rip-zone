@@ -30,6 +30,8 @@ The interactive muscle map must work — users can see which muscles are straine
 - [x] TypeScript domain types, data storage split, seed data infrastructure — Validated in Phase 1: Foundation
 - [x] 2.5D illustrated muscle map (front/back views) covering all muscles including rare/obscure ones — Validated in Phase 2: Muscle Map SVG
 - [x] Browseable, searchable exercise library with 110 exercises, muscle tags, and warm-up guidance — Validated in Phase 3: Exercise Library
+- [x] Workout tracker — freestyle logging (exercise → sets/reps/weight → rest timer) — Validated in Phase 4: Workout Logger
+- [x] Pre-built workout plans users can follow step by step — Validated in Phase 4: Workout Logger
 
 ### Active
 - [ ] Heatmap overlay showing strain level per muscle based on training data
@@ -39,8 +41,6 @@ The interactive muscle map must work — users can see which muscles are straine
 - [ ] Bio-info reward system — more data improves accuracy, never gates features
 - [ ] AI-generated FAQ content from Egyptian gym community topics (Reddit, Twitter, Facebook)
 - [ ] Newbie-focused Q&A (muscle pain, progress loss, common misconceptions)
-- [ ] Workout tracker — freestyle logging (exercise → sets/reps/weight → rest timer)
-- [ ] Pre-built workout plans users can follow step by step
 - [ ] Radar chart body rating based on reps, weight, and body metrics
 - [ ] Tier ranking system: Iron → Bronze → Silver → Gold → Platinum → Diamond → Elite
 
@@ -97,4 +97,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-23 after Phase 3: Exercise Library complete — 110 exercises browsable in 9 muscle groups, search/filter, two-level card expand, mini muscle map, warm-up bottom sheet, bottom nav shell*
+*Last updated: 2026-03-23 after Phase 4: Workout Logger complete — freestyle logging with exercise picker, set rows, rest timer, PR badges, history page with contribution graph, plan runner with 7 Egyptian gym splits, all persisted in IndexedDB offline-first*
