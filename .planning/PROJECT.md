@@ -28,10 +28,9 @@ The interactive muscle map must work — users can see which muscles are straine
 ### Validated
 
 - [x] TypeScript domain types, data storage split, seed data infrastructure — Validated in Phase 1: Foundation
+- [x] 2.5D illustrated muscle map (front/back views) covering all muscles including rare/obscure ones — Validated in Phase 2: Muscle Map SVG
 
 ### Active
-
-- [ ] 2.5D illustrated muscle map (front/back views) covering all muscles including rare/obscure ones
 - [ ] Heatmap overlay showing strain level per muscle based on training data
 - [ ] Clickable muscles opening exercise references with pre-training warm-up and training intensity info
 - [ ] Placeholder scientific dataset for muscle strain/recovery calculations
@@ -97,4 +96,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-22 after Phase 1: Foundation complete — Next.js 16, domain types, Dexie/Zustand client layer, MongoDB/Mongoose server layer, seed data, Playwright E2E*
+*Last updated: 2026-03-23 after Phase 2: Muscle Map SVG complete — 6 SVG files (Normal/Advanced/Anatomy × front/back), React component layer, disambiguation zoom, slug-based path ID contract locked*
