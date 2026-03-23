@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Ready to execute
-stopped_at: Completed 04-02-PLAN.md
-last_updated: "2026-03-23T21:26:37.879Z"
+stopped_at: Completed 04-05-PLAN.md
+last_updated: "2026-03-23T21:50:01.414Z"
 progress:
   total_phases: 8
   completed_phases: 3
   total_plans: 20
-  completed_plans: 16
+  completed_plans: 19
 ---
 
 # Project State
@@ -24,7 +24,7 @@ See: .planning/PROJECT.md (updated 2026-03-22)
 ## Current Position
 
 Phase: 04 (workout-logger) — EXECUTING
-Plan: 3 of 6
+Plan: 6 of 6
 
 ## Performance Metrics
 
@@ -62,6 +62,9 @@ Plan: 3 of 6
 | Phase 03-exercise-library P04 | 5min | 2 tasks | 1 files |
 | Phase 04 P01 | 8min | 2 tasks | 9 files |
 | Phase 04-workout-logger P02 | 3min | 1 tasks | 1 files |
+| Phase 04-workout-logger P03 | 4min | 2 tasks | 7 files |
+| Phase 04-workout-logger P04 | 3min | 2 tasks | 6 files |
+| Phase 04-workout-logger P05 | 4min | 2 tasks | 7 files |
 
 ## Accumulated Context
 
@@ -106,6 +109,13 @@ Recent decisions affecting current work:
 - [Phase 04-01]: Timer state fully managed in Zustand store — components call tickTimer from setInterval
 - [Phase 04-01]: loadActiveSession filters completedAt===null and restores exercises+sets for crash recovery
 - [Phase 04-workout-logger]: Workout plan exercise slugs substituted to match exercises.json: barbell-bench-press->flat-bench-press, cable-fly->cable-crossovers, dips->chest-dips, pull-up->pull-ups, face-pull->face-pulls, barbell-squat->back-squat, etc.
+- [Phase 04-workout-logger]: NumberField uses onValueChange (not onChange) per @base-ui/react API
+- [Phase 04-workout-logger]: Drawer.Portal + Drawer.Backdrop + Drawer.Popup pattern for bottom sheet (no Drawer.Content)
+- [Phase 04-workout-logger]: Tests use getByLabelText for NumberField inputs — spinbutton role not exposed in jsdom
+- [Phase 04-workout-logger]: ContributionGraph is pure presentational — receives pre-aggregated daily volumes from page, decoupled from Dexie
+- [Phase 04-workout-logger]: isPR function passed as prop to SessionDetail — caller builds PRMap per exercise, component receives predicate
+- [Phase 04-workout-logger]: workout-plans.json: added id field to each plan (equals slug) to satisfy WorkoutPlanId branded type
+- [Phase 04-workout-logger]: finishSession resets currentPlanId/currentDayLabel after saving planProgress to prevent duplicate records on subsequent freestyle sessions
 
 ### Pending Todos
 
@@ -119,6 +129,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-23T21:26:37.875Z
-Stopped at: Completed 04-02-PLAN.md
+Last session: 2026-03-23T21:50:01.410Z
+Stopped at: Completed 04-05-PLAN.md
 Resume file: None
