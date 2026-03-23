@@ -25,12 +25,12 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Workout Tracking
 
-- [ ] **WORK-01**: User can log freestyle workouts (exercise picker → sets/reps/weight)
-- [ ] **WORK-02**: User can use a configurable rest timer between sets
+- [x] **WORK-01**: User can log freestyle workouts (exercise picker → sets/reps/weight)
+- [x] **WORK-02**: User can use a configurable rest timer between sets
 - [ ] **WORK-03**: User can view workout history in reverse chronological order
-- [ ] **WORK-04**: User sees automatic PR detection with visual callout on new personal records
+- [x] **WORK-04**: User sees automatic PR detection with visual callout on new personal records
 - [ ] **WORK-05**: User can follow pre-built workout plans (3-5 programs) step by step
-- [ ] **WORK-06**: User can use the app fully offline
+- [x] **WORK-06**: User can use the app fully offline
 
 ### Strain Engine
 
@@ -112,12 +112,12 @@ Which phases cover which requirements. Updated during roadmap creation.
 | EXER-03 | Phase 3 | Complete |
 | EXER-04 | Phase 6 | Pending |
 | EXER-05 | Phase 6 | Pending |
-| WORK-01 | Phase 4 | Pending |
-| WORK-02 | Phase 4 | Pending |
+| WORK-01 | Phase 4 | Complete |
+| WORK-02 | Phase 4 | Complete |
 | WORK-03 | Phase 4 | Pending |
-| WORK-04 | Phase 4 | Pending |
+| WORK-04 | Phase 4 | Complete |
 | WORK-05 | Phase 4 | Pending |
-| WORK-06 | Phase 4 | Pending |
+| WORK-06 | Phase 4 | Complete |
 | STRAIN-01 | Phase 5 | Pending |
 | STRAIN-02 | Phase 5 | Pending |
 | STRAIN-03 | Phase 5 | Pending |

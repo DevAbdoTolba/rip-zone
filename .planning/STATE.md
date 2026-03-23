@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Ready to plan
-stopped_at: Phase 4 context gathered
-last_updated: "2026-03-23T20:51:44.060Z"
+status: Ready to execute
+stopped_at: Completed 04-01-PLAN.md
+last_updated: "2026-03-23T21:22:29.076Z"
 progress:
   total_phases: 8
   completed_phases: 3
-  total_plans: 14
-  completed_plans: 14
+  total_plans: 20
+  completed_plans: 15
 ---
 
 # Project State
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-22)
 
 **Core value:** The interactive muscle map must work — users can see which muscles are strained, click any muscle for training guidance, and understand their body's state at a glance.
-**Current focus:** Phase 03 — exercise-library
+**Current focus:** Phase 04 — workout-logger
 
 ## Current Position
 
-Phase: 4
-Plan: Not started
+Phase: 04 (workout-logger) — EXECUTING
+Plan: 2 of 6
 
 ## Performance Metrics
 
@@ -60,6 +60,7 @@ Plan: Not started
 | Phase 03 P02 | 7min | 2 tasks | 5 files |
 | Phase 03 P03 | 8min | 2 tasks | 4 files |
 | Phase 03-exercise-library P04 | 5min | 2 tasks | 1 files |
+| Phase 04 P01 | 8min | 2 tasks | 9 files |
 
 ## Accumulated Context
 
@@ -100,6 +101,9 @@ Recent decisions affecting current work:
 - [Phase 03]: Cards start collapsed (Level 0) — Level 1 expand reveals description, badges, warm-up and More CTAs; Level 2 adds form cues and secondary muscles
 - [Phase 03]: MiniMuscleMap uses style.fill inline overrides — container lacks data-view so globals.css muscle selectors don't apply; useEffect resets ALL muscle path fills before applying highlights
 - [Phase 03]: WarmupSheet uses @base-ui Dialog with split warmupOpen/warmupGroup state in ExerciseLibrary — pre-computed movements prop passed to keep sheet stateless
+- [Phase 04-01]: Dexie v2 adds planProgress and lastUsedRest tables with no upgrade() needed — new tables start empty
+- [Phase 04-01]: Timer state fully managed in Zustand store — components call tickTimer from setInterval
+- [Phase 04-01]: loadActiveSession filters completedAt===null and restores exercises+sets for crash recovery
 
 ### Pending Todos
 
@@ -113,6 +117,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-23T20:51:44.056Z
-Stopped at: Phase 4 context gathered
-Resume file: .planning/phases/04-workout-logger/04-CONTEXT.md
+Last session: 2026-03-23T21:22:29.072Z
+Stopped at: Completed 04-01-PLAN.md
+Resume file: None
