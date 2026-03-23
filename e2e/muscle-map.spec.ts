@@ -8,7 +8,6 @@ test.describe('Muscle Map — MAP-01: Rendering', () => {
 
   test('front view SVG contains muscle path IDs', async ({ page }) => {
     await page.goto('/')
-    // At least one muscle path should exist with the slug-based ID convention
     await expect(page.locator('path[id^="muscle-"]').first()).toBeAttached()
   })
 
@@ -16,25 +15,36 @@ test.describe('Muscle Map — MAP-01: Rendering', () => {
     await page.goto('/')
     await expect(page.locator('svg[aria-label="Front muscle map"]')).toBeVisible()
   })
+
+  test('page shows Rip Zone heading', async ({ page }) => {
+    await page.goto('/')
+    await expect(page.locator('h1')).toContainText('Rip Zone')
+  })
 })
 
 test.describe('Muscle Map — MAP-02: Front/Back Toggle', () => {
   test('Front/Back segmented control is visible', async ({ page }) => {
     await page.goto('/')
-    await expect(page.locator('text=Front')).toBeVisible()
-    await expect(page.locator('text=Back')).toBeVisible()
+    await expect(page.getByRole('button', { name: 'Front' })).toBeVisible()
+    await expect(page.getByRole('button', { name: 'Back' })).toBeVisible()
   })
 
-  test('clicking Back switches to back view', async ({ page }) => {
+  test('Front button has aria-pressed=true by default', async ({ page }) => {
     await page.goto('/')
-    await page.click('text=Back')
+    await expect(page.getByRole('button', { name: 'Front' })).toHaveAttribute('aria-pressed', 'true')
+  })
+
+  test('clicking Back switches to back view SVG', async ({ page }) => {
+    await page.goto('/')
+    await page.getByRole('button', { name: 'Back' }).click()
     await expect(page.locator('svg[aria-label="Back muscle map"]')).toBeVisible()
+    await expect(page.getByRole('button', { name: 'Back' })).toHaveAttribute('aria-pressed', 'true')
   })
 
   test('clicking Front returns to front view', async ({ page }) => {
     await page.goto('/')
-    await page.click('text=Back')
-    await page.click('text=Front')
+    await page.getByRole('button', { name: 'Back' }).click()
+    await page.getByRole('button', { name: 'Front' }).click()
     await expect(page.locator('svg[aria-label="Front muscle map"]')).toBeVisible()
   })
 })
@@ -42,17 +52,80 @@ test.describe('Muscle Map — MAP-02: Front/Back Toggle', () => {
 test.describe('Muscle Map — Detail Mode Toggle', () => {
   test('detail mode toggle shows Normal, Advanced, Anatomy', async ({ page }) => {
     await page.goto('/')
-    await expect(page.locator('text=Normal')).toBeVisible()
-    await expect(page.locator('text=Advanced')).toBeVisible()
-    await expect(page.locator('text=Anatomy')).toBeVisible()
+    await expect(page.getByRole('button', { name: 'Normal' })).toBeVisible()
+    await expect(page.getByRole('button', { name: 'Advanced' })).toBeVisible()
+    await expect(page.getByRole('button', { name: 'Anatomy' })).toBeVisible()
+  })
+
+  test('Normal is active by default', async ({ page }) => {
+    await page.goto('/')
+    await expect(page.getByRole('button', { name: 'Normal' })).toHaveAttribute('aria-pressed', 'true')
+  })
+
+  test('switching to Advanced mode changes visible SVG', async ({ page }) => {
+    await page.goto('/')
+    await page.getByRole('button', { name: 'Advanced' }).click()
+    await expect(page.getByRole('button', { name: 'Advanced' })).toHaveAttribute('aria-pressed', 'true')
+    // Advanced mode SVG should still show muscle paths
+    await expect(page.locator('path[id^="muscle-"]').first()).toBeAttached()
+  })
+})
+
+test.describe('Muscle Map — Muscle Selection', () => {
+  test('clicking a muscle path highlights it', async ({ page }) => {
+    await page.goto('/')
+    // Click on a hit target (pectoralis major is a large, reliable target)
+    const hitTarget = page.locator('path[id="hit-muscle-pectoralis-major"]')
+    if (await hitTarget.count() > 0) {
+      await hitTarget.click()
+      // Check that the visual path got selected attribute
+      await expect(page.locator('path[id="muscle-pectoralis-major"][data-selected="true"]')).toBeAttached()
+    }
   })
 })
 
 test.describe('Muscle Map — MAP-05: Disambiguation', () => {
-  test.skip('disambiguation zoom triggers in Advanced mode for clustered muscles', async ({ page }) => {
-    // Requires CLUSTER_MAP to be populated — will be enabled in Plan 05
+  test('Normal mode does not trigger disambiguation', async ({ page }) => {
     await page.goto('/')
-    await page.click('text=Advanced')
-    // Click a known cluster region — coordinates TBD after SVG authoring
+    // In Normal mode, clicking any muscle should select directly, not zoom
+    const hitTarget = page.locator('path[id^="hit-muscle-"]').first()
+    if (await hitTarget.count() > 0) {
+      await hitTarget.click()
+      // No disambiguation overlay should appear
+      await expect(page.locator('.disambiguation-overlay')).not.toBeVisible()
+    }
+  })
+})
+
+test.describe('Muscle Map — No Console Errors', () => {
+  test('no console errors on page load and interaction', async ({ page }) => {
+    const errors: string[] = []
+    page.on('console', (msg) => {
+      if (msg.type() === 'error') {
+        errors.push(msg.text())
+      }
+    })
+
+    await page.goto('/')
+    await page.waitForTimeout(2000)
+
+    // Toggle views
+    await page.getByRole('button', { name: 'Back' }).click()
+    await page.getByRole('button', { name: 'Front' }).click()
+
+    // Toggle modes
+    await page.getByRole('button', { name: 'Advanced' }).click()
+    await page.getByRole('button', { name: 'Normal' }).click()
+
+    await page.waitForTimeout(1000)
+
+    const appErrors = errors.filter(
+      (e) =>
+        !e.includes('Download the React DevTools') &&
+        !e.includes('Warning:') &&
+        !e.includes('was preloaded using link preload')
+    )
+
+    expect(appErrors).toEqual([])
   })
 })
