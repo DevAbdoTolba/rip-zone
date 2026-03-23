@@ -13,6 +13,8 @@ import AnatomyFront from '@/assets/svg/muscle-map-anatomy-front.svg'
 import AnatomyBack from '@/assets/svg/muscle-map-anatomy-back.svg'
 
 import type { DetailMode, MapView } from '@/stores/useMapStore'
+import { CLUSTER_MAP } from './muscle-clusters'
+import { DisambiguationZoom } from './DisambiguationZoom'
 
 const SVG_MAP: Record<DetailMode, Record<MapView, React.FC<React.SVGProps<SVGSVGElement>>>> = {
   normal: { front: NormalFront, back: NormalBack },
@@ -21,7 +23,7 @@ const SVG_MAP: Record<DetailMode, Record<MapView, React.FC<React.SVGProps<SVGSVG
 }
 
 export function MuscleMapCanvas() {
-  const { currentView, detailMode, selectedMuscle, selectMuscle, zoomRegion } = useMapStore()
+  const { currentView, detailMode, selectedMuscle, selectMuscle, zoomRegion, setZoomRegion } = useMapStore()
   const svgContainerRef = useRef<HTMLDivElement>(null)
 
   const CurrentSvg = SVG_MAP[detailMode][currentView]
@@ -30,11 +32,18 @@ export function MuscleMapCanvas() {
   const handleClick = useCallback(
     (e: React.MouseEvent<HTMLDivElement>) => {
       const target = e.target as SVGElement
-      const id = target.id || target.closest('[id^="hit-"]')?.id
+      const hitElement = target.closest('[id^="hit-"]') as SVGElement | null
+      const id = hitElement?.id || (target.id?.startsWith('hit-') ? target.id : null)
 
       if (!id) return
 
-      // Hit target IDs: "hit-muscle-biceps-brachii" -> extract "biceps-brachii"
+      // D-15: Disambiguation only in Advanced and Anatomy modes
+      if (detailMode !== 'normal' && CLUSTER_MAP[id]) {
+        setZoomRegion(CLUSTER_MAP[id])
+        return
+      }
+
+      // Direct selection — extract slug from hit target ID
       if (id.startsWith('hit-muscle-')) {
         const slug = id.replace('hit-muscle-', '') as MuscleSlug
         // If same muscle is already selected, deselect
@@ -45,7 +54,7 @@ export function MuscleMapCanvas() {
         }
       }
     },
-    [selectedMuscle, selectMuscle]
+    [selectedMuscle, selectMuscle, detailMode, setZoomRegion]
   )
 
   // Apply data-selected attribute to the selected muscle's visual path
@@ -73,7 +82,7 @@ export function MuscleMapCanvas() {
       data-view={currentView}
       data-detail-mode={detailMode}
       data-selected-muscle={selectedMuscle ?? undefined}
-      className="w-full max-w-sm mx-auto"
+      className="relative w-full max-w-sm mx-auto"
       onClick={handleClick}
     >
       <CurrentSvg
@@ -81,6 +90,24 @@ export function MuscleMapCanvas() {
         viewBox={zoomRegion?.viewBox ?? undefined}
         aria-label={`${currentView === 'front' ? 'Front' : 'Back'} muscle map`}
       />
+      {/* Disambiguation overlay — rendered as a second SVG layer on top */}
+      {zoomRegion && (
+        <svg
+          className="absolute inset-0 w-full h-full"
+          viewBox={zoomRegion.viewBox}
+          aria-label={`Disambiguation: ${zoomRegion.label}`}
+        >
+          {/* Dim overlay on full viewBox area */}
+          <rect
+            x={zoomRegion.viewBox.split(' ').map(Number)[0]}
+            y={zoomRegion.viewBox.split(' ').map(Number)[1]}
+            width={zoomRegion.viewBox.split(' ').map(Number)[2]}
+            height={zoomRegion.viewBox.split(' ').map(Number)[3]}
+            className="disambiguation-overlay"
+          />
+          <DisambiguationZoom />
+        </svg>
+      )}
     </div>
   )
 }
