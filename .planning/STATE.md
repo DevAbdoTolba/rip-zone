@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Ready to plan
-stopped_at: Phase 3 context gathered
-last_updated: "2026-03-23T13:08:37.151Z"
+status: Ready to execute
+stopped_at: Completed 03-01-PLAN.md
+last_updated: "2026-03-23T14:00:49.387Z"
 progress:
   total_phases: 8
   completed_phases: 2
-  total_plans: 10
-  completed_plans: 10
+  total_plans: 14
+  completed_plans: 11
 ---
 
 # Project State
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-22)
 
 **Core value:** The interactive muscle map must work — users can see which muscles are strained, click any muscle for training guidance, and understand their body's state at a glance.
-**Current focus:** Phase 02 — muscle-map-svg
+**Current focus:** Phase 03 — exercise-library
 
 ## Current Position
 
-Phase: 3
-Plan: Not started
+Phase: 03 (exercise-library) — EXECUTING
+Plan: 2 of 4
 
 ## Performance Metrics
 
@@ -56,6 +56,7 @@ Plan: Not started
 | Phase 02 P03 | 12min | 2 tasks | 5 files |
 | Phase 02 P04 | 2min | 2 tasks | 4 files |
 | Phase 02 P05 | 10 | 3 tasks | 4 files |
+| Phase 03 P01 | 5min | 2 tasks | 9 files |
 
 ## Accumulated Context
 
@@ -89,6 +90,9 @@ Recent decisions affecting current work:
 - [Phase 02]: page.tsx uses text-foreground for heading (not text-primary) — primary reserved for accents per UI-SPEC color contract
 - [Phase 02]: Disambiguation overlay implemented as second SVG layer (absolute-positioned sibling) rather than injecting into SVGR SVG DOM — SVGR prevents JSX child injection
 - [Phase 02]: CLUSTER_MAP viewBox and MUSCLE_CENTROIDS are initial SVG-coordinate estimates — expect visual tuning after real device testing
+- [Phase 03]: BottomNav renders both mobile and desktop variants in single component using Tailwind responsive classes (md:hidden / hidden md:flex)
+- [Phase 03]: Route group (main) transparent to URL — / still resolves to (main)/page.tsx without redirect
+- [Phase 03]: filterExercises uses AND logic for multiple filters; E2E exercise-library tests use real bodies (not .skip) to surface missing UI
 
 ### Pending Todos
 
@@ -102,6 +106,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-23T13:08:37.145Z
-Stopped at: Phase 3 context gathered
-Resume file: .planning/phases/03-exercise-library/03-CONTEXT.md
+Last session: 2026-03-23T14:00:49.382Z
+Stopped at: Completed 03-01-PLAN.md
+Resume file: None

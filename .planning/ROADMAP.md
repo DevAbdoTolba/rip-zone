@@ -67,9 +67,9 @@ Plans:
   1. User can browse a library of 100+ exercises, each showing its primary and secondary muscle targets
   2. User can search exercises by name and results update as they type
   3. User can navigate to any muscle group and view its warm-up guidance before training
-**Plans:** 4 plans
+**Plans:** 1/4 plans executed
 Plans:
-- [ ] 03-01-PLAN.md — Infrastructure: warm-up data, Mongoose model, route group migration, bottom nav, filter function TDD, test scaffolds
+- [x] 03-01-PLAN.md — Infrastructure: warm-up data, Mongoose model, route group migration, bottom nav, filter function TDD, test scaffolds
 - [ ] 03-02-PLAN.md — Exercise library page with search, filter chips, muscle group sections, and two-level card expand
 - [ ] 03-03-PLAN.md — Mini muscle map highlights in exercise detail and warm-up bottom sheet
 - [ ] 03-04-PLAN.md — E2E test finalization and human verification checkpoint
@@ -145,7 +145,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 |-------|----------------|--------|-----------|
 | 1. Foundation | 5/5 | Complete   | 2026-03-22 |
 | 2. Muscle Map SVG | 5/5 | Complete   | 2026-03-23 |
-| 3. Exercise Library | 0/4 | Planned | - |
+| 3. Exercise Library | 1/4 | In Progress|  |
 | 4. Workout Logger | 0/TBD | Not started | - |
 | 5. Strain Engine + Heatmap | 0/TBD | Not started | - |
 | 6. Click-to-Muscle Panel | 0/TBD | Not started | - |

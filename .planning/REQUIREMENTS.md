@@ -19,7 +19,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [ ] **EXER-01**: User can browse a library of 100+ exercises with primary/secondary muscle tags
 - [ ] **EXER-02**: User can search exercises by name
-- [ ] **EXER-03**: User can view warm-up guidance per muscle group
+- [x] **EXER-03**: User can view warm-up guidance per muscle group
 - [ ] **EXER-04**: User can see exercises targeting a specific muscle via click-to-muscle reference panel
 - [ ] **EXER-05**: User can see current strain state for a muscle in the reference panel
 
@@ -109,7 +109,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | MAP-05 | Phase 2 | Complete |
 | EXER-01 | Phase 3 | Pending |
 | EXER-02 | Phase 3 | Pending |
-| EXER-03 | Phase 3 | Pending |
+| EXER-03 | Phase 3 | Complete |
 | EXER-04 | Phase 6 | Pending |
 | EXER-05 | Phase 6 | Pending |
 | WORK-01 | Phase 4 | Pending |
