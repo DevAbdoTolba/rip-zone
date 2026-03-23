@@ -54,7 +54,7 @@ Exceptions:
 | Body | 16px | 400 | 1.5 | Not prominent in Phase 2; reserved for future panels |
 | Label | 14px | 400 | 1.4 | Toggle button text ("Front", "Back", "Normal", "Advanced", "Anatomy") |
 | Heading | 20px | 600 | 1.2 | Section title above muscle map if shown (e.g., page header) |
-| Display | 28px | 700 | 1.1 | Not used in Phase 2; declared for contract completeness |
+| Display | 28px | 400 | 1.1 | Not used in Phase 2; declared for contract completeness |
 
 SVG text labels (D-18, zoomed cluster view):
 - **Size:** 6 SVG coordinate units (renders as ~12px at typical viewBox scale)
@@ -63,7 +63,7 @@ SVG text labels (D-18, zoomed cluster view):
 - **Text anchor:** `middle` (centered on muscle centroid)
 - **Font family:** Inherited from SVG `font-family: inherit` — uses system font stack
 
-**Source:** shadcn base-nova defaults; RESEARCH.md Pattern 6 (SVG text labels at fontSize="6").
+**Source:** shadcn base-nova defaults; RESEARCH.md Pattern 6 (SVG text labels at fontSize="6"). Display row weight corrected to 400 (weight 700 removed — Phase 2 uses only 400 and 600).
 
 ---
 
