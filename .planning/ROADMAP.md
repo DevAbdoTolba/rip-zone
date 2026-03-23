@@ -15,7 +15,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 1: Foundation** - Next.js project, TypeScript domain types, MongoDB connection, Dexie schema, and seeded reference data (completed 2026-03-22)
 - [x] **Phase 2: Muscle Map SVG** - 2.5D illustrated muscle map with front/back views, slug-based path IDs, and layered SVG architecture (completed 2026-03-23)
 - [x] **Phase 3: Exercise Library** - Browseable, searchable exercise library with 100+ exercises and muscle group warm-up guidance (completed 2026-03-23)
-- [ ] **Phase 4: Workout Logger** - Freestyle workout logging with rest timer, workout history, PR detection, and pre-built plan runner
+- [x] **Phase 4: Workout Logger** - Freestyle workout logging with rest timer, workout history, PR detection, and pre-built plan runner (completed 2026-03-23)
 - [ ] **Phase 5: Strain Engine + Heatmap** - Per-muscle fatigue computation from workout logs wired to heatmap color overlay on the muscle map
 - [ ] **Phase 6: Click-to-Muscle Panel** - Tap any muscle to see exercises targeting it, warm-up guidance, and current strain state in a slide-out panel
 - [ ] **Phase 7: Ranking + Radar** - Iron → Elite tier ranking system with sub-tier progress bar, tier-advance celebration, and radar chart body rating
@@ -86,15 +86,15 @@ Plans:
   4. User sees a visual callout highlighting a new personal record at the moment it is set during a session
   5. User can select a pre-built workout plan and step through it exercise by exercise with the app tracking their position in the plan
   6. User can close and reopen the app with all workout history intact and no data loss (offline-first confirmed)
-**Plans:** 7 plans
+**Plans:** 7/7 plans complete
 Plans:
 - [x] 04-01-PLAN.md — Foundation: Dexie v2 schema, extended Zustand store, PR detection, 4-tab nav, route stubs
 - [x] 04-02-PLAN.md — Seed data: PPL, Arnold Split, and Upper/Lower Superset Egyptian gym splits
 - [x] 04-03-PLAN.md — Workout logger UI: exercise picker sheet, set rows, rest timer widget, PR badges
 - [x] 04-04-PLAN.md — History page: contribution graph heatmap, git-log timeline, expandable session detail
 - [x] 04-05-PLAN.md — Plan runner: plan browser with recommendations, day picker, progress tracking
-- [ ] 04-06-PLAN.md — E2E tests, store tests, and human verification
-- [ ] 04-07-PLAN.md — Gap closure: fix PR badge snapshot logic so badge fires during active session
+- [x] 04-06-PLAN.md — E2E tests, store tests, and human verification
+- [x] 04-07-PLAN.md — Gap closure: fix PR badge snapshot logic so badge fires during active session
 **UI hint**: yes
 
 ### Phase 5: Strain Engine + Heatmap
@@ -154,7 +154,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | 1. Foundation | 5/5 | Complete   | 2026-03-22 |
 | 2. Muscle Map SVG | 5/5 | Complete   | 2026-03-23 |
 | 3. Exercise Library | 4/4 | Complete   | 2026-03-23 |
-| 4. Workout Logger | 5/7 | In Progress|  |
+| 4. Workout Logger | 7/7 | Complete   | 2026-03-23 |
 | 5. Strain Engine + Heatmap | 0/TBD | Not started | - |
 | 6. Click-to-Muscle Panel | 0/TBD | Not started | - |
 | 7. Ranking + Radar | 0/TBD | Not started | - |
