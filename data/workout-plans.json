@@ -1,5 +1,6 @@
 [
   {
+    "id": "beginner-strength",
     "name": "Beginner Strength",
     "slug": "beginner-strength",
     "goal": "Build foundational strength with compound barbell movements. Perfect for your first 3-6 months in the gym.",
@@ -26,6 +27,7 @@
     ]
   },
   {
+    "id": "muscle-building",
     "name": "Muscle Building",
     "slug": "muscle-building",
     "goal": "Maximize muscle growth with higher volume and targeted isolation work. For lifters with 6+ months experience.",
@@ -64,6 +66,7 @@
     ]
   },
   {
+    "id": "fat-loss",
     "name": "Fat Loss",
     "slug": "fat-loss",
     "goal": "Burn fat while preserving muscle with circuit-style training and compound movements. Keep rest periods short.",
@@ -100,6 +103,7 @@
     ]
   },
   {
+    "id": "athletic-performance",
     "name": "Athletic Performance",
     "slug": "athletic-performance",
     "goal": "Develop explosive power, speed, and conditioning for sports performance. Combines Olympic lifts with plyometrics.",
@@ -132,6 +136,7 @@
     ]
   },
   {
+    "id": "ppl-6day",
     "name": "PPL 6-Day",
     "slug": "ppl-6day",
     "goal": "High-frequency hypertrophy split hitting each muscle group twice per week",
@@ -171,6 +176,7 @@
     ]
   },
   {
+    "id": "arnold-split",
     "name": "Arnold Split",
     "slug": "arnold-split",
     "goal": "Arnold Schwarzenegger's classic high-volume split for experienced lifters",
@@ -215,6 +221,7 @@
     ]
   },
   {
+    "id": "upper-lower-superset",
     "name": "Upper/Lower Superset",
     "slug": "upper-lower-superset",
     "goal": "Time-efficient split using superset pairings popular in Egyptian gym culture. Exercises are paired as supersets: bench+row, shoulder press+pulldown, tricep+curl",
