@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Ready to plan
-stopped_at: Completed 07-ranking-radar-03-PLAN.md (all tasks complete)
-last_updated: "2026-03-24T10:35:00.040Z"
+status: Ready to execute
+stopped_at: Completed 08-01-PLAN.md (all tasks complete)
+last_updated: "2026-03-24T11:17:21.166Z"
 progress:
   total_phases: 8
   completed_phases: 7
-  total_plans: 28
-  completed_plans: 28
+  total_plans: 31
+  completed_plans: 29
 ---
 
 # Project State
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-22)
 
 **Core value:** The interactive muscle map must work — users can see which muscles are strained, click any muscle for training guidance, and understand their body's state at a glance.
-**Current focus:** Phase 07 — ranking-radar
+**Current focus:** Phase 08 — community-faq-bio-metrics
 
 ## Current Position
 
-Phase: 8
-Plan: Not started
+Phase: 08 (community-faq-bio-metrics) — EXECUTING
+Plan: 2 of 3
 
 ## Performance Metrics
 
@@ -76,6 +76,7 @@ Plan: Not started
 | Phase 07 P02 | 2min | 2 tasks | 7 files |
 | Phase 07-ranking-radar P03 | 4min | 1 tasks | 1 files |
 | Phase 07-ranking-radar P03 | 5min | 2 tasks | 1 files |
+| Phase 08 P01 | 8min | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -151,6 +152,8 @@ Recent decisions affecting current work:
 - [Phase 07]: RankingDashboard useEffect depends on [isLoading] only — prevents repeated celebration triggers after setLastSeenTier state updates
 - [Phase 07]: Use getByRole('link') instead of CSS attribute selectors for nav links — BottomNav renders mobile+desktop variants simultaneously in DOM, role-based selectors avoid strict mode violations
 - [Phase 07-ranking-radar]: Use getByRole('link') instead of CSS attribute selectors for nav links — BottomNav renders mobile+desktop variants simultaneously in DOM, role-based selectors avoid strict mode violations
+- [Phase 08]: Use exact:true for 'All' chip button selector in E2E tests — FAQ accordion buttons contain 'all' substring in question text, causing strict mode violations without exact match
+- [Phase 08]: FaqPage clears openSlugs Set when category changes — prevents stale expanded items carrying across filter switches
 
 ### Pending Todos
 
@@ -164,6 +167,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-24T10:30:24.039Z
-Stopped at: Completed 07-ranking-radar-03-PLAN.md (all tasks complete)
+Last session: 2026-03-24T11:17:21.162Z
+Stopped at: Completed 08-01-PLAN.md (all tasks complete)
 Resume file: None
