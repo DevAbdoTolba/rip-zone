@@ -6,10 +6,30 @@ const nextConfig: NextConfig = {
 
   // Pre-wire SVGR for Phase 2 muscle map SVG imports
   // Allows: import MuscleMap from './muscle-map.svg' -> React component
+  // svgoConfig disables cleanupIds — muscle map hit-layer paths use IDs for event delegation
   turbopack: {
     rules: {
       '*.svg': {
-        loaders: ['@svgr/webpack'],
+        loaders: [
+          {
+            loader: '@svgr/webpack',
+            options: {
+              svgoConfig: {
+                plugins: [
+                  {
+                    name: 'preset-default',
+                    params: {
+                      overrides: {
+                        cleanupIds: false,
+                        removeHiddenElems: false,
+                      },
+                    },
+                  },
+                ],
+              },
+            },
+          },
+        ],
         as: '*.js',
       },
     },
