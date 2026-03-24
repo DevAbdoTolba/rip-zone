@@ -2,7 +2,9 @@
 
 import { useCallback, useRef, useEffect } from 'react'
 import { useMapStore } from '@/stores/useMapStore'
+import { StrainLevel } from '@/types'
 import type { MuscleSlug } from '@/types'
+import { STRAIN_COLORS } from '@/lib/strain-engine'
 
 // SVGR imports — each returns a React component
 import NormalFront from '@/assets/svg/muscle-map-normal-front.svg'
@@ -22,7 +24,29 @@ const SVG_MAP: Record<DetailMode, Record<MapView, React.FC<React.SVGProps<SVGSVG
   anatomy: { front: AnatomyFront, back: AnatomyBack },
 }
 
-export function MuscleMapCanvas() {
+interface MuscleMapCanvasProps {
+  strainMap: Map<MuscleSlug, StrainLevel>
+}
+
+/**
+ * Apply strain color fill to a muscle slug, handling bilateral anatomy mode paths.
+ * Attempts base path first, then tries -left/-right variants for anatomy mode.
+ * NOTE: Does NOT use else between base and bilateral lookups — some muscles have BOTH
+ * a base path AND bilateral paths in anatomy mode. All matching paths receive the fill.
+ */
+function applyStrainToSlug(container: HTMLDivElement, slug: string, color: string) {
+  const base = container.querySelector<SVGPathElement>(`#muscle-${slug}`)
+  if (base) {
+    base.style.fill = color
+  }
+  // Also try bilateral variants for anatomy mode (Pitfall 5 from RESEARCH.md)
+  const left = container.querySelector<SVGPathElement>(`#muscle-${slug}-left`)
+  const right = container.querySelector<SVGPathElement>(`#muscle-${slug}-right`)
+  if (left) left.style.fill = color
+  if (right) right.style.fill = color
+}
+
+export function MuscleMapCanvas({ strainMap }: MuscleMapCanvasProps) {
   const { currentView, detailMode, selectedMuscle, selectMuscle, zoomRegion, setZoomRegion } = useMapStore()
   const svgContainerRef = useRef<HTMLDivElement>(null)
 
@@ -56,6 +80,28 @@ export function MuscleMapCanvas() {
     },
     [selectedMuscle, selectMuscle, detailMode, setZoomRegion]
   )
+
+  // Apply strain heatmap fills to muscle paths
+  // Placed BEFORE the data-selected effect so selection always wins
+  useEffect(() => {
+    const container = svgContainerRef.current
+    if (!container) return
+
+    // Reset all muscle path inline fills (lets CSS defaults and data-selected rule take over)
+    container.querySelectorAll<SVGPathElement>('path[id^="muscle-"]').forEach(el => {
+      el.style.fill = ''
+    })
+
+    // Apply strain colors (skip selected muscle — selection wins per UI-SPEC)
+    for (const [slug, level] of strainMap) {
+      if (slug === selectedMuscle) continue
+      if (level === StrainLevel.Rested) continue
+      applyStrainToSlug(container, slug, STRAIN_COLORS[level])
+    }
+    // Dependencies: currentView and detailMode ensure fills re-apply after SVG component
+    // swap (fresh DOM nodes — Pitfall 1). selectedMuscle ensures previously-selected muscle
+    // gets its strain color back after deselection.
+  }, [strainMap, currentView, detailMode, selectedMuscle])
 
   // Apply data-selected attribute to the selected muscle's visual path
   useEffect(() => {
