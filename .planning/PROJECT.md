@@ -37,12 +37,14 @@ The interactive muscle map must work — users can see which muscles are straine
 - [x] Clickable muscles opening exercise references with pre-training warm-up and training intensity info — Validated in Phase 6: Click-to-Muscle Panel
 
 ### Active
-- [ ] Optional bio-info collection (height, weight, age, gender, body fat %, muscle measurements)
-- [ ] Bio-info reward system — more data improves accuracy, never gates features
-- [ ] AI-generated FAQ content from Egyptian gym community topics (Reddit, Twitter, Facebook)
-- [ ] Newbie-focused Q&A (muscle pain, progress loss, common misconceptions)
+
+None — all v1 requirements validated.
 - [x] Radar chart body rating based on reps, weight, and body metrics — Validated in Phase 7: Ranking + Radar
 - [x] Tier ranking system: Iron → Bronze → Silver → Gold → Platinum → Diamond → Elite — Validated in Phase 7: Ranking + Radar
+- [x] Optional bio-info collection (height, weight, age, gender, body fat %, waist measurement) — Validated in Phase 8: Community FAQ + Bio Metrics
+- [x] Bio-info reward system — accuracy ring shows improvement percentage, never gates features — Validated in Phase 8: Community FAQ + Bio Metrics
+- [x] FAQ content from Egyptian gym community topics (20 entries, 6 categories) — Validated in Phase 8: Community FAQ + Bio Metrics
+- [x] Newbie-focused Q&A (muscle pain, progress loss, common misconceptions) — Validated in Phase 8: Community FAQ + Bio Metrics
 
 ### Out of Scope
 
@@ -97,4 +99,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-24 after Phase 7: Ranking + Radar complete — tier ranking (Iron→Elite), 5-axis radar chart body rating, sub-tier progress bar, and celebration overlay on tier advance*
+*Last updated: 2026-03-24 after Phase 8: Community FAQ + Bio Metrics complete — FAQ browsing with 6 categories and accordion Q&A, bio profile with 6-field form and accuracy ring, bodyweight-normalized strain, enhanced badge on ranking. All v1.0 milestone phases complete.*
