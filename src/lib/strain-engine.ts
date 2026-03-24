@@ -60,18 +60,29 @@ function strainToLevel(pct: number): StrainLevel {
  * Algorithm:
  * 1. For each dose, compute exponentially decayed strain contribution.
  * 2. Accumulate per muscleSlug.
- * 3. Normalize: pct = min(100, (rawSum / NORMALIZE_DIVISOR) * 100).
+ * 3. Normalize: pct = min(100, (rawSum / divisor) * 100).
+ *    When bodyweightKg provided: divisor = bodyweightKg * 50
+ *    (100kg person: 100*50 = 5000 = NORMALIZE_DIVISOR — identical to default)
+ *    (60kg person: 60*50 = 3000 — lower divisor = higher normalized pct)
+ *    When bodyweightKg is null/undefined: falls back to NORMALIZE_DIVISOR.
  * 4. Map to StrainLevel using threshold boundaries.
  * 5. Only include muscles above the Rested threshold in the result.
  *
  * @param doses - Array of muscle doses from workout history
  * @param now - Current timestamp in Unix ms (injectable for testability)
+ * @param bodyweightKg - Optional user bodyweight for normalized strain (BIO-02)
  * @returns Map of MuscleSlug to StrainLevel — Rested muscles are absent from the map
  */
 export function computeStrainMap(
   doses: WorkoutMuscleDose[],
   now: number,
+  bodyweightKg?: number | null,
 ): Map<MuscleSlug, StrainLevel> {
+  // When bodyweightKg provided: divisor scales proportionally to body size
+  // 100kg person: divisor = 100 * 50 = 5000 (matches original NORMALIZE_DIVISOR)
+  // 60kg person: divisor = 60 * 50 = 3000 (lower = more strain per volume)
+  const divisor = bodyweightKg != null ? bodyweightKg * 50 : NORMALIZE_DIVISOR
+
   // Step 1 & 2: Accumulate decayed strain per muscle
   const rawMap = new Map<MuscleSlug, number>()
   for (const dose of doses) {
@@ -79,10 +90,10 @@ export function computeStrainMap(
     rawMap.set(dose.muscleSlug, (rawMap.get(dose.muscleSlug) ?? 0) + decayed)
   }
 
-  // Step 3–5: Normalize, threshold, and filter Rested
+  // Step 3-5: Normalize, threshold, and filter Rested
   const result = new Map<MuscleSlug, StrainLevel>()
   for (const [slug, raw] of rawMap) {
-    const pct = Math.min(100, (raw / NORMALIZE_DIVISOR) * 100)
+    const pct = Math.min(100, (raw / divisor) * 100)
     const level = strainToLevel(pct)
     if (level !== StrainLevel.Rested) {
       result.set(slug, level)

@@ -158,6 +158,53 @@ describe('computeStrainMap', () => {
   })
 })
 
+describe('computeStrainMap with bodyweightKg', () => {
+  it('returns same result without bodyweightKg (backward compatible)', () => {
+    const now = Date.now()
+    const dose: WorkoutMuscleDose = {
+      muscleSlug: chest,
+      volume: 5000,
+      multiplier: 1.0,
+      completedAt: now,
+    }
+    const withoutBw = computeStrainMap([dose], now)
+    const withNullBw = computeStrainMap([dose], now, null)
+    const withUndefinedBw = computeStrainMap([dose], now, undefined)
+    expect(withoutBw.get(chest)).toBe(withNullBw.get(chest))
+    expect(withoutBw.get(chest)).toBe(withUndefinedBw.get(chest))
+  })
+
+  it('lighter person (60kg) gets higher strain than heavier person (100kg) at same volume', () => {
+    const now = Date.now()
+    const dose: WorkoutMuscleDose = {
+      muscleSlug: chest,
+      volume: 3000,
+      multiplier: 1.0,
+      completedAt: now,
+    }
+    const lightPerson = computeStrainMap([dose], now, 60)
+    const heavyPerson = computeStrainMap([dose], now, 100)
+    // 60kg: divisor = 3000, pct = (3000/3000)*100 = 100% -> Strained
+    // 100kg: divisor = 5000, pct = (3000/5000)*100 = 60% -> Heavy
+    expect(lightPerson.get(chest)).toBe(StrainLevel.Strained)
+    expect(heavyPerson.get(chest)).toBe(StrainLevel.Heavy)
+  })
+
+  it('100kg person with 5000 volume matches default NORMALIZE_DIVISOR behavior', () => {
+    const now = Date.now()
+    const dose: WorkoutMuscleDose = {
+      muscleSlug: chest,
+      volume: 5000,
+      multiplier: 1.0,
+      completedAt: now,
+    }
+    const withBw = computeStrainMap([dose], now, 100)
+    const withoutBw = computeStrainMap([dose], now)
+    // 100kg * 50 = 5000 = NORMALIZE_DIVISOR, so results should be identical
+    expect(withBw.get(chest)).toBe(withoutBw.get(chest))
+  })
+})
+
 describe('STRAIN_COLORS', () => {
   it('maps all StrainLevel values to correct color strings', () => {
     expect(STRAIN_COLORS[StrainLevel.Rested]).toBe('oklch(0.22 0.02 265)')

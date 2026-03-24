@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react'
 import { useWorkoutStore } from '@/stores/useWorkoutStore'
+import { useProfileStore } from '@/stores/useProfileStore'
 import { computeStrainMap } from '@/lib/strain-engine'
 import type { WorkoutMuscleDose } from '@/lib/strain-engine'
 import { StrainLevel } from '@/types'
@@ -19,6 +20,14 @@ export function useStrainMap(): Map<MuscleSlug, StrainLevel> {
 
   // Subscribe to primitive ID, not full object — avoids re-fire on unrelated store updates (Pitfall 3)
   const activeSessionId = useWorkoutStore(s => s.activeSession?.id ?? null)
+
+  // Subscribe to bodyweight for normalized strain (BIO-02)
+  const bodyweightKg = useProfileStore(s => s.latestBio?.weightKg ?? null)
+
+  // Load bio data on mount to populate bodyweightKg
+  useEffect(() => {
+    useProfileStore.getState().loadLatestBio()
+  }, [])
 
   useEffect(() => {
     let cancelled = false
@@ -89,7 +98,7 @@ export function useStrainMap(): Map<MuscleSlug, StrainLevel> {
         }
 
         if (!cancelled) {
-          setStrainMap(computeStrainMap(doses, Date.now()))
+          setStrainMap(computeStrainMap(doses, Date.now(), bodyweightKg))
         }
       } catch (err) {
         console.error('useStrainMap: failed to compute', err)
@@ -101,7 +110,7 @@ export function useStrainMap(): Map<MuscleSlug, StrainLevel> {
     return () => {
       cancelled = true
     }
-  }, [activeSessionId])
+  }, [activeSessionId, bodyweightKg])
 
   return strainMap
 }
