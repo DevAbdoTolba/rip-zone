@@ -53,7 +53,7 @@ Requirements for initial release. Each maps to roadmap phases.
 ### Bio Metrics
 
 - [x] **BIO-01**: User can optionally provide bio info (height, weight, age, gender, body fat %, measurements)
-- [ ] **BIO-02**: User sees improved accuracy in strain/ranking when bio info is provided
+- [x] **BIO-02**: User sees improved accuracy in strain/ranking when bio info is provided
 - [x] **BIO-03**: All features work fully without any bio info provided
 
 ## Future Requirements
@@ -128,7 +128,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | FAQ-01 | Phase 8 | Complete |
 | FAQ-02 | Phase 8 | Complete |
 | BIO-01 | Phase 8 | Complete |
-| BIO-02 | Phase 8 | Pending |
+| BIO-02 | Phase 8 | Complete |
 | BIO-03 | Phase 8 | Complete |
 
 **Coverage:**

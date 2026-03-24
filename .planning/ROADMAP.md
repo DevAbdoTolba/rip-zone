@@ -19,7 +19,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 5: Strain Engine + Heatmap** - Per-muscle fatigue computation from workout logs wired to heatmap color overlay on the muscle map (completed 2026-03-24)
 - [x] **Phase 6: Click-to-Muscle Panel** - Tap any muscle to see exercises targeting it, warm-up guidance, and current strain state in a slide-out panel (completed 2026-03-24)
 - [x] **Phase 7: Ranking + Radar** - Iron → Elite tier ranking system with sub-tier progress bar, tier-advance celebration, and radar chart body rating (completed 2026-03-24)
-- [ ] **Phase 8: Community FAQ + Bio Metrics** - Egyptian gym community FAQ browser and optional bio info collection with accuracy reward
+- [x] **Phase 8: Community FAQ + Bio Metrics** - Egyptian gym community FAQ browser and optional bio info collection with accuracy reward (completed 2026-03-24)
 
 ## Phase Details
 
@@ -151,11 +151,11 @@ Plans:
   2. User can read individual FAQ articles written in a tone that reflects Egyptian fitness culture, not generic clinical language
   3. User can optionally fill in bio info (height, weight, age, gender, body fat percentage, measurements) and sees a visible accuracy improvement indicator in strain and ranking
   4. User who provides zero bio info can access every feature — workout logging, heatmap, exercise panel, ranking, radar chart, and FAQ — without any prompt or gate
-**Plans:** 2/3 plans executed
+**Plans:** 3/3 plans complete
 Plans:
 - [x] 08-01-PLAN.md — FAQ page with category filter chips, accordion Q&A items, FAQ tab in BottomNav
 - [x] 08-02-PLAN.md — Bio profile page with 6-field form, Dexie v2 schema migration, accuracy ring, Profile tab in BottomNav
-- [ ] 08-03-PLAN.md — Bio-enhanced strain engine, accuracy indicators on map and ranking pages, human verification
+- [x] 08-03-PLAN.md — Bio-enhanced strain engine, accuracy indicators on map and ranking pages, human verification
 **UI hint**: yes
 
 ## Progress
@@ -172,4 +172,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | 5. Strain Engine + Heatmap | 2/2 | Complete   | 2026-03-24 |
 | 6. Click-to-Muscle Panel | 2/2 | Complete   | 2026-03-24 |
 | 7. Ranking + Radar | 3/3 | Complete   | 2026-03-24 |
-| 8. Community FAQ + Bio Metrics | 2/3 | In Progress|  |
+| 8. Community FAQ + Bio Metrics | 3/3 | Complete   | 2026-03-24 |
