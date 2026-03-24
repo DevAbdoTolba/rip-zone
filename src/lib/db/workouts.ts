@@ -1,5 +1,6 @@
 import Dexie, { type EntityTable } from 'dexie'
 import type { WorkoutSessionId, ExerciseLogId, SetLogId, ExerciseSlug, WorkoutPlanId } from '@/types'
+import type { TierRank } from '@/types/ranking'
 
 // Per D-10: Separate tables for sessions, exercises-in-session, and individual sets
 // Per D-11: No computed values stored — strain, PRs, rankings computed at read time
@@ -41,12 +42,18 @@ export interface LastUsedRestRecord {
   updatedAt: number
 }
 
+export interface LastSeenTierRecord {
+  id: 'singleton'
+  tier: TierRank
+}
+
 export class WorkoutsDatabase extends Dexie {
   sessions!: EntityTable<WorkoutSessionRecord, 'id'>
   exercisesInSession!: EntityTable<ExerciseInSessionRecord, 'id'>
   sets!: EntityTable<SetLogRecord, 'id'>
   planProgress!: EntityTable<PlanProgressRecord, 'id'>
   lastUsedRest!: EntityTable<LastUsedRestRecord, 'exerciseSlug'>
+  lastSeenTier!: EntityTable<LastSeenTierRecord, 'id'>
 
   constructor() {
     super('rip-zone-workouts')
@@ -75,6 +82,18 @@ export class WorkoutsDatabase extends Dexie {
       sets: 'id, exerciseInSessionId, completedAt',
       planProgress: 'id, planId, dayLabel, completedAt',
       lastUsedRest: 'exerciseSlug',
+    })
+
+    // v3: Add lastSeenTier table for tier-up celebration tracking.
+    // Stores a singleton record with the last tier the user saw the celebration for.
+    // No upgrade() needed — new table starts empty.
+    this.version(3).stores({
+      sessions: 'id, startedAt, completedAt, planId',
+      exercisesInSession: 'id, sessionId, exerciseSlug, orderIndex',
+      sets: 'id, exerciseInSessionId, completedAt',
+      planProgress: 'id, planId, dayLabel, completedAt',
+      lastUsedRest: 'exerciseSlug',
+      lastSeenTier: 'id',
     })
   }
 }
