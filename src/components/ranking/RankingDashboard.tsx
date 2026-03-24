@@ -9,6 +9,9 @@ import { RadarChart } from './RadarChart'
 import { TierBadge } from './TierBadge'
 import { ProgressBar } from './ProgressBar'
 import { CelebrationOverlay } from './CelebrationOverlay'
+import { useProfileStore } from '@/stores/useProfileStore'
+import { computeAccuracyPct } from '@/lib/bio-accuracy'
+import { AccuracyRing } from '@/components/profile/AccuracyRing'
 
 /**
  * Derives the next tier from TIER_THRESHOLDS given current tier.
@@ -25,6 +28,15 @@ export function RankingDashboard() {
     useRankingData()
 
   const [showCelebration, setShowCelebration] = useState(false)
+
+  // Subscribe to bio for accuracy ring and enhanced badge (BIO-02)
+  const latestBio = useProfileStore(s => s.latestBio)
+  const accuracyPct = computeAccuracyPct(latestBio)
+
+  // Load bio on mount
+  useEffect(() => {
+    useProfileStore.getState().loadLatestBio()
+  }, [])
 
   // Celebration logic: trigger when tier has advanced since last seen
   useEffect(() => {
@@ -110,7 +122,14 @@ export function RankingDashboard() {
         <RadarChart axes={radarAxes} />
 
         {/* Tier badge */}
-        <TierBadge tier={tier} totalVolume={totalVolume} />
+        <div className="flex items-center gap-2">
+          <TierBadge tier={tier} totalVolume={totalVolume} />
+          {accuracyPct > 0 && (
+            <span className="text-[10px] text-primary px-1.5 py-0.5 rounded-full border border-primary/30">
+              enhanced
+            </span>
+          )}
+        </div>
 
         {/* Sub-tier progress bar */}
         <div className="w-full max-w-sm mx-auto">
@@ -120,6 +139,22 @@ export function RankingDashboard() {
             nextTier={nextTier}
           />
         </div>
+
+        {/* Accuracy indicator */}
+        <div className="flex items-center justify-center gap-2 mt-2">
+          <AccuracyRing pct={accuracyPct} />
+          <span className="text-[12px] text-muted-foreground">Accuracy</span>
+        </div>
+
+        {/* Relative strength — only when bodyweight provided */}
+        {latestBio?.weightKg && totalVolume > 0 && (
+          <p className="text-sm text-muted-foreground text-center">
+            Relative strength: {(totalVolume / latestBio.weightKg).toFixed(1)} kg/kg
+            <span className="ml-1 text-[10px] text-primary px-1 py-0.5 rounded-full border border-primary/30">
+              enhanced
+            </span>
+          </p>
+        )}
       </div>
     </>
   )
