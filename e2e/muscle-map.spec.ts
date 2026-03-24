@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test'
+import { test, expect, type Page } from '@playwright/test'
 
 test.describe('Muscle Map — MAP-01: Rendering', () => {
   test('page loads with muscle map SVG visible', async ({ page }) => {
@@ -149,7 +149,7 @@ test.describe('Muscle Map — No Console Errors', () => {
 // viewport-based click is intercepted by the parent SVG element. Using dispatchEvent
 // bypasses this by firing directly on the target element via the DOM event system,
 // which React's event delegation correctly processes.
-async function clickMuscle(page: Parameters<typeof test>[1]['page'], muscleSlug: string) {
+async function clickMuscle(page: Page, muscleSlug: string) {
   await page.locator(`path[id="hit-muscle-${muscleSlug}"]`).dispatchEvent('click')
 }
 
