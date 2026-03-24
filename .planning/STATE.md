@@ -3,8 +3,8 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Phase complete — ready for verification
-stopped_at: Completed 05-02 Tasks 1+2; awaiting human-verify checkpoint (Task 3)
-last_updated: "2026-03-24T00:19:49.632Z"
+stopped_at: Completed 05-02-PLAN.md (heatmap overlay — full pipeline verified)
+last_updated: "2026-03-24T00:23:55.573Z"
 progress:
   total_phases: 8
   completed_phases: 5
@@ -69,6 +69,7 @@ Plan: 2 of 2
 | Phase 04-workout-logger P07 | 2 | 1 tasks | 2 files |
 | Phase 05 P01 | 2min | 1 tasks | 2 files |
 | Phase 05 P02 | 3min | 2 tasks | 4 files |
+| Phase 05 P02 | 3min | 3 tasks | 4 files |
 
 ## Accumulated Context
 
@@ -130,6 +131,9 @@ Recent decisions affecting current work:
 - [Phase 05]: activeSession?.id ?? null (primitive) as useStrainMap dependency — stable ID avoids re-fires on unrelated Zustand store updates
 - [Phase 05]: applyStrainToSlug checks base slug AND bilateral -left/-right variants without else — anatomy mode can have both simultaneously
 - [Phase 05]: Strain fill useEffect placed before data-selected useEffect; selectedMuscle in deps — selection accent always wins over strain color
+- [Phase 05]: activeSession?.id ?? null (primitive) as useStrainMap dependency — stable ID avoids re-fires on unrelated Zustand store updates
+- [Phase 05]: applyStrainToSlug checks base slug AND bilateral -left/-right variants without else — anatomy mode can have both simultaneously
+- [Phase 05]: Strain fill useEffect placed before data-selected useEffect; selectedMuscle in deps — selection accent always wins over strain color
 
 ### Pending Todos
 
@@ -143,6 +147,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-24T00:19:49.628Z
-Stopped at: Completed 05-02 Tasks 1+2; awaiting human-verify checkpoint (Task 3)
+Last session: 2026-03-24T00:23:55.568Z
+Stopped at: Completed 05-02-PLAN.md (heatmap overlay — full pipeline verified)
 Resume file: None
