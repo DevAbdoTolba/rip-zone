@@ -138,7 +138,7 @@ Plans:
 **Plans:** 1/3 plans executed
 Plans:
 - [x] 07-01-PLAN.md — TDD ranking engine: tier computation, sub-tier progress, radar axes, Dexie v3 schema, useRankingData hook
-- [ ] 07-02-PLAN.md — Ranking page UI: radar chart SVG, tier badge, progress bar, celebration overlay, BottomNav integration
+- [x] 07-02-PLAN.md — Ranking page UI: radar chart SVG, tier badge, progress bar, celebration overlay, BottomNav integration
 - [ ] 07-03-PLAN.md — E2E tests for RANK-01/RANK-02/RANK-03/RANK-04 and human verification
 **UI hint**: yes
 

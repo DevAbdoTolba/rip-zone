@@ -40,10 +40,10 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Ranking
 
-- [ ] **RANK-01**: User earns a tier rank (Iron → Bronze → Silver → Gold → Platinum → Diamond → Elite) based on workout performance
-- [ ] **RANK-02**: User can view a radar chart body rating (push/pull/legs/core/conditioning axes)
-- [ ] **RANK-03**: User sees progress within current tier via sub-tier progress bar
-- [ ] **RANK-04**: User sees celebration UI when advancing to a new tier
+- [x] **RANK-01**: User earns a tier rank (Iron → Bronze → Silver → Gold → Platinum → Diamond → Elite) based on workout performance
+- [x] **RANK-02**: User can view a radar chart body rating (push/pull/legs/core/conditioning axes)
+- [x] **RANK-03**: User sees progress within current tier via sub-tier progress bar
+- [x] **RANK-04**: User sees celebration UI when advancing to a new tier
 
 ### Community FAQ
 
@@ -121,10 +121,10 @@ Which phases cover which requirements. Updated during roadmap creation.
 | STRAIN-01 | Phase 5 | Complete |
 | STRAIN-02 | Phase 5 | Complete |
 | STRAIN-03 | Phase 5 | Complete |
-| RANK-01 | Phase 7 | Pending |
-| RANK-02 | Phase 7 | Pending |
-| RANK-03 | Phase 7 | Pending |
-| RANK-04 | Phase 7 | Pending |
+| RANK-01 | Phase 7 | Complete |
+| RANK-02 | Phase 7 | Complete |
+| RANK-03 | Phase 7 | Complete |
+| RANK-04 | Phase 7 | Complete |
 | FAQ-01 | Phase 8 | Pending |
 | FAQ-02 | Phase 8 | Pending |
 | BIO-01 | Phase 8 | Pending |
