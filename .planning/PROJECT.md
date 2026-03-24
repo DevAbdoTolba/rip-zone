@@ -32,11 +32,11 @@ The interactive muscle map must work — users can see which muscles are straine
 - [x] Browseable, searchable exercise library with 110 exercises, muscle tags, and warm-up guidance — Validated in Phase 3: Exercise Library
 - [x] Workout tracker — freestyle logging (exercise → sets/reps/weight → rest timer) — Validated in Phase 4: Workout Logger
 - [x] Pre-built workout plans users can follow step by step — Validated in Phase 4: Workout Logger
+- [x] Heatmap overlay showing strain level per muscle based on training data — Validated in Phase 5: Strain Engine + Heatmap
+- [x] Placeholder scientific dataset for muscle strain/recovery calculations — Validated in Phase 5: Strain Engine + Heatmap
 
 ### Active
-- [ ] Heatmap overlay showing strain level per muscle based on training data
 - [ ] Clickable muscles opening exercise references with pre-training warm-up and training intensity info
-- [ ] Placeholder scientific dataset for muscle strain/recovery calculations
 - [ ] Optional bio-info collection (height, weight, age, gender, body fat %, muscle measurements)
 - [ ] Bio-info reward system — more data improves accuracy, never gates features
 - [ ] AI-generated FAQ content from Egyptian gym community topics (Reddit, Twitter, Facebook)
@@ -97,4 +97,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-23 after Phase 4: Workout Logger complete — freestyle logging with exercise picker, set rows, rest timer, PR badges, history page with contribution graph, plan runner with 7 Egyptian gym splits, all persisted in IndexedDB offline-first*
+*Last updated: 2026-03-24 after Phase 5: Strain Engine + Heatmap complete — pure strain computation engine with exponential decay (72hr half-life), useStrainMap hook wired to Dexie workout history, heatmap color overlay on muscle map SVG, disclaimer text visible*
