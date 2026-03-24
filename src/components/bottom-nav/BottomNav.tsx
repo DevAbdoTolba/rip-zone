@@ -2,7 +2,7 @@
 
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import { MapPin, Dumbbell, History, Timer, Trophy } from 'lucide-react'
+import { MapPin, Dumbbell, History, Timer, Trophy, BookOpen } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const tabs = [
@@ -11,6 +11,7 @@ const tabs = [
   { href: '/history', label: 'History', icon: History },
   { href: '/ranking', label: 'Ranking', icon: Trophy },
   { href: '/workout', label: 'Workout', icon: Timer },
+  { href: '/faq', label: 'FAQ', icon: BookOpen },
 ]
 
 export function BottomNav() {
