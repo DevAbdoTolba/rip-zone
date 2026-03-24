@@ -3,13 +3,13 @@ gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
 status: Ready to execute
-stopped_at: Completed 06-click-to-muscle-panel-01-PLAN.md
-last_updated: "2026-03-24T08:31:48.746Z"
+stopped_at: "Checkpoint: Task 2 human-verify — 06-02 E2E tests complete, awaiting human verification of muscle panel visual"
+last_updated: "2026-03-24T08:49:12.200Z"
 progress:
   total_phases: 8
-  completed_phases: 5
+  completed_phases: 6
   total_plans: 25
-  completed_plans: 24
+  completed_plans: 25
 ---
 
 # Project State
@@ -71,6 +71,7 @@ Plan: 2 of 2
 | Phase 05 P02 | 3min | 2 tasks | 4 files |
 | Phase 05 P02 | 3min | 3 tasks | 4 files |
 | Phase 06-click-to-muscle-panel P01 | 4min | 2 tasks | 6 files |
+| Phase 06-click-to-muscle-panel P02 | 25min | 1 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -137,6 +138,8 @@ Recent decisions affecting current work:
 - [Phase 05]: Strain fill useEffect placed before data-selected useEffect; selectedMuscle in deps — selection accent always wins over strain color
 - [Phase 06-01]: Server Component page.tsx passes JSON as serialized props to client MusclePanelDrawer — keeps data out of main bundle
 - [Phase 06-01]: modal={false} on Drawer.Root — muscle map stays interactive while panel is open on desktop
+- [Phase 06-click-to-muscle-panel]: Use dispatchEvent instead of click() for SVG hit-layer paths in E2E — parent SVG intercepts viewport-based Playwright clicks; dispatchEvent fires on target directly via DOM event system
+- [Phase 06-click-to-muscle-panel]: svgoConfig cleanupIds:false in SVGR turbopack options — SVGO default strips all element IDs, breaking hit-layer ID-based event delegation
 
 ### Pending Todos
 
@@ -150,6 +153,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-24T08:31:48.742Z
-Stopped at: Completed 06-click-to-muscle-panel-01-PLAN.md
+Last session: 2026-03-24T08:48:53.727Z
+Stopped at: Checkpoint: Task 2 human-verify — 06-02 E2E tests complete, awaiting human verification of muscle panel visual
 Resume file: None

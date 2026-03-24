@@ -17,7 +17,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 3: Exercise Library** - Browseable, searchable exercise library with 100+ exercises and muscle group warm-up guidance (completed 2026-03-23)
 - [x] **Phase 4: Workout Logger** - Freestyle workout logging with rest timer, workout history, PR detection, and pre-built plan runner (completed 2026-03-23)
 - [x] **Phase 5: Strain Engine + Heatmap** - Per-muscle fatigue computation from workout logs wired to heatmap color overlay on the muscle map (completed 2026-03-24)
-- [ ] **Phase 6: Click-to-Muscle Panel** - Tap any muscle to see exercises targeting it, warm-up guidance, and current strain state in a slide-out panel
+- [x] **Phase 6: Click-to-Muscle Panel** - Tap any muscle to see exercises targeting it, warm-up guidance, and current strain state in a slide-out panel (completed 2026-03-24)
 - [ ] **Phase 7: Ranking + Radar** - Iron → Elite tier ranking system with sub-tier progress bar, tier-advance celebration, and radar chart body rating
 - [ ] **Phase 8: Community FAQ + Bio Metrics** - Egyptian gym community FAQ browser and optional bio info collection with accuracy reward
 
@@ -120,10 +120,10 @@ Plans:
   1. User can tap any muscle on the front or back map view and a slide-out panel opens showing exercises that target that muscle
   2. User can see the current strain/recovery state for the tapped muscle displayed inside the reference panel
   3. User can see warm-up guidance specific to the tapped muscle group inside the panel
-**Plans:** 1/2 plans executed
+**Plans:** 2/2 plans complete
 Plans:
 - [x] 06-01-PLAN.md — Muscle panel components (MusclePanelDrawer, StrainStatusCard, PanelExerciseList, PanelWarmupSection) and home page integration
-- [ ] 06-02-PLAN.md — E2E tests for MAP-04/EXER-04/EXER-05 and human verification
+- [x] 06-02-PLAN.md — E2E tests for MAP-04/EXER-04/EXER-05 and human verification
 **UI hint**: yes
 
 ### Phase 7: Ranking + Radar
@@ -162,6 +162,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | 3. Exercise Library | 4/4 | Complete   | 2026-03-23 |
 | 4. Workout Logger | 7/7 | Complete   | 2026-03-23 |
 | 5. Strain Engine + Heatmap | 2/2 | Complete   | 2026-03-24 |
-| 6. Click-to-Muscle Panel | 1/2 | In Progress|  |
+| 6. Click-to-Muscle Panel | 2/2 | Complete   | 2026-03-24 |
 | 7. Ranking + Radar | 0/TBD | Not started | - |
 | 8. Community FAQ + Bio Metrics | 0/TBD | Not started | - |
