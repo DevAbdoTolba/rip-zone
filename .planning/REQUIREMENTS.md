@@ -47,8 +47,8 @@ Requirements for initial release. Each maps to roadmap phases.
 
 ### Community FAQ
 
-- [ ] **FAQ-01**: User can browse FAQ content categorized by Egyptian gym community topics
-- [ ] **FAQ-02**: User can read newbie-focused Q&A (muscle pain, progress loss, common misconceptions)
+- [x] **FAQ-01**: User can browse FAQ content categorized by Egyptian gym community topics
+- [x] **FAQ-02**: User can read newbie-focused Q&A (muscle pain, progress loss, common misconceptions)
 
 ### Bio Metrics
 
@@ -125,8 +125,8 @@ Which phases cover which requirements. Updated during roadmap creation.
 | RANK-02 | Phase 7 | Complete |
 | RANK-03 | Phase 7 | Complete |
 | RANK-04 | Phase 7 | Complete |
-| FAQ-01 | Phase 8 | Pending |
-| FAQ-02 | Phase 8 | Pending |
+| FAQ-01 | Phase 8 | Complete |
+| FAQ-02 | Phase 8 | Complete |
 | BIO-01 | Phase 8 | Pending |
 | BIO-02 | Phase 8 | Pending |
 | BIO-03 | Phase 8 | Pending |
