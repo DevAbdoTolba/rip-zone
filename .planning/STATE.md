@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Ready to plan
-stopped_at: Completed 04-07-PLAN.md
-last_updated: "2026-03-23T23:25:40.226Z"
+status: Ready to execute
+stopped_at: Completed 05-01-PLAN.md
+last_updated: "2026-03-24T00:13:52.738Z"
 progress:
   total_phases: 8
   completed_phases: 4
-  total_plans: 21
-  completed_plans: 21
+  total_plans: 23
+  completed_plans: 22
 ---
 
 # Project State
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-22)
 
 **Core value:** The interactive muscle map must work — users can see which muscles are strained, click any muscle for training guidance, and understand their body's state at a glance.
-**Current focus:** Phase 04 — workout-logger
+**Current focus:** Phase 05 — strain-engine-heatmap
 
 ## Current Position
 
-Phase: 5
-Plan: Not started
+Phase: 05 (strain-engine-heatmap) — EXECUTING
+Plan: 2 of 2
 
 ## Performance Metrics
 
@@ -67,6 +67,7 @@ Plan: Not started
 | Phase 04-workout-logger P05 | 4min | 2 tasks | 7 files |
 | Phase 04-workout-logger P06 | 3min | 2 tasks | 3 files |
 | Phase 04-workout-logger P07 | 2 | 1 tasks | 2 files |
+| Phase 05 P01 | 2min | 1 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -122,6 +123,9 @@ Recent decisions affecting current work:
 - [Phase 04-06]: Plan workout flow E2E test.skip — complex flow needs seeded history for recommendations; manual verification covers it
 - [Phase 04-07]: useRef for PR baseline (not useState) — prevents re-renders and cascading re-queries on every confirmSet
 - [Phase 04-07]: excludeSessionId Dexie filter: session ID is authoritative boundary for historical vs current-session data; loadedSlugs ref loads baseline once per slug
+- [Phase 05]: NORMALIZE_DIVISOR=5000 tuning constant: 5 sets x 10 reps x 100kg = full strain at moment of completion
+- [Phase 05]: Rested muscles excluded from result Map — Rested is the absence of a key, not a Map entry
+- [Phase 05]: Injectable 'now' timestamp parameter in computeStrainMap for deterministic unit testing without mocks
 
 ### Pending Todos
 
@@ -135,6 +139,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-23T23:19:21.714Z
-Stopped at: Completed 04-07-PLAN.md
+Last session: 2026-03-24T00:13:52.733Z
+Stopped at: Completed 05-01-PLAN.md
 Resume file: None

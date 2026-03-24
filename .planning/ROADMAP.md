@@ -106,9 +106,9 @@ Plans:
   2. User who logs a workout sees the heatmap update to reflect the newly trained muscles within the same session
   3. User who returns the next day sees strain levels partially recovered compared to the day before, reflecting the time-decay model
   4. User sees a non-intrusive disclaimer on the muscle map indicating strain data is based on placeholder estimates, not verified scientific data
-**Plans:** 2 plans
+**Plans:** 1/2 plans executed
 Plans:
-- [ ] 05-01-PLAN.md — TDD strain engine: pure computeStrainMap function with exponential decay, volume normalization, and threshold bucketing
+- [x] 05-01-PLAN.md — TDD strain engine: pure computeStrainMap function with exponential decay, volume normalization, and threshold bucketing
 - [ ] 05-02-PLAN.md — useStrainMap hook, heatmap SVG fill rendering, disclaimer text, and human verification
 **UI hint**: yes
 
@@ -158,7 +158,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | 2. Muscle Map SVG | 5/5 | Complete   | 2026-03-23 |
 | 3. Exercise Library | 4/4 | Complete   | 2026-03-23 |
 | 4. Workout Logger | 7/7 | Complete   | 2026-03-23 |
-| 5. Strain Engine + Heatmap | 0/2 | Not started | - |
+| 5. Strain Engine + Heatmap | 1/2 | In Progress|  |
 | 6. Click-to-Muscle Panel | 0/TBD | Not started | - |
 | 7. Ranking + Radar | 0/TBD | Not started | - |
 | 8. Community FAQ + Bio Metrics | 0/TBD | Not started | - |
