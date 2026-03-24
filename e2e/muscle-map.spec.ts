@@ -85,9 +85,11 @@ test.describe('Muscle Map — Muscle Selection', () => {
   test('clicking a muscle path highlights it', async ({ page }) => {
     await page.goto('/')
     // Click on a hit target (pectoralis major is a large, reliable target)
+    // Use dispatchEvent: SVG hit targets have transparent fill so Playwright's
+    // viewport-based click is intercepted by the parent SVG element
     const hitTarget = page.locator('path[id="hit-muscle-pectoralis-major"]')
     if (await hitTarget.count() > 0) {
-      await hitTarget.click()
+      await hitTarget.dispatchEvent('click')
       // Check that the visual path got selected attribute
       await expect(page.locator('path[id="muscle-pectoralis-major"][data-selected="true"]')).toBeAttached()
     }
@@ -98,9 +100,11 @@ test.describe('Muscle Map — MAP-05: Disambiguation', () => {
   test('Normal mode does not trigger disambiguation', async ({ page }) => {
     await page.goto('/')
     // In Normal mode, clicking any muscle should select directly, not zoom
+    // Use dispatchEvent: SVG hit targets have transparent fill so Playwright's
+    // viewport-based click is intercepted by the parent SVG element
     const hitTarget = page.locator('path[id^="hit-muscle-"]').first()
     if (await hitTarget.count() > 0) {
-      await hitTarget.click()
+      await hitTarget.dispatchEvent('click')
       // No disambiguation overlay should appear
       await expect(page.locator('.disambiguation-overlay')).not.toBeVisible()
     }
@@ -137,5 +141,102 @@ test.describe('Muscle Map — No Console Errors', () => {
     )
 
     expect(appErrors).toEqual([])
+  })
+})
+
+// Helper: dispatch a synthetic click on an SVG hit-layer path.
+// SVG hit targets use `pointer-events: all` with transparent fill, but Playwright's
+// viewport-based click is intercepted by the parent SVG element. Using dispatchEvent
+// bypasses this by firing directly on the target element via the DOM event system,
+// which React's event delegation correctly processes.
+async function clickMuscle(page: Parameters<typeof test>[1]['page'], muscleSlug: string) {
+  await page.locator(`path[id="hit-muscle-${muscleSlug}"]`).dispatchEvent('click')
+}
+
+test.describe('Muscle Map — MAP-04: Muscle Detail Panel', () => {
+  test('clicking a muscle opens the detail panel', async ({ page }) => {
+    await page.goto('/')
+    await clickMuscle(page, 'pectoralis-major')
+    const panel = page.locator('[data-testid="muscle-panel"]')
+    await expect(panel).toBeVisible()
+    // Panel should show the muscle display name
+    await expect(panel).toContainText('Pectoralis Major')
+  })
+
+  test('panel shows exercises targeting the selected muscle', async ({ page }) => {
+    await page.goto('/')
+    await clickMuscle(page, 'pectoralis-major')
+    const panel = page.locator('[data-testid="muscle-panel"]')
+    await expect(panel).toBeVisible()
+    // Should show "Exercises" section heading
+    await expect(panel.locator('[data-testid="panel-exercise-list"] h3')).toContainText('Exercises')
+    // Pectoralis major has multiple exercises — at least one should appear
+    // Flat Bench Press is a primary exercise for pectoralis-major
+    await expect(panel).toContainText('Flat Bench Press')
+  })
+
+  test('panel shows strain status for the selected muscle', async ({ page }) => {
+    await page.goto('/')
+    await clickMuscle(page, 'pectoralis-major')
+    const panel = page.locator('[data-testid="muscle-panel"]')
+    await expect(panel).toBeVisible()
+    // Strain status card should be visible
+    const strainCard = panel.locator('[data-testid="strain-status-card"]')
+    await expect(strainCard).toBeVisible()
+    // Should contain the "Recovery Status" heading
+    await expect(strainCard).toContainText('Recovery Status')
+    // Should contain a strain level text (at minimum "Rested" for a fresh DB)
+    await expect(strainCard).toContainText(/Rested|Light strain|Moderate strain|Heavy strain|Strained/)
+  })
+
+  test('panel closes when X button is clicked', async ({ page }) => {
+    await page.goto('/')
+    await clickMuscle(page, 'pectoralis-major')
+    const panel = page.locator('[data-testid="muscle-panel"]')
+    await expect(panel).toBeVisible()
+    // Click the close button
+    await page.locator('button[aria-label="Close muscle panel"]').click()
+    await expect(panel).not.toBeVisible()
+  })
+
+  test('panel closes when view is toggled', async ({ page }) => {
+    await page.goto('/')
+    await clickMuscle(page, 'pectoralis-major')
+    const panel = page.locator('[data-testid="muscle-panel"]')
+    await expect(panel).toBeVisible()
+    // Toggle to Back view
+    await page.getByRole('button', { name: 'Back' }).click()
+    await expect(panel).not.toBeVisible()
+  })
+
+  test('tapping same muscle again closes the panel', async ({ page }) => {
+    await page.goto('/')
+    await clickMuscle(page, 'pectoralis-major')
+    const panel = page.locator('[data-testid="muscle-panel"]')
+    await expect(panel).toBeVisible()
+    // Click same muscle again — should deselect
+    await clickMuscle(page, 'pectoralis-major')
+    await expect(panel).not.toBeVisible()
+  })
+
+  test('"View all exercises" link navigates to filtered exercise library', async ({ page }) => {
+    await page.goto('/')
+    await clickMuscle(page, 'pectoralis-major')
+    const panel = page.locator('[data-testid="muscle-panel"]')
+    await expect(panel).toBeVisible()
+    const link = panel.locator('a:has-text("View all exercises")')
+    await expect(link).toBeVisible()
+    await expect(link).toHaveAttribute('href', '/exercises?muscle=pectoralis-major')
+  })
+
+  test('tapping a different muscle switches panel content', async ({ page }) => {
+    await page.goto('/')
+    // Click pectoralis major first
+    await clickMuscle(page, 'pectoralis-major')
+    const panel = page.locator('[data-testid="muscle-panel"]')
+    await expect(panel).toContainText('Pectoralis Major')
+    // Click rectus abdominis (different muscle on front view)
+    await clickMuscle(page, 'rectus-abdominis')
+    await expect(panel).toContainText('Rectus Abdominis')
   })
 })
