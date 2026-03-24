@@ -16,7 +16,7 @@ Decimal phases appear between their surrounding integers in numeric order.
 - [x] **Phase 2: Muscle Map SVG** - 2.5D illustrated muscle map with front/back views, slug-based path IDs, and layered SVG architecture (completed 2026-03-23)
 - [x] **Phase 3: Exercise Library** - Browseable, searchable exercise library with 100+ exercises and muscle group warm-up guidance (completed 2026-03-23)
 - [x] **Phase 4: Workout Logger** - Freestyle workout logging with rest timer, workout history, PR detection, and pre-built plan runner (completed 2026-03-23)
-- [ ] **Phase 5: Strain Engine + Heatmap** - Per-muscle fatigue computation from workout logs wired to heatmap color overlay on the muscle map
+- [x] **Phase 5: Strain Engine + Heatmap** - Per-muscle fatigue computation from workout logs wired to heatmap color overlay on the muscle map (completed 2026-03-24)
 - [ ] **Phase 6: Click-to-Muscle Panel** - Tap any muscle to see exercises targeting it, warm-up guidance, and current strain state in a slide-out panel
 - [ ] **Phase 7: Ranking + Radar** - Iron → Elite tier ranking system with sub-tier progress bar, tier-advance celebration, and radar chart body rating
 - [ ] **Phase 8: Community FAQ + Bio Metrics** - Egyptian gym community FAQ browser and optional bio info collection with accuracy reward
@@ -106,10 +106,10 @@ Plans:
   2. User who logs a workout sees the heatmap update to reflect the newly trained muscles within the same session
   3. User who returns the next day sees strain levels partially recovered compared to the day before, reflecting the time-decay model
   4. User sees a non-intrusive disclaimer on the muscle map indicating strain data is based on placeholder estimates, not verified scientific data
-**Plans:** 1/2 plans executed
+**Plans:** 2/2 plans complete
 Plans:
 - [x] 05-01-PLAN.md — TDD strain engine: pure computeStrainMap function with exponential decay, volume normalization, and threshold bucketing
-- [ ] 05-02-PLAN.md — useStrainMap hook, heatmap SVG fill rendering, disclaimer text, and human verification
+- [x] 05-02-PLAN.md — useStrainMap hook, heatmap SVG fill rendering, disclaimer text, and human verification
 **UI hint**: yes
 
 ### Phase 6: Click-to-Muscle Panel
@@ -158,7 +158,7 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | 2. Muscle Map SVG | 5/5 | Complete   | 2026-03-23 |
 | 3. Exercise Library | 4/4 | Complete   | 2026-03-23 |
 | 4. Workout Logger | 7/7 | Complete   | 2026-03-23 |
-| 5. Strain Engine + Heatmap | 1/2 | In Progress|  |
+| 5. Strain Engine + Heatmap | 2/2 | Complete   | 2026-03-24 |
 | 6. Click-to-Muscle Panel | 0/TBD | Not started | - |
 | 7. Ranking + Radar | 0/TBD | Not started | - |
 | 8. Community FAQ + Bio Metrics | 0/TBD | Not started | - |

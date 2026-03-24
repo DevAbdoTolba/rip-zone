@@ -11,7 +11,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [x] **MAP-01**: User can view a 2.5D illustrated muscle map with front and back body views
 - [x] **MAP-02**: User can toggle between front and back views with state preserved
-- [ ] **MAP-03**: User can see heatmap color overlay showing strain level per muscle (rested → strained gradient)
+- [x] **MAP-03**: User can see heatmap color overlay showing strain level per muscle (rested → strained gradient)
 - [ ] **MAP-04**: User can click any muscle to open an exercise reference panel
 - [x] **MAP-05**: User can tap small/clustered muscles with disambiguation UI for accurate selection
 
@@ -36,7 +36,7 @@ Requirements for initial release. Each maps to roadmap phases.
 
 - [x] **STRAIN-01**: User can see per-muscle strain/recovery state derived from logged workouts
 - [x] **STRAIN-02**: Strain calculations use placeholder dataset with time-decay model
-- [ ] **STRAIN-03**: User sees a disclaimer indicating strain data is based on placeholder estimates
+- [x] **STRAIN-03**: User sees a disclaimer indicating strain data is based on placeholder estimates
 
 ### Ranking
 
@@ -104,7 +104,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 |-------------|-------|--------|
 | MAP-01 | Phase 2 | Complete |
 | MAP-02 | Phase 2 | Complete |
-| MAP-03 | Phase 5 | Pending |
+| MAP-03 | Phase 5 | Complete |
 | MAP-04 | Phase 6 | Pending |
 | MAP-05 | Phase 2 | Complete |
 | EXER-01 | Phase 3 | Complete |
@@ -120,7 +120,7 @@ Which phases cover which requirements. Updated during roadmap creation.
 | WORK-06 | Phase 4 | Complete |
 | STRAIN-01 | Phase 5 | Complete |
 | STRAIN-02 | Phase 5 | Complete |
-| STRAIN-03 | Phase 5 | Pending |
+| STRAIN-03 | Phase 5 | Complete |
 | RANK-01 | Phase 7 | Pending |
 | RANK-02 | Phase 7 | Pending |
 | RANK-03 | Phase 7 | Pending |
