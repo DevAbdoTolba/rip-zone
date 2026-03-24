@@ -11,6 +11,7 @@ export interface BioMetricRecord {
   ageYears: number | null
   gender: 'male' | 'female' | null
   bodyFatPct: number | null
+  measurementsCm: number | null
 }
 
 export interface RankStateRecord {
@@ -30,7 +31,7 @@ export class ProfileDatabase extends Dexie {
     // Per D-13: Migration pattern for Dexie schema changes.
     // When adding a new field or index in future phases, add a new version block:
     //
-    //   this.version(2).stores({
+    //   this.version(3).stores({
     //     bioMetrics: 'id, recordedAt, newIndex',
     //     rankState: 'id',
     //   }).upgrade(tx => {
@@ -50,6 +51,17 @@ export class ProfileDatabase extends Dexie {
     this.version(1).stores({
       bioMetrics: 'id, recordedAt',
       rankState: 'id',
+    })
+
+    this.version(2).stores({
+      bioMetrics: 'id, recordedAt',
+      rankState: 'id',
+    }).upgrade(tx => {
+      return tx.table('bioMetrics').toCollection().modify((entry: any) => {
+        if (entry.measurementsCm === undefined) {
+          entry.measurementsCm = null
+        }
+      })
     })
   }
 }

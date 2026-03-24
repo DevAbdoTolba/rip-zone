@@ -10,4 +10,5 @@ export interface BioMetricEntry {
   ageYears: number | null
   gender: 'male' | 'female' | null
   bodyFatPct: number | null
+  measurementsCm: number | null   // Waist circumference in cm
 }

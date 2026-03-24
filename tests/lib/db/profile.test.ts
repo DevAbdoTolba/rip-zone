@@ -36,6 +36,7 @@ describe('ProfileDatabase', () => {
       ageYears: 25,
       gender: 'male',
       bodyFatPct: 15,
+      measurementsCm: null,
     })
     const result = await db.bioMetrics.get(id)
     expect(result).toBeDefined()
@@ -54,10 +55,47 @@ describe('ProfileDatabase', () => {
       ageYears: null,
       gender: null,
       bodyFatPct: null,
+      measurementsCm: null,
     })
     const result = await db.bioMetrics.get(id)
     expect(result).toBeDefined()
     expect(result!.heightCm).toBeNull()
+  })
+
+  test('bioMetrics table accepts record with measurementsCm field', async () => {
+    await db.open()
+    const id = 'test-bio-v2-1' as any
+    await db.bioMetrics.put({
+      id,
+      recordedAt: Date.now(),
+      heightCm: 175,
+      weightKg: 80,
+      ageYears: 25,
+      gender: 'male',
+      bodyFatPct: 15,
+      measurementsCm: 85,
+    })
+    const result = await db.bioMetrics.get(id)
+    expect(result).toBeDefined()
+    expect(result!.measurementsCm).toBe(85)
+  })
+
+  test('bioMetrics table accepts measurementsCm as null', async () => {
+    await db.open()
+    const id = 'test-bio-v2-2' as any
+    await db.bioMetrics.put({
+      id,
+      recordedAt: Date.now(),
+      heightCm: null,
+      weightKg: null,
+      ageYears: null,
+      gender: null,
+      bodyFatPct: null,
+      measurementsCm: null,
+    })
+    const result = await db.bioMetrics.get(id)
+    expect(result).toBeDefined()
+    expect(result!.measurementsCm).toBeNull()
   })
 
   test('rankState table accepts singleton record', async () => {
