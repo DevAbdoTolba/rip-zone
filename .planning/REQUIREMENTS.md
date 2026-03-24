@@ -12,7 +12,7 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **MAP-01**: User can view a 2.5D illustrated muscle map with front and back body views
 - [x] **MAP-02**: User can toggle between front and back views with state preserved
 - [x] **MAP-03**: User can see heatmap color overlay showing strain level per muscle (rested → strained gradient)
-- [ ] **MAP-04**: User can click any muscle to open an exercise reference panel
+- [x] **MAP-04**: User can click any muscle to open an exercise reference panel
 - [x] **MAP-05**: User can tap small/clustered muscles with disambiguation UI for accurate selection
 
 ### Exercise Library
@@ -20,8 +20,8 @@ Requirements for initial release. Each maps to roadmap phases.
 - [x] **EXER-01**: User can browse a library of 100+ exercises with primary/secondary muscle tags
 - [x] **EXER-02**: User can search exercises by name
 - [x] **EXER-03**: User can view warm-up guidance per muscle group
-- [ ] **EXER-04**: User can see exercises targeting a specific muscle via click-to-muscle reference panel
-- [ ] **EXER-05**: User can see current strain state for a muscle in the reference panel
+- [x] **EXER-04**: User can see exercises targeting a specific muscle via click-to-muscle reference panel
+- [x] **EXER-05**: User can see current strain state for a muscle in the reference panel
 
 ### Workout Tracking
 
@@ -105,13 +105,13 @@ Which phases cover which requirements. Updated during roadmap creation.
 | MAP-01 | Phase 2 | Complete |
 | MAP-02 | Phase 2 | Complete |
 | MAP-03 | Phase 5 | Complete |
-| MAP-04 | Phase 6 | Pending |
+| MAP-04 | Phase 6 | Complete |
 | MAP-05 | Phase 2 | Complete |
 | EXER-01 | Phase 3 | Complete |
 | EXER-02 | Phase 3 | Complete |
 | EXER-03 | Phase 3 | Complete |
-| EXER-04 | Phase 6 | Pending |
-| EXER-05 | Phase 6 | Pending |
+| EXER-04 | Phase 6 | Complete |
+| EXER-05 | Phase 6 | Complete |
 | WORK-01 | Phase 4 | Complete |
 | WORK-02 | Phase 4 | Complete |
 | WORK-03 | Phase 4 | Complete |

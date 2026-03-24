@@ -2,14 +2,14 @@
 gsd_state_version: 1.0
 milestone: v1.0
 milestone_name: milestone
-status: Ready to plan
-stopped_at: Completed 05-02-PLAN.md (heatmap overlay — full pipeline verified)
-last_updated: "2026-03-24T00:33:32.749Z"
+status: Ready to execute
+stopped_at: Completed 06-click-to-muscle-panel-01-PLAN.md
+last_updated: "2026-03-24T08:31:48.746Z"
 progress:
   total_phases: 8
   completed_phases: 5
-  total_plans: 23
-  completed_plans: 23
+  total_plans: 25
+  completed_plans: 24
 ---
 
 # Project State
@@ -19,12 +19,12 @@ progress:
 See: .planning/PROJECT.md (updated 2026-03-22)
 
 **Core value:** The interactive muscle map must work — users can see which muscles are strained, click any muscle for training guidance, and understand their body's state at a glance.
-**Current focus:** Phase 05 — strain-engine-heatmap
+**Current focus:** Phase 06 — click-to-muscle-panel
 
 ## Current Position
 
-Phase: 6
-Plan: Not started
+Phase: 06 (click-to-muscle-panel) — EXECUTING
+Plan: 2 of 2
 
 ## Performance Metrics
 
@@ -70,6 +70,7 @@ Plan: Not started
 | Phase 05 P01 | 2min | 1 tasks | 2 files |
 | Phase 05 P02 | 3min | 2 tasks | 4 files |
 | Phase 05 P02 | 3min | 3 tasks | 4 files |
+| Phase 06-click-to-muscle-panel P01 | 4min | 2 tasks | 6 files |
 
 ## Accumulated Context
 
@@ -134,6 +135,8 @@ Recent decisions affecting current work:
 - [Phase 05]: activeSession?.id ?? null (primitive) as useStrainMap dependency — stable ID avoids re-fires on unrelated Zustand store updates
 - [Phase 05]: applyStrainToSlug checks base slug AND bilateral -left/-right variants without else — anatomy mode can have both simultaneously
 - [Phase 05]: Strain fill useEffect placed before data-selected useEffect; selectedMuscle in deps — selection accent always wins over strain color
+- [Phase 06-01]: Server Component page.tsx passes JSON as serialized props to client MusclePanelDrawer — keeps data out of main bundle
+- [Phase 06-01]: modal={false} on Drawer.Root — muscle map stays interactive while panel is open on desktop
 
 ### Pending Todos
 
@@ -147,6 +150,6 @@ None yet.
 
 ## Session Continuity
 
-Last session: 2026-03-24T00:23:55.568Z
-Stopped at: Completed 05-02-PLAN.md (heatmap overlay — full pipeline verified)
+Last session: 2026-03-24T08:31:48.742Z
+Stopped at: Completed 06-click-to-muscle-panel-01-PLAN.md
 Resume file: None
