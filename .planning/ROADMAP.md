@@ -151,7 +151,11 @@ Plans:
   2. User can read individual FAQ articles written in a tone that reflects Egyptian fitness culture, not generic clinical language
   3. User can optionally fill in bio info (height, weight, age, gender, body fat percentage, measurements) and sees a visible accuracy improvement indicator in strain and ranking
   4. User who provides zero bio info can access every feature — workout logging, heatmap, exercise panel, ranking, radar chart, and FAQ — without any prompt or gate
-**Plans**: TBD
+**Plans:** 3 plans
+Plans:
+- [ ] 08-01-PLAN.md — FAQ page with category filter chips, accordion Q&A items, FAQ tab in BottomNav
+- [ ] 08-02-PLAN.md — Bio profile page with 6-field form, Dexie v2 schema migration, accuracy ring, Profile tab in BottomNav
+- [ ] 08-03-PLAN.md — Bio-enhanced strain engine, accuracy indicators on map and ranking pages, human verification
 **UI hint**: yes
 
 ## Progress
@@ -168,4 +172,4 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | 5. Strain Engine + Heatmap | 2/2 | Complete   | 2026-03-24 |
 | 6. Click-to-Muscle Panel | 2/2 | Complete   | 2026-03-24 |
 | 7. Ranking + Radar | 3/3 | Complete   | 2026-03-24 |
-| 8. Community FAQ + Bio Metrics | 0/TBD | Not started | - |
+| 8. Community FAQ + Bio Metrics | 0/3 | Not started | - |
