@@ -34,9 +34,9 @@ The interactive muscle map must work — users can see which muscles are straine
 - [x] Pre-built workout plans users can follow step by step — Validated in Phase 4: Workout Logger
 - [x] Heatmap overlay showing strain level per muscle based on training data — Validated in Phase 5: Strain Engine + Heatmap
 - [x] Placeholder scientific dataset for muscle strain/recovery calculations — Validated in Phase 5: Strain Engine + Heatmap
+- [x] Clickable muscles opening exercise references with pre-training warm-up and training intensity info — Validated in Phase 6: Click-to-Muscle Panel
 
 ### Active
-- [ ] Clickable muscles opening exercise references with pre-training warm-up and training intensity info
 - [ ] Optional bio-info collection (height, weight, age, gender, body fat %, muscle measurements)
 - [ ] Bio-info reward system — more data improves accuracy, never gates features
 - [ ] AI-generated FAQ content from Egyptian gym community topics (Reddit, Twitter, Facebook)
@@ -97,4 +97,4 @@ This document evolves at phase transitions and milestone boundaries.
 4. Update Context with current state
 
 ---
-*Last updated: 2026-03-24 after Phase 5: Strain Engine + Heatmap complete — pure strain computation engine with exponential decay (72hr half-life), useStrainMap hook wired to Dexie workout history, heatmap color overlay on muscle map SVG, disclaimer text visible*
+*Last updated: 2026-03-24 after Phase 6: Click-to-Muscle Panel complete — slide-out panel shows exercises, strain state, and warm-up guidance when any muscle is tapped on the map*
