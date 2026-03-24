@@ -120,7 +120,10 @@ Plans:
   1. User can tap any muscle on the front or back map view and a slide-out panel opens showing exercises that target that muscle
   2. User can see the current strain/recovery state for the tapped muscle displayed inside the reference panel
   3. User can see warm-up guidance specific to the tapped muscle group inside the panel
-**Plans**: TBD
+**Plans:** 2 plans
+Plans:
+- [ ] 06-01-PLAN.md — Muscle panel components (MusclePanelDrawer, StrainStatusCard, PanelExerciseList, PanelWarmupSection) and home page integration
+- [ ] 06-02-PLAN.md — E2E tests for MAP-04/EXER-04/EXER-05 and human verification
 **UI hint**: yes
 
 ### Phase 7: Ranking + Radar
@@ -159,6 +162,6 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | 3. Exercise Library | 4/4 | Complete   | 2026-03-23 |
 | 4. Workout Logger | 7/7 | Complete   | 2026-03-23 |
 | 5. Strain Engine + Heatmap | 2/2 | Complete   | 2026-03-24 |
-| 6. Click-to-Muscle Panel | 0/TBD | Not started | - |
+| 6. Click-to-Muscle Panel | 0/2 | In Progress | - |
 | 7. Ranking + Radar | 0/TBD | Not started | - |
 | 8. Community FAQ + Bio Metrics | 0/TBD | Not started | - |
