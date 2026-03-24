@@ -135,7 +135,11 @@ Plans:
   2. User can see a radar chart showing their body rating across push, pull, legs, core, and conditioning axes derived from their workout history
   3. User can see a sub-tier progress bar showing how far they have progressed within their current tier toward the next one
   4. User experiences a celebration UI (animation or visual callout) at the moment they advance to a new tier
-**Plans**: TBD
+**Plans:** 3 plans
+Plans:
+- [ ] 07-01-PLAN.md — TDD ranking engine: tier computation, sub-tier progress, radar axes, Dexie v3 schema, useRankingData hook
+- [ ] 07-02-PLAN.md — Ranking page UI: radar chart SVG, tier badge, progress bar, celebration overlay, BottomNav integration
+- [ ] 07-03-PLAN.md — E2E tests for RANK-01/RANK-02/RANK-03/RANK-04 and human verification
 **UI hint**: yes
 
 ### Phase 8: Community FAQ + Bio Metrics
@@ -163,5 +167,5 @@ Phases execute in numeric order: 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8
 | 4. Workout Logger | 7/7 | Complete   | 2026-03-23 |
 | 5. Strain Engine + Heatmap | 2/2 | Complete   | 2026-03-24 |
 | 6. Click-to-Muscle Panel | 2/2 | Complete   | 2026-03-24 |
-| 7. Ranking + Radar | 0/TBD | Not started | - |
+| 7. Ranking + Radar | 0/3 | In Progress | - |
 | 8. Community FAQ + Bio Metrics | 0/TBD | Not started | - |
